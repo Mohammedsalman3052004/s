@@ -67,8 +67,11 @@
     <link rel="canonical" href="https://www.avendus.com/india" />
 
     <link rel="shortcut icon" type="image/x-icon" href="https://www.avendus.com/dist/img/Avendus-new-fav.png" />
-
+    <link rel="shortcut icon" href="./sim_files/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://www.avendus.com/dist/css/app.min.css" />
+    <link rel="stylesheet" href="https://www.avendus.com/dist/css/app.min.css" />
+    <link rel="shortcut icon" href="./sim_files/favicon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./sim_files/app.min.css" /> -->
     <style>
         /* comment */
         .lg-outer #lg-share {
@@ -131,6 +134,206 @@
 
         .reportDownload:focus {
             color: #fff;
+        }
+
+        .contact-us-contnet {
+            padding: 50px;
+        }
+
+        .heading-container-contact {
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        .left,
+        .right {
+            flex: 1 1 500px;
+        }
+
+        .heading-small {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #7f7f7f;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #2d2a4c;
+            margin-bottom: 40px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: transparent;
+            margin-bottom: 25px;
+            font-size: 1rem;
+            color: #1d1d1f;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            outline: none;
+            border-bottom: 1px solid #2d2a4c;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .radio-group {
+            margin-bottom: 40px;
+        }
+
+        .radio-group h3 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        .radio-option {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-option input {
+            margin-right: 10px;
+        }
+
+        .contact-location {
+            margin-top: 80px;
+            border-top: 1px solid #dbb6a1;
+            border-bottom: 1px solid #dbb6a1;
+            padding: 20px;
+        }
+
+        .office {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+
+        .submit-section {
+            margin-top: 40px;
+        }
+
+        .submit-btn {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #c8a897;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            color: #a87d68;
+        }
+
+        .submit-btn::after {
+            content: "→";
+            font-style: normal;
+            transition: transform 0.3s ease;
+        }
+
+        .submit-btn:hover::after {
+            transform: translateX(5px);
+        }
+
+        .form-note {
+            font-size: 0.9rem;
+            color: #2d2a4c;
+            font-style: italic;
+            margin-top: 8px;
+            line-height: 1.5;
+            max-width: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        /* Tablet Devices (768px - 1024px) */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .left,
+            .right {
+                flex: 1 1 100%;
+            }
+
+            form input,
+            form textarea {
+                font-size: 0.95rem;
+            }
+
+            .submit-btn {
+                font-size: 1rem;
+            }
+
+            .form-note {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Mobile Devices (below 768px) */
+        @media (max-width: 767px) {
+            .heading-container-contact {
+                padding: 30px 20px;
+            }
+
+            .contact-us-contnet {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            form input,
+            form textarea {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            .radio-group h3 {
+                font-size: 0.95rem;
+            }
+
+            .radio-option label {
+                font-size: 0.9rem;
+            }
+
+            .submit-btn {
+                font-size: 0.95rem;
+            }
+
+            .form-note {
+                font-size: 0.8rem;
+            }
         }
     </style>
 
@@ -224,10 +427,11 @@
                     <span class="sr-only">Toggle navigation</span>
                 </button>
                 <a class="navbar-brand logo" href="https://www.avendus.com/india" itemprop="url"><img
-                        src="https://www.avendus.com/dist/img/logo-2.png" class="img-responsive" alt="Avendus"
-                        id="toplogo" itemprop="logo">
-                    <img src="https://www.avendus.com/dist/img/logo.png" id="toplogo1" alt="Avendus"
-                        class="img-responsive" style="display:none;"></a>
+                        src="./sim_files/footer-logo.png" class="img-responsive" alt="Avendus" id="toplogo"
+                        itemprop="logo">
+                    <img src="./sim_files/logo.png" width="200" height="83" id="toplogo1" alt="Avendus"
+                        class="img-responsive" style="display: none;"></a>
+                </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse navbar-height">
                 <ul class="nav navbar-nav navbar-right pages-links">
@@ -505,7 +709,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-sm-push-5 col-sm-7 banner-img">
-                        <img src="https://www.avendus.com/crypted_storage_img/new-img-68495b9926f05-.gif"
+                        <img src="./sim_files/home banner.png" height="553" width="553"
                             alt="Delivering Advisory Services with Unwavering Expertise and Deep Insight"
                             class="img-responsive">
 
@@ -515,18 +719,13 @@
                     <div class="col-md-5 col-sm-pull-7 col-sm-5 banner-text">
                         <h1> Delivering Advisory Services with Unwavering Expertise and Deep Insight
                         </h1>
-                        <p>Broadwings Multi-Family Office
-
-                            Broadwings is a multi-family office founded by a team of seasoned professionals, each with
-                            over a decade of experience across Banking, Financial Services, and Wealth Management.
-
-                            Through years of managing portfolios for High-Net-Worth Individuals (HNIs) and Ultra
-                            High-Net-Worth Individuals (UHNIs), we identified a critical need: a platform that delivers
-                            truly holistic, client-centric financial solutions.
-
-                            At Broadwings Family Office, we don’t just meet expectations—we redefine them.
-
-                            Beyond is where we begin.</p>
+                        <p>Broadwings Family Office is a distinguished multi-family office, established by a
+                            team of seasoned professionals with over a decade of collective experience in Banking,
+                            Financial Services, and Wealth Management. With a proven track record of managing
+                            portfolios for High-Net-Worth Individuals (HNIs) and Ultra High-Net-Worth
+                            Individuals (UHNIs), we recognized the need for a platform that offers truly holistic,
+                            personalized financial solutions. At Broadwings Family Office, we don't just meet
+                            expectations—we set new benchmarks. For us, going beyond is just the beginning.</p>
                         <a href="https://www.avendus.com/india/reports/81">
                             <button
                                 onclick="ga('send', 'event', { eventCategory: 'Button Click', eventAction: 'Click', eventLabel: 'Download Report'});"
@@ -1008,25 +1207,17 @@
                                 </div>
                                 <div class="col-md-8 test-img-text col-xs-6">
 
-                                    <h6>Avendus</h6>
-                                    <p class="test-name">@Avendus</p>
+                                    <h6>A Leading HNI Client</h6>
+                                    <p class="test-name">@Broadwings</p>
                                     <p class="test-date">Sep 25</p>
 
                                 </div>
                                 <div class="col-md-8 col-md-offset-2 col-xs-12 ">
-                                    <p class="text-desc"><a href="https://twitter.com/hashtag/ESG?src=hashtag_click"
-                                            target="_blank">#ESG
-                                        </a> has taken the global investment landscape by storm & green
-                                        shoots are
-                                        emerging in India. Our report delves into how ESG is set to be a key
-                                        decision-making
-                                        parameter for
-                                        Indian <a href="https://twitter.com/hashtag/CapitalMarkets?src=hashtag_click"
-                                            target="_blank">#CapitalMarkets</a>, contributing to ~34% of total domestic
-                                        AUM
-                                        by
-                                        2051 <a href="https://t.co/TGauvULXU2"
-                                            target="_blank">https://bit.ly/48nxTSO</a>
+                                    <p class="text-desc">Broadwings Family Office’s bespoke portfolio management has
+                                        helped us achieve a 19%
+                                        CAGR over the last 5 years, outperforming industry benchmarks by over 4%. Their
+                                        proactive
+                                        approach and timely rebalancing were key drivers of this consistent growth.
                                     </p>
                                 </div>
 
@@ -1038,22 +1229,16 @@
                                     <img src="https://www.avendus.com/dist/img/test1.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="col-md-8 test-img-text col-xs-6">
-                                    <h6>Avendus</h6>
-                                    <p class="test-name">@Avendus</p>
+                                    <h6>A Multi-Generational UHNI Family</h6>
+                                    <p class="test-name">@Broadwings</p>
                                     <p class="test-date">Sep 29</p>
                                 </div>
                                 <div class="col-md-8 col-md-offset-2 col-xs-12">
-                                    <p class="text-desc">Surge in <a
-                                            href="https://twitter.com/hashtag/optiontrading?src=hashtag_click"
-                                            target="_blank">#optiontrading</a> augurs well for the <a
-                                            href="https://twitter.com/hashtag/markets?src=hashtag_click"
-                                            target="_blank">#markets</a>. Nandik
-                                        Mallik, CIO, Avendus
-                                        Alternate Strategies LLP, penned an article for <a
-                                            href="https://twitter.com/EconomicTimes" target="_blank">@EconomicTimes</a>,
-                                        on increasing debate around the
-                                        high volumes in options segment & market instability. Read the article here <a
-                                            href="https://t.co/htOaIQegkP" target="_blank">https://bit.ly/3ETmzjL</a>
+                                    <p class="text-desc">After switching to Broadwings Family Office, our family’s
+                                        estate and succession planning
+                                        efficiency improved by 28%, ensuring smoother wealth transfer across generations
+                                        while
+                                        reducing potential tax liabilities significantly.
                                     </p>
                                 </div>
 
@@ -1065,26 +1250,36 @@
                                     <img src="https://www.avendus.com/dist/img/test1.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="col-md-8 test-img-text col-xs-6">
-                                    <h6>Avendus</h6>
-                                    <p class="test-name">@Avendus</p>
+                                    <h6>A Private Equity Investor</h6>
+                                    <p class="test-name">@Broadwings</p>
                                     <p class="test-date">Sep 28</p>
                                 </div>
                                 <div class="col-md-8 col-md-offset-2 col-xs-12">
-                                    <p class="text-desc">India’s <a
-                                            href="https://twitter.com/hashtag/coworking?src=hashtag_click"
-                                            target="_blank">#coworking</a> sector has seen a sharp recovery post
-                                        Covid-19.<br>
-                                        <a href="https://twitter.com/prjhawar" target="_blank">@prjhawar</a>, MD
-                                        & Head, Infra & Real Assets, Avendus Capital, tells us more on how the segment
-                                        is
-                                        shaping up to take the <a
-                                            href="https://twitter.com/hashtag/IPO?src=hashtag_click"
-                                            target="_blank">#IPO</a> route <a href="https://t.co/hAYcPQ2Wgi"
-                                            target="_blank">https://bit.ly/3Pw36ux : </a> <a
-                                            href="https://twitter.com/ashwinmohansays"
-                                            target="_blank">@ashwinmohansays</a>, <a
-                                            href="https://twitter.com/moneycontrolcom"
-                                            target="_blank">@moneycontrolcom</a>
+                                    <p class="text-desc">Broadwings Family Office facilitated access to exclusive
+                                        private equity deals, resulting in an
+                                        IRR of 22% in alternative investments, a remarkable figure considering market
+                                        volatility during
+                                        this period.
+                                    </p>
+                                </div>
+                                <div class="col-md-1 col-md-offset-1">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-md-offset-1 col-xs-5">
+                                    <img src="https://www.avendus.com/dist/img/test1.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="col-md-8 test-img-text col-xs-6">
+                                    <h6> A Corporate Treasury Head </h6>
+                                    <p class="test-name">@Broadwings</p>
+                                    <p class="test-date">Sep 28</p>
+                                </div>
+                                <div class="col-md-8 col-md-offset-2 col-xs-12">
+                                    <p class="text-desc">With Broadwings Family Office’s dedicated debt market
+                                        expertise, our portfolio’s average
+                                        yield improved by 180 basis points, enhancing liquidity management and reducing
+                                        credit risk
+                                        exposure.
                                     </p>
                                 </div>
                                 <div class="col-md-1 col-md-offset-1">
@@ -1109,8 +1304,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-xs-12">
-                        <img src="https://www.avendus.com/dist/img/investor-relations-disclosures/investor-relations-disclosures-img.png"
-                            class="img-responsive">
+                        <img src="./sim_files/Investor-Relations.png" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -1574,31 +1768,111 @@
 
 
 
-    <div class="newsletter-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-xs-12 col-sm-3 col-md-push-3">
-                    <p class="subscribe-latest-text">Subscribe<br><span>to our newsletter</span></p>
-                </div>
-                <div class="col-md-3 col-xs-12 col-sm-4 col-md-pull-5">
-                    <p class="stay-latest-text">Stay updated with the latest at Broadwings Multi Family Office</p>
-                </div>
-                <div class="col-md-4 col-xs-12 col-sm-5">
+    <div class="contact-us-contnet">
+        <div class="heading-container-contact">
+            <div class="heading-small">CONTACT US</div>
+            <h1>Your legacy awaits</h1>
+        </div>
 
-                    <form method="POST" id="subscribe-newsletter"
-                        action="https://www.avendus.com/india/subscribe-newsletter" class="newsletter-v2" novalidate>
-                        <div class="newsletter-flex">
-                            <input type="hidden" name="_token" value="IOwJYLacrTqxNb4EsMKd7J64qSytXN1nHzGYJ6fx">
-                            <input id="subs_email" name="subs_email" type="email" value="" placeholder="Email Address"
-                                class="placeholder-fix" required="required" />
-                            <button type="submit" class="newsletter-btn">SIGN UP</button>
+        <div class="container">
+            <!-- LEFT SECTION (RADIO QUESTIONS) -->
+            <div class="left">
+                <div class="radio-group">
+                    <h3>Topic of Enquiry*:</h3>
+                    <div class="radio-option">
+                        <input type="radio" name="topic" />
+                        <label>Personal Wealth Advisory (₹ 5 Cr to ₹ 100 Cr)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="topic" />
+                        <label>Family Office Advisory (₹ 100 Cr & Above)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="topic" />
+                        <label>HERitage - Wealth Advisory For Women (₹ 10 Cr & Above)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="topic" />
+                        <label>Founders Circle (₹ 10 Cr & Above)</label>
+                    </div>
+                </div>
+
+                <div class="radio-group">
+                    <h3>How did you discover Waterfield?</h3>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>News Publication (Forbes, Moneycontrol, etc)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>Search Engine (Google, Bing, etc)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>UHNW Event Calendar 2025</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>Fortune Waterfield Rich List</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>Indian Family Business Awards</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>Recommended by friend or colleague</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>Social Media (LinkedIn, Instagram, etc)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>YouTube</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="discovery" />
+                        <label>Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SECTION (FORM + LOCATION + SUBMIT) -->
+            <div class="right">
+                <form>
+                    <input type="text" placeholder="Full Name*" required />
+                    <div style="display: flex; gap: 20px">
+                        <input type="email" placeholder="Email Address*" required style="flex: 1" />
+                        <input type="tel" placeholder="Contact Number*" required style="flex: 1" />
+                    </div>
+                    <div style="display: flex; gap: 20px">
+                        <input type="text" placeholder="Name of the Company / Family*" style="flex: 1" />
+                        <input type="text" placeholder="City*" style="flex: 1" />
+                    </div>
+                    <textarea placeholder="How can we help you?" rows="5"></textarea>
+
+                    <div class="submit-section">
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <div class="form-note">
+                            *Kindly note that this form does not operate as a job portal,
+                            and the HR Team will not receive information regarding your
+                            candidature
                         </div>
-                    </form>
-                    <p id="subscribe_msg" style="color: #f5f5f5;"></p>
+                    </div>
+                </form>
+                <div class="contact-location">
+                    <div class="office">
+                        <span>Bengaluru</span> <span>+91-80-67433089</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
     <footer>
         <div class="container">
             <div class="row links-footer">
@@ -1642,7 +1916,7 @@
 
                 </div>
                 <div class="foot-div col-xs-6">
-                    <a href="https://www.avendus.com/india/careers">
+                    <a href="./sim_files/careers/careers.html">
                         <h4>Careers</h4>
                     </a>
                     <a href="https://www.avendus.com/india/careers/life-at-avendus">
@@ -1669,11 +1943,7 @@
                         <p>Track Record</p>
                     </a>
                 </div>
-                <div class="foot-div col-xs-6">
-                    <a href="https://www.avendus.com/india/avendus-eye">
-                        <h4>Avendus Eye</h4>
-                    </a>
-                </div>
+
                 <div class="foot-div col-xs-6">
                     <a href="https://www.avendus.com/india/contact-us">
                         <h4>Contact Us</h4>
@@ -1681,6 +1951,11 @@
 
 
 
+                </div>
+                <div class="foot-div col-xs-6">
+                    <a href="https://www.avendus.com/india/avendus-eye">
+                        <h4></h4>
+                    </a>
                 </div>
                 <div class="foot-div col-xs-6" itemscope itemtype="http://schema.org/Organization">
                     <div class="social-icons">
@@ -1698,7 +1973,7 @@
                         </a>
                     </div>
                     <a href="https://www.avendus.com/india">
-                        <img src="https://www.avendus.com/dist/img/footer-logo.png" itemprop="url" alt="Avendus"
+                        <img src="./sim_files/footer-logo.png" itemprop="url" alt="Avendus"
                             class="img-responsive img-mid logo">
                     </a>
                 </div>

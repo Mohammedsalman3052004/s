@@ -30172,6 +30172,13 @@ input:focus {
         padding-bottom: 3em
     }
 }
+.banner-image{
+    height: 100vh;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
 
 .notice-popup .modal-body {
     padding: 30px 60px 30px
