@@ -67455,7 +67455,7 @@ footer .footer-bottom h5 a:hover {
   font-family: "UniviaPro-Light";
   font-size: 33px;
   color: #f5f5f5;
-  padding-top: 6.5em;
+  padding-top: 4.5em;
   line-height: 1.2;
   margin-bottom: 10px;
 }
@@ -67511,6 +67511,12 @@ footer .footer-bottom h5 a:hover {
     padding-top: 5em;
     padding-bottom: 3em;
   }
+}
+.banner-img{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #esg .esg-text-block {
   background-color: #efefef;

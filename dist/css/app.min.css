@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 body {
-    font-family: "CoreSansR35Regular", "Open Sans", "Arial"
+    font-family: "Poppins", sans-serif;
 }
 
 html {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -127,7 +127,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: "Poppins", sans-serif;
     font-size: 1em
 }
 
@@ -318,7 +318,7 @@ th {
 }
 
 @font-face {
-    font-family: 'Glyphicons Halflings';
+    font-family: "Poppins", sans-serif;
     src: url('../fonts/glyphicons-halflings-regular.eot');
     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
 }
@@ -327,7 +327,7 @@ th {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -1403,7 +1403,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -1414,7 +1414,7 @@ input,
 button,
 select,
 textarea {
-    font-family: inherit;
+    font-family: "Poppins", sans-serif;
     font-size: inherit;
     line-height: inherit
 }
@@ -1519,7 +1519,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: inherit;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1.1;
     color: inherit
@@ -1935,7 +1935,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+    font-family: "Poppins", sans-serif;
 }
 
 code {
@@ -7536,7 +7536,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: normal;
@@ -7846,7 +7846,7 @@ button.close {
     width: 20px;
     height: 20px;
     line-height: 1;
-    font-family: serif
+    font-family: "Poppins", sans-serif;
 }
 
 .carousel-control .icon-prev:before {
@@ -12901,7 +12901,7 @@ button.close {
     background: url("../img/date-icon.png") bottom no-repeat;
     color: #7e7e7e;
     font-size: 11.25px;
-    font-family: "UniviaProRegular";
+    font-family: "Poppins", sans-serif;
     padding-bottom: 25px;
     letter-spacing: 2px
 }
@@ -13631,7 +13631,7 @@ a {
 .button-white span {
     z-index: 99;
     display: block;
-    font-family: "UniviaPro-Light";
+    font-family: "Poppins", sans-serif;
     position: relative;
     width: 100%;
     font-size: 14px;
@@ -13728,7 +13728,7 @@ a {
     z-index: 99;
     display: block;
     font-size: 14px;
-    font-family: "UniviaPro-Light";
+    font-family: "Poppins", sans-serif;
     position: relative;
     width: 100%;
     height: 100%
@@ -13827,7 +13827,7 @@ a {
     z-index: 99;
     display: block;
     font-size: 14px;
-    font-family: "UniviaPro-Light";
+    font-family: "Poppins", sans-serif;
     position: relative;
     width: 100%;
     height: 100%
@@ -13925,7 +13925,7 @@ a {
 .button-grey span {
     z-index: 99;
     display: block;
-    font-family: "UniviaPro-Light";
+    font-family: "Poppins", sans-serif;
     position: relative;
     width: 100%;
     height: 100%
@@ -29664,57 +29664,57 @@ table {
 }
 
 @font-face {
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/Mostardesign-UniviaProBook.otf), url("../fonts/mostardesign-univiaprobook.woff") format("woff"), url("../fonts/mostardesign-univiaprobook.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "UniviaProRegular";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/Mostardesign-UniviaProRegular.otf), url("../fonts/mostardesign-univiaproregular.woff") format("woff"), url("../fonts/mostardesign-univiaproregular.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "UniviaPro-Medium";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/Mostardesign-UniviaPro-Medium.otf), url("../fonts/mostardesign-univiapro-medium.woff") format("woff"), url("../fonts/mostardesign-univiapro-medium.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "UniviaPro-Light";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/Mostardesign-UniviaPro-Light.otf), url("../fonts/mostardesign-univiapro-light.woff") format("woff"), url("../fonts/mostardesign-univiapro-light.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "UniviaProThin";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/Mostardesign-UniviaProThin.otf), url("../fonts/mostardesign-univiaprothin.woff") format("woff"), url("../fonts/mostardesign-univiaprothin.woff2") format("woff2"), url("../fonts/mostardesign-univiaprothin.ttf") format("truetype")
 }
 
 @font-face {
-    font-family: "UniviaProUltraLight";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/Mostardesign-UniviaProUltraLight.otf), url("../fonts/mostardesign-univiaproultralight-webfont.woff") format("woff"), url("../fonts/mostardesign-univiaproultralight-webfont.woff2") format("woff2"), url("../fonts/mostardesign-univiaproultralight-webfont.ttf") format("truetype")
 }
 
 @font-face {
-    font-family: "UniviaPro-Bold";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/Mostardesign-UniviaPro-Bold.otf), url("../fonts/mostardesign-univiapro-bold.woff") format("woff"), url("../fonts/mostardesign-univiapro-bold.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "CoreSansR25Light";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/S-Core-CoreSansR25Light_0.otf), url("../fonts/s-core-coresansr25light_0.ttf") format("truetype"), url("../fonts/s-core-coresansr25light_0.woff") format("woff"), url("../fonts/s-core-coresansr25light_0.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "CoreSansR35Regular";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/S-Core-CoreSansR35Regular_0.otf), url("../fonts/s-core-coresansr35regular_0.ttf") format("truetype"), url("../fonts/s-core-coresansr35regular_0.woff") format("woff"), url("../fonts/s-core-coresansr35regular_0.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "CoreSansR45Medium";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/S-Core-CoreSansR45Medium_0.otf), url("../fonts/s-core-coresansr45medium_0.ttf") format("truetype"), url("../fonts/s-core-coresansr45medium_0.woff") format("woff"), url("../fonts/s-core-coresansr45medium_0.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "CoreSansR45Bold";
+    font-family: "Poppins", sans-serif;
     src: url(../fonts/S-Core-CoreSansR55Bold_0.otf), url("../fonts/s-core_-_coresansr55bold_0.woff") format("woff"), url("../fonts/s-core_-_coresansr55bold_0.woff2") format("woff2")
 }
 
@@ -29726,7 +29726,7 @@ html {
 html body {
     height: 100%;
     background-color: white;
-  font-family: 'Open Sans', 'Roboto', Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -29881,7 +29881,7 @@ input:focus {
     padding-left: 10px;
     color: #a0a0a0;
     font-size: 30px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     letter-spacing: 1px
 }
 
@@ -30043,7 +30043,7 @@ input:focus {
 }
 
 #avendus_banner .banner-section .banner-text h1 {
-    font-family: "UniviaProRegular";
+    font-family: "Poppins", sans-serif;
     font-size: 33px;
     color: #1f1f1f;
     line-height: 1.2;
@@ -30174,8 +30174,7 @@ input:focus {
 }
 .banner-image{
     height: 100vh;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -37511,7 +37510,7 @@ button.picker__close:focus {
     font-size: 12px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: all .5s ease-out
 }
@@ -37556,7 +37555,7 @@ button.picker__close:focus {
     color: #504e4e;
     letter-spacing: 2px;
     font-size: 12px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase
 }
 
@@ -37787,7 +37786,7 @@ button.picker__close:focus {
     font-size: 12px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: all .5s ease-out
 }
@@ -37832,7 +37831,7 @@ button.picker__close:focus {
     color: #504e4e;
     letter-spacing: 2px;
     font-size: 12px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase
 }
 
@@ -37863,7 +37862,7 @@ button.picker__close:focus {
     font-size: 12px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: all .5s ease-out
 }
@@ -37935,7 +37934,7 @@ button.picker__close:focus {
     font-size: 12px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: all .5s ease-out
 }
@@ -37980,7 +37979,7 @@ button.picker__close:focus {
     color: #504e4e;
     letter-spacing: 2px;
     font-size: 12px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase
 }
 
@@ -38261,7 +38260,7 @@ button.picker__close:focus {
 }
 
 .header-design2 .pages-links li a {
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     color: #1f1f1f;
     letter-spacing: 1px;
     line-height: 1.4
@@ -38488,7 +38487,7 @@ button.picker__close:focus {
     color: #504e4e;
     letter-spacing: 2px;
     font-size: 12px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase
 }
 
@@ -38503,7 +38502,7 @@ button.picker__close:focus {
     font-size: 12px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: all .5s ease-out
 }
@@ -38586,7 +38585,7 @@ button.picker__close:focus {
     font-size: 12px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: all .5s ease-out
 }
@@ -38631,7 +38630,7 @@ button.picker__close:focus {
     color: #504e4e;
     letter-spacing: 2px;
     font-size: 12px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase
 }
 
@@ -38665,7 +38664,7 @@ button.picker__close:focus {
     font-size: 12px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: all .5s ease-out
 }
@@ -38710,7 +38709,7 @@ button.picker__close:focus {
     color: #504e4e;
     letter-spacing: 2px;
     font-size: 12px;
-    font-family: "UniviaProBook";
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase
 }
 
@@ -39190,7 +39189,7 @@ footer .links-footer .foot-div .social-icons img:hover {
 }
 
 footer .footer-bottom h6 {
-    font-family: "UniviaPro-Light";
+    font-family: "Poppins", sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: #f5f5f5;
@@ -39212,7 +39211,7 @@ footer .footer-bottom h6 {
 }
 
 footer .footer-bottom h5 {
-    font-family: "UniviaPro-Light";
+    font-family: "Poppins", sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: #f5f5f5;
