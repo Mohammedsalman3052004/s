@@ -1,0 +1,182 @@
+/**
+ * Jayesh Filter
+ */
+
+function check_it(id) {
+    if ($("#" + id).val() == "Internship Program") {
+        $("#internship_dates").show();
+    } else {
+        $("#internship_dates").hide();
+    }
+}
+
+$(document).ready(function () {
+
+    var filterActive;
+
+    function filterCategory(cat1, cat2) {
+
+        // reset results list
+        $('.filter-cat-results .f-cat').removeClass('active');
+
+        // the filtering in action for all criteria
+        var selector = ".filtering .f-cat";
+        if (cat1 !== 'cat-all') {
+            selector = '[data-cat=' + cat1 + "]";
+        }
+        if (cat2 !== 'cat-all') {
+            selector = selector + '[data-cat2=' + cat2 + "]";
+        }
+        // if (cat3 !== 'cat-all') {
+        // selector = selector + '[data-cat3=' + cat3 + "]";
+        // }
+
+        // show all results
+        $(selector).addClass('active');
+
+        if ($(selector).length < 1) {
+            $(".filter-cat-results").find(".no-result").remove();
+            $(".filter-cat-results").append("<h5 class='no-result text-left'>No Results Found </h5>")
+        } else {
+            $(".filter-cat-results").find(".no-result").remove();
+        }
+
+        // reset active filter
+        filterActive = cat1;
+    }
+
+    // start by showing all items
+    $('.filtering .f-cat').addClass('active');
+
+    // call the filtering function when selects are changed
+    $('.filtering select').change(function () {
+
+        filterCategory($('.filtering select.cat1').val(), $('.filtering select.cat2').val());
+
+    });
+
+});
+
+$(document).ready(function () {
+    var filterActive1;
+
+    function filterCategory1(cat1) {
+
+        $('.filter-cat1-results .f-cat1').removeClass('active');
+        var selector = ".filtering1 .f-cat1";
+        if (cat1 !== 'cat1-all') {
+            selector = '[data-cat11=' + cat1 + "]";
+        }
+        $(selector).addClass('active');
+        filterActive1 = cat1;
+    }
+
+    $('.filtering1 .f-cat1').addClass('active');
+
+    $('.filtering1 select').change(function () {
+
+        filterCategory1($('.filtering1 select.cat11').val());
+    });
+
+});
+
+$(document).ready(function () {
+    var filterActive2;
+
+    function filterCategory2(cat1, cat2, cat3) {
+
+        $('.filter-cat-results .f-cat').removeClass('active');
+
+        var selector = ".filter-cat-results .f-cat";
+        if (cat1 !== 'cat1-all') {
+            selector = selector + '[data-cat1=' + cat1 + "]";
+        }
+        if (cat2 !== 'cat2-all') {
+            selector = selector + '[data-cat2=' + cat2 + "]";
+        }
+        if (cat3 !== 'cat3-all') {
+            selector = selector + '[data-cat3=' + cat3 + "]";
+        }
+
+
+        $(selector).addClass('active');
+        if ($(selector).length < 1) {
+            $(".filter-cat-results").find(".no-result").remove();
+            $(".filter-cat-results").append("<h5 class='no-result text-left'>No Results Found </h5>")
+        } else {
+            $(".filter-cat-results").find(".no-result").remove();
+        }
+        filterActive2 = cat1;
+    }
+
+    $('.filter-cat-results .f-cat').addClass('active');
+
+    $('.cat-option').click(function () {
+        if ($(this).hasClass("cat-sol")) {
+            $('.cat-sol').removeClass("fselected");
+        }
+        else if ($(this).hasClass("cat-sec")) {
+            $('.cat-sec').removeClass("fselected");
+        }
+        else if ($(this).hasClass("cat-year")) {
+            $('.cat-year').removeClass("fselected");
+        }
+
+        $(this).addClass("fselected");
+        var option1 = $(".cat1 .fselected").attr('data-filter');
+        var option2 = $(".cat2 .fselected").attr('data-filter');
+        var option3 = $(".cat3 .fselected").attr('data-filter');
+
+        filterCategory2(option1, option2, option3);
+    });
+
+});
+
+
+/**
+ *Image Light Gallery
+ */
+
+$(document).ready(function () {
+    $(".lightgallery").lightGallery();
+});
+
+/**
+ * Report Filter
+ */
+
+$(document).ready(function () {
+    // start by showing all items
+    $('.filtering-report .f-cat').addClass('active');
+// call the filtering function when selects are changed
+    $('.filtering-report select').change(function () {
+        filter_report($('.filtering-report select.cat1').val());
+    });
+});
+
+var filter_report_active;
+
+function filter_report(cat1) {
+
+    // reset results list
+    $('.filter-reports-results .f-cat').removeClass('active');
+    // the filtering in action for all criteria
+    var selector = ".filtering-report .f-cat";
+    if (cat1 !== 'cat-all') {
+        selector = "[data-cat=':cat']";
+        selector = selector.replace(":cat", cat1);
+    }
+    // show all results
+    console.log($(selector));
+    $(selector).addClass('active');
+    if ($(selector).length < 1) {
+        $(".filter-reports-results").find(".no-result").remove();
+        $(".filter-reports-results").append("<h5 class='no-result'>No Results Found For " + cat1 + " </h5>")
+    } else {
+        $(".filter-reports-results").find(".no-result").remove();
+    }
+    // reset active filter
+    filter_report_active = cat1;
+}
+
+
