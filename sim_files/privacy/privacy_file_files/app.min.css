@@ -33047,8 +33047,8 @@ footer .links-footer .foot-div {
 }
 @media screen and (max-width: 767px) {
   footer .links-footer .foot-div {
-    width: 50%;
-    height: 220px;
+    /* width: 50%;
+    height: 220px; */
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
