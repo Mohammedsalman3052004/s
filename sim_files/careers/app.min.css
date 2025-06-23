@@ -21654,7 +21654,7 @@ footer .footer_inner .made_by_ting_sec span {
 }
 @media (max-width: 767px) {
   #career .inner_page_banner {
-    background-image: url(../../img/mobile-banners/careers-banner.jpg);
+    background-image: url(./banner-white.webp);
   }
 }
 #career .inner_page_banner p {
@@ -71886,7 +71886,7 @@ footer .links-footer {
   }
 }
 footer .links-footer .foot-div {
-  width: 14.28%;
+  /* width: 14.28%; */
 }
 @media screen and (max-width: 767px) {
   footer .links-footer .foot-div {

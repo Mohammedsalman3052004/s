@@ -33043,7 +33043,7 @@ footer .links-footer {
   }
 }
 footer .links-footer .foot-div {
-  width: 14.28%;
+  /* width: 14.28%; */
 }
 @media screen and (max-width: 767px) {
   footer .links-footer .foot-div {

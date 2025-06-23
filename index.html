@@ -845,6 +845,16 @@
                 margin-top: 5rem;
             }
         }
+
+        @media screen and (max-width: 767px) {
+            footer .links-footer .foot-div {
+                width: 50%;
+                height: 60px;
+            }
+        }
+        .navbar-default .navbar-toggle{
+            border-color: red;
+        }
     </style>
 
     <!-- <script type="text/javascript">
@@ -940,8 +950,8 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse navbar-height">
                 <ul class="nav navbar-nav navbar-right pages-links">
-                    <li class="dropdown mega-dropdown"><a href="/index.htm" class="dropdown-toggle mega-content-white"
-                            id="01" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <li class="dropdown mega-dropdown"><a href="./index.html" class="dropdown-toggle mega-content-white"
+                            id="01" role="button" aria-haspopup="true" aria-expanded="true">Home</a>
                         <!-- <span class="drop-close drop-open-not"><i class="fas fa-caret-down caret-img"></i></span>
                         <ul class="dropdown-menu mega-dropdown-menu row">
                             <div class="container">
@@ -1117,7 +1127,7 @@
                         <span class="drop-close">
                         </span>
                     </li>
-                    <li><a href="">FAQ</a>
+                    <li><a href="./sim_files/careers/careers.html">Career</a>
                         <span class="drop-close">
                         </span>
                     </li>
@@ -2549,7 +2559,7 @@
     <footer>
         <div class="container">
             <div class="row links-footer">
-                <div class="foot-div col-xs-6">
+                <div class="foot-div col-xs-6" style="height: auto;">
                     <a href="https://www.avendus.com/india/who-we-are">
                         <h4>Who We Are</h4>
                     </a>
@@ -2852,6 +2862,14 @@
             // $('.cautionBtn').trigger('click');
         });
     </script>
+
+
+
+
+
+
+
+
 </body>
 
 </html>

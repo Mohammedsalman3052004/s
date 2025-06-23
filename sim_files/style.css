@@ -21649,7 +21649,7 @@ footer .footer_inner .made_by_ting_sec span {
 }
 @media (max-width: 767px) {
   #career .inner_page_banner {
-    background-image: url(../../img/mobile-banners/careers-banner.jpg);
+    background-image: url(./banner-white.webp);
   }
 }
 #career .inner_page_banner p {

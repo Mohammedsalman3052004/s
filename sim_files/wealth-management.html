@@ -311,6 +311,97 @@
                 font-size: 0.8rem;
             }
         }
+
+
+
+
+        /* Navbar toggle styles */
+        .navbar-collapse {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .navbar-collapse.in {
+            max-height: 500px;
+            /* Adjust based on your menu height */
+        }
+
+        /* Mobile menu styles */
+        @media (max-width: 767px) {
+            .navbar-nav {
+                margin: 0;
+            }
+
+            .navbar-nav>li {
+                float: none;
+            }
+
+            .navbar-nav>li>a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            /* Show the toggle button on mobile */
+            .navbar-toggle {
+                display: block;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                position: relative;
+                float: right;
+                margin-right: 15px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                background-color: transparent;
+                background-image: none;
+                cursor: pointer;
+            }
+
+            .navbar-toggle .icon-bar {
+                display: block;
+                width: 22px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: #888;
+                margin: 4px 0;
+                transition: all 0.3s;
+            }
+
+            /* Animate hamburger to X */
+            .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+
+        /* Hide toggle button on desktop */
+        @media (min-width: 768px) {
+            .navbar-toggle {
+                display: none;
+            }
+
+            .navbar-collapse {
+                max-height: none;
+                overflow: visible;
+            }
+
+            .navbar-collapse.in {
+                overflow: visible;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #navbar .pages-links {
+                margin-top: 6rem;
+            }
+        }
     </style>
 
     <!-- <script type="text/javascript">
@@ -387,6 +478,9 @@
     </script>
     <script async="" src="./hotjar-3477351.js.download"></script>
 
+
+
+
 </head>
 
 <body cz-shortcut-listen="true">
@@ -404,8 +498,8 @@
                     <span class="icon-bar"></span>
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <a class="navbar-brand logo" href="/" itemprop="url"><img src="./logo-2.png"
-                        class="img-responsive" alt="Avendus" id="toplogo" itemprop="logo" style="display: inline;">
+                <a class="navbar-brand logo" href="/" itemprop="url"><img src="./logo-2.png" class="img-responsive"
+                        alt="Avendus" id="toplogo" itemprop="logo" style="display: inline;">
                     <img src="./logo.png" width="200" height="83" id="toplogo1" alt="Avendus" class="img-responsive"
                         style="display: none;"></a>
             </div>
@@ -993,11 +1087,9 @@
                         <div class="unit-class">
 
                             <div class="box">
-                                <a
-                                    href="./block1/block1.html">
+                                <a href="./block1/block1.html">
                                     <div class="field-wrapper">
-                                        <div class="box-img"
-                                            style="background-image: url('./blog1.png')">
+                                        <div class="box-img" style="background-image: url('./blog1.png')">
                                         </div>
                                         <div class="blog-text">
                                             <h6>Investment Banking</h6>
@@ -1033,11 +1125,9 @@
                             </div>
 
                             <div class="box">
-                                <a
-                                    href="./block2/block2.html">
+                                <a href="./block2/block2.html">
                                     <div class="field-wrapper">
-                                        <div class="box-img"
-                                            style="background-image: url('blog2.png')">
+                                        <div class="box-img" style="background-image: url('blog2.png')">
                                         </div>
                                         <div class="blog-text">
                                             <h6>PRIVATE MARKETS & AUTOMATION</h6>
@@ -1082,10 +1172,8 @@
                         <div class="unit-class">
 
                             <div class="box">
-                                <a
-                                    href="./block3/block3.html">
-                                    <div class="box-img"
-                                        style="background-image: url('blog3.png')">
+                                <a href="./block3/block3.html">
+                                    <div class="box-img" style="background-image: url('blog3.png')">
                                     </div>
                                     <div class="blog-text">
                                         <h6>ASSET MANAGEMENT</h6>
@@ -1121,10 +1209,8 @@
 
                             <div class="box">
                                 <div class="same-width-block">
-                                    <a
-                                        href="./block4/block4.html">
-                                        <div class="box-img"
-                                            style="background-image: url('blog4.png')">
+                                    <a href="./block4/block4.html">
+                                        <div class="box-img" style="background-image: url('blog4.png')">
                                         </div>
                                         <div class="blog-text1">
                                             <h6>WEALTH & LEGACY</h6>
@@ -1160,10 +1246,8 @@
 
                                 </div>
                                 <div class="same-width-block">
-                                    <a
-                                        href="./block5/block5.html">
-                                        <div class="box-img"
-                                            style="background-image: url('blog5.png')">
+                                    <a href="./block5/block5.html">
+                                        <div class="box-img" style="background-image: url('blog5.png')">
                                         </div>
                                         <div class="blog-text1">
                                             <h6>REAL ESTATE INVESTING</h6>
@@ -1202,10 +1286,8 @@
 
 
                             <div class="box">
-                                <a
-                                    href="./block6/block6.html">
-                                    <div class="box-img"
-                                        style="background-image: url('blog6.png')">
+                                <a href="./block6/block6.html">
+                                    <div class="box-img" style="background-image: url('blog6.png')">
                                     </div>
                                     <div class="blog-text">
                                         <h6>PORTFOLIO STRATEGY</h6>
@@ -1258,11 +1340,9 @@
                         <div class="unit-class">
 
                             <div class="box">
-                                <a
-                                    href="./block7/block7.html">
+                                <a href="./block7/block7.html">
                                     <div class="field-wrapper">
-                                        <div class="box-img"
-                                            style="background-image: url('blog7.png')">
+                                        <div class="box-img" style="background-image: url('blog7.png')">
                                         </div>
                                         <div class="blog-text">
                                             <h6>ESTATE & LEGACY PLANNING</h6>
@@ -1296,11 +1376,9 @@
                             </div>
 
                             <div class="box">
-                                <a
-                                    href="./block8/block8.html">
+                                <a href="./block8/block8.html">
                                     <div class="field-wrapper">
-                                        <div class="box-img"
-                                            style="background-image: url('blog8.png')">
+                                        <div class="box-img" style="background-image: url('blog8.png')">
                                         </div>
                                         <div class="blog-text">
                                             <h6>PORTFOLIO STRATEGY</h6>
@@ -1474,7 +1552,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="row ibbb" style="display: flex; justify-content: center; align-items: center; width: 100%; ">
+                <div class="row ibbb"
+                    style="display: flex; justify-content: center; align-items: center; width: 100%; ">
                     <div class="col-md-3 col-sm-6">
                         <a href="https://www.avendus.com/india/leadership/swati-singh">
                             <div class="ib-people-info">
@@ -1690,8 +1769,8 @@
                     <!-- <a href="https://www.avendus.com/india/regulatory-information"><p>Regulatory Information</p></a> -->
                 </div>
                 <div class="foot-div col-xs-6">
-                    <a href="https://www.avendus.com/india/what-we-do">
-                        <h4>What We Do</h4>
+                    <a href="./wealth-management.html">
+                        <h4>Wealth Management</h4>
                     </a>
                     <!-- <a href="https://www.avendus.com/india/asset-management">
                         <p>Asset Management</p>
@@ -1777,8 +1856,7 @@
                     <h6>Copyright © 2025 Broadwings. All rights reserved. Broadwings Capital Private Limited</h6>
                 </div>
                 <div class="col-md-6 col-xs-12 col-sm-6">
-                    <h5><a href="./term/term.html">Terms of use </a>| <a
-                            href="./privacy/privacy_file.html">Privacy
+                    <h5><a href="./term/term.html">Terms of use </a>| <a href="./privacy/privacy_file.html">Privacy
                             Policy</a></h5>
                 </div>
             </div>
@@ -1960,6 +2038,74 @@
         });
     </script>
 
+
+
+
+    <script>
+
+        // Navbar toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the toggle button and navbar collapse element
+            const toggleButton = document.querySelector('.navbar-toggle');
+            const navbarCollapse = document.querySelector('#navbar');
+
+            // Add click event listener to the toggle button
+            toggleButton.addEventListener('click', function () {
+                // Toggle the 'in' class to show/hide the navbar
+                navbarCollapse.classList.toggle('in');
+
+                // Toggle aria-expanded attribute for accessibility
+                const isExpanded = navbarCollapse.classList.contains('in');
+                toggleButton.setAttribute('aria-expanded', isExpanded);
+
+                // Optional: Add collapsed class to toggle button for styling
+                toggleButton.classList.toggle('collapsed', !isExpanded);
+            });
+
+            // Close navbar when clicking outside
+            document.addEventListener('click', function (event) {
+                const isClickInsideNav = navbarCollapse.contains(event.target) ||
+                    toggleButton.contains(event.target);
+
+                if (!isClickInsideNav && navbarCollapse.classList.contains('in')) {
+                    navbarCollapse.classList.remove('in');
+                    toggleButton.setAttribute('aria-expanded', 'false');
+                    toggleButton.classList.add('collapsed');
+                }
+            });
+
+            // Close navbar when clicking on a menu item (optional)
+            const menuLinks = navbarCollapse.querySelectorAll('a');
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    navbarCollapse.classList.remove('in');
+                    toggleButton.setAttribute('aria-expanded', 'false');
+                    toggleButton.classList.add('collapsed');
+                });
+            });
+        });
+
+        // Alternative jQuery version (if you're using jQuery)
+        /*
+        $(document).ready(function() {
+            $('.navbar-toggle').click(function() {
+                $('#navbar').toggleClass('in');
+                
+                var isExpanded = $('#navbar').hasClass('in');
+                $(this).attr('aria-expanded', isExpanded);
+                $(this).toggleClass('collapsed', !isExpanded);
+            });
+            
+            // Close navbar when clicking outside
+            $(document).click(function(event) {
+                if (!$(event.target).closest('.navbar').length) {
+                    $('#navbar').removeClass('in');
+                    $('.navbar-toggle').attr('aria-expanded', 'false').addClass('collapsed');
+                }
+            });
+        });
+        */
+    </script>
 
 
     <div class="zoombox-maincon disabled skin-nebula transition-fade transition-gallery-slide transition-out-fade">
