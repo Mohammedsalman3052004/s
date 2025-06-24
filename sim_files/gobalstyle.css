@@ -109,7 +109,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #DAA520;
+    /* color: #CC1919; */
 }
 
 .nav-link::after {
@@ -119,7 +119,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: #DAA520;
+    background: #CC1919;
     transition: width 0.3s ease;
 }
 
