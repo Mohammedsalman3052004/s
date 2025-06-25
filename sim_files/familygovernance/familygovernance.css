@@ -33,6 +33,7 @@
 
         .hero-container {
             max-width: 1200px;
+            max-width: 90%;
             margin: 0 auto;
             padding: 0 20px;
             display: grid;
@@ -135,22 +136,28 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         .section-title {
-            font-size: 2.8rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #1f1f1f;
             margin-bottom: 20px;
         }
 
         .section-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #666;
-            max-width: 800px;
+            /* max-width: 800px; */
             margin: 0 auto;
-            line-height: 1.6;
+            line-height: 1.3;
+            max-width: 800px;
         }
 
         .services-grid {
@@ -161,7 +168,7 @@
 
         .service-card {
             background: white;
-            padding: 40px 30px;
+            padding: 20px;
             border-radius: 20px;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
@@ -186,8 +193,8 @@
         }
 
         .service-icon {
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             background: linear-gradient(135deg, #DAA520, #B8860B);
             border-radius: 50%;
             display: flex;
@@ -198,7 +205,7 @@
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: #1f1f1f;
             margin-bottom: 15px;
@@ -206,7 +213,7 @@
 
         .service-card p {
             color: #666;
-            line-height: 1.7;
+            line-height: 1.2;
             font-size: 1rem;
         }
 
@@ -223,29 +230,42 @@
             align-items: center;
         }
 
-        .expertise-text h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1f1f1f;
-            margin-bottom: 30px;
+        .expertise-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem
         }
 
-        .expertise-text p {
-            font-size: 1.1rem;
+        .expertise-title-header {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f1f1f;
+            /* margin-bottom: 10px; */
+        }
+
+        .expertise-subtitle {
+            font-size: 1.2rem;
             color: #666;
             margin-bottom: 30px;
-            line-height: 1.8;
+            line-height: 1.3;
+            max-width: 800px;
+            text-align: center;
         }
 
         .expertise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
             list-style: none;
         }
 
         .expertise-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 25px;
-            padding: 20px;
+            /* margin-bottom: 25px; */
+            padding: 10px;
             background: #f8f9fa;
             border-radius: 12px;
             transition: all 0.3s ease;
@@ -286,8 +306,7 @@
         .expertise-image {
             width: 100%;
             height: 500px;
-            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="%23f0f0f0"/><text x="200" y="200" text-anchor="middle" dy=".3em" font-family="Arial" font-size="20" fill="%23666">🏛️ Governance</text></svg>');
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
             background-size: cover;
             background-position: center;
             border-radius: 20px;
@@ -300,13 +319,13 @@
 
         /* Client Types Section */
         .clients-section {
-            padding: 100px 0;
+            padding: 80px 0;
             background: linear-gradient(135deg, #1f1f1f, #34495e);
             color: white;
         }
 
         .clients-header h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 20px;
@@ -315,6 +334,7 @@
         .clients-header p {
             font-size: 1.2rem;
             text-align: center;
+            line-height: 1.2;
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 60px;
             max-width: 600px;
@@ -373,16 +393,16 @@
         }
 
         .matters-content h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #1f1f1f;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         .matters-content p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #666;
-            line-height: 1.8;
+            line-height: 1.3;
             margin-bottom: 40px;
         }
 
@@ -404,8 +424,8 @@
 
         .matters-highlight p {
             color: #666;
-            font-size: 1.1rem;
-            line-height: 1.7;
+            font-size: 1rem;
+            line-height: 1.3;
             margin: 0;
         }
 
@@ -418,7 +438,7 @@
 
         .principle-card {
             background: white;
-            padding: 30px 25px;
+            padding: 10px;
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);

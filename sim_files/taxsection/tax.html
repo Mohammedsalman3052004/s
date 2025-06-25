@@ -54,7 +54,7 @@
         }
 
         .hero-content h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
             color: white;
             margin-bottom: 20px;
@@ -62,7 +62,7 @@
         }
 
         .hero-subtitle {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #DAA520;
             margin-bottom: 30px;
             font-weight: 500;
@@ -122,9 +122,12 @@
         }
 
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0px);
             }
+
             50% {
                 transform: translateY(-20px);
             }
@@ -144,22 +147,28 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         .section-title {
-            font-size: 2.8rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #1f1f1f;
             margin-bottom: 20px;
         }
 
         .section-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #666;
-            max-width: 800px;
+            /* max-width: 800px; */
             margin: 0 auto;
-            line-height: 1.6;
+            line-height: 1.3;
+            max-width: 800px;
         }
 
         .services-grid {
@@ -170,7 +179,7 @@
 
         .service-card {
             background: white;
-            padding: 40px 30px;
+            padding: 20px;
             border-radius: 20px;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
@@ -195,8 +204,8 @@
         }
 
         .service-icon {
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             background: linear-gradient(135deg, #DAA520, #B8860B);
             border-radius: 50%;
             display: flex;
@@ -207,7 +216,7 @@
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: #1f1f1f;
             margin-bottom: 15px;
@@ -215,7 +224,7 @@
 
         .service-card p {
             color: #666;
-            line-height: 1.7;
+            line-height: 1.2;
             font-size: 1rem;
         }
 
@@ -232,29 +241,42 @@
             align-items: center;
         }
 
-        .expertise-text h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1f1f1f;
-            margin-bottom: 30px;
+        .expertise-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem
         }
 
-        .expertise-text p {
-            font-size: 1.1rem;
+        .expertise-title-header {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f1f1f;
+            /* margin-bottom: 10px; */
+        }
+
+        .expertise-subtitle {
+            font-size: 1.2rem;
             color: #666;
             margin-bottom: 30px;
-            line-height: 1.8;
+            line-height: 1.3;
+            max-width: 800px;
+            text-align: center;
         }
 
         .expertise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
             list-style: none;
         }
 
         .expertise-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 25px;
-            padding: 20px;
+            /* margin-bottom: 25px; */
+            padding: 10px;
             background: #f8f9fa;
             border-radius: 12px;
             transition: all 0.3s ease;
@@ -308,13 +330,13 @@
 
         /* Client Types Section */
         .clients-section {
-            padding: 100px 0;
+            padding: 80px 0;
             background: linear-gradient(135deg, #1f1f1f, #34495e);
             color: white;
         }
 
         .clients-header h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 20px;
@@ -323,6 +345,7 @@
         .clients-header p {
             font-size: 1.2rem;
             text-align: center;
+            line-height: 1.2;
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 60px;
             max-width: 600px;
@@ -375,30 +398,41 @@
         }
 
         .matters-content {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
             text-align: center;
-            max-width: 800px;
+            /* max-width: 800px; */
             margin: 0 auto;
         }
 
         .matters-content h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #1f1f1f;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+
+        .matters-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .matters-content p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #666;
-            line-height: 1.8;
-            margin-bottom: 40px;
+            line-height: 1.3;
+            /* margin-bottom: 40px; */
+            max-width: 800px;
         }
 
         .strategic-points {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
             gap: 40px;
-            margin-top: 60px;
+            /* margin-top: 60px; */
         }
 
         .strategic-item {
@@ -423,7 +457,7 @@
 
         .strategic-item h4 {
             font-size: 1.4rem;
-            font-weight: 600;
+            font-weight: 600;   
             color: #1f1f1f;
             margin-bottom: 15px;
         }
@@ -436,7 +470,7 @@
 
         /* CTA Section */
         .cta-section {
-            padding: 80px 0;
+            padding: 50px;
             background: linear-gradient(135deg, #1f1f1f, #34495e);
             text-align: center;
         }
@@ -613,16 +647,16 @@
                     At Broadwings Family Office, we integrate tax efficiency into every financial decision. Our Tax
                     Advisory services are designed to ensure that families, entrepreneurs, and global investors manage
                     liabilities smartly while staying ahead of regulatory shifts. We go beyond annual filings — offering
-                    proactive, strategic advice that aligns your financial structures, cross-border holdings, and estate plans with evolving tax laws.
+                    proactive, strategic advice that aligns your financial structures, cross-border holdings, and estate
+                    plans with evolving tax laws.
                 </p>
                 <a href="#tax-services" class="cta-button">Explore Tax Services</a>
             </div>
             <div class="hero-visual">
-                <img src="./Tax Advisory 1.webp" alt="image" class="hero-illustration"/>
+                <img src="./Tax Advisory 1.webp" alt="image" class="hero-illustration" />
             </div>
         </div>
     </section>
-
     <!-- Tax Advisory Services Section -->
     <section class="services-section" id="tax-services">
         <div class="section-container">
@@ -637,12 +671,14 @@
                 <div class="service-card">
                     <div class="service-icon">🌍</div>
                     <h3>Domestic & International Tax Planning</h3>
-                    <p>Design optimal tax structures across multiple jurisdictions for families with global footprints.</p>
+                    <p>Design optimal tax structures across multiple jurisdictions for families with global footprints.
+                    </p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">👤</div>
                     <h3>HNI & NRI Tax Advisory</h3>
-                    <p>Navigate complex residential status, income repatriation, and regulatory disclosures with precision.</p>
+                    <p>Navigate complex residential status, income repatriation, and regulatory disclosures with
+                        precision.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📈</div>
@@ -671,34 +707,41 @@
     <!-- Tax Expertise Section -->
     <section class="expertise-section">
         <div class="section-container">
+            <div class="expertise-header">
+                <h2 class="expertise-title-header">Our Tax Advisory Expertise</h2>
+                <p class="expertise-subtitle">We design comprehensive tax frameworks that ensure regulatory compliance while maximizing
+                    efficiency across all financial structures.</p>
+            </div>
             <div class="expertise-content">
                 <div class="expertise-text">
-                    <h2>Our Tax Advisory Expertise</h2>
-                    <p>We design comprehensive tax frameworks that ensure regulatory compliance while maximizing efficiency across all financial structures.</p>
 
                     <ul class="expertise-list">
                         <li class="expertise-item">
                             <div class="expertise-item-content">
                                 <h4>Trust, Foundation & Holding Company Advisory</h4>
-                                <p>Utilize institutional structures to protect assets while optimizing tax efficiency across multiple jurisdictions.</p>
+                                <p>Utilize institutional structures to protect assets while optimizing tax efficiency
+                                    across multiple jurisdictions.</p>
                             </div>
                         </li>
                         <li class="expertise-item">
                             <div class="expertise-item-content">
                                 <h4>Regulatory Filings & Compliance Management</h4>
-                                <p>Ensure timely adherence to income tax, FEMA, FATCA, and CRS requirements with expert guidance.</p>
+                                <p>Ensure timely adherence to income tax, FEMA, FATCA, and CRS requirements with expert
+                                    guidance.</p>
                             </div>
                         </li>
                         <li class="expertise-item">
                             <div class="expertise-item-content">
                                 <h4>Multi-Jurisdictional Tax Strategies</h4>
-                                <p>Navigate complex international tax laws for families with global assets and operations.</p>
+                                <p>Navigate complex international tax laws for families with global assets and
+                                    operations.</p>
                             </div>
                         </li>
                         <li class="expertise-item">
                             <div class="expertise-item-content">
                                 <h4>Strategic Tax Planning</h4>
-                                <p>Proactive planning that aligns with your long-term wealth preservation and growth objectives.</p>
+                                <p>Proactive planning that aligns with your long-term wealth preservation and growth
+                                    objectives.</p>
                             </div>
                         </li>
                     </ul>
@@ -715,23 +758,27 @@
         <div class="section-container">
             <div class="clients-header">
                 <h2>We Work With</h2>
-                <p>Our expertise serves diverse client profiles, each with unique tax optimization needs and compliance requirements.</p>
+                <p>Our expertise serves diverse client profiles, each with unique tax optimization needs and compliance
+                    requirements.</p>
             </div>
             <div class="clients-grid">
                 <div class="client-card">
                     <span class="client-icon">🌏</span>
                     <h3>Global Indian Families</h3>
-                    <p>Requiring multi-jurisdictional tax strategies across India, the UAE, UK, US, Singapore, and beyond with complex cross-border compliance needs.</p>
+                    <p>Requiring multi-jurisdictional tax strategies across India, the UAE, UK, US, Singapore, and
+                        beyond with complex cross-border compliance needs.</p>
                 </div>
                 <div class="client-card">
                     <span class="client-icon">👔</span>
                     <h3>Entrepreneurs & Promoters</h3>
-                    <p>Looking to optimize business income, dividend strategies, and capital event taxation while maintaining regulatory compliance.</p>
+                    <p>Looking to optimize business income, dividend strategies, and capital event taxation while
+                        maintaining regulatory compliance.</p>
                 </div>
                 <div class="client-card">
                     <span class="client-icon">👨‍👩‍👧‍👦</span>
                     <h3>Legacy-Oriented Families</h3>
-                    <p>Needing integrated tax planning across estate, succession, and philanthropic goals for multi-generational wealth transfer.</p>
+                    <p>Needing integrated tax planning across estate, succession, and philanthropic goals for
+                        multi-generational wealth transfer.</p>
                 </div>
             </div>
         </div>
@@ -741,24 +788,31 @@
     <section class="matters-section">
         <div class="section-container">
             <div class="matters-content">
-                <h2>Why Tax Advisory Matters</h2>
-                <p>In today's dynamic regulatory landscape, tax strategy is central to wealth preservation. At Broadwings, we offer expert, adaptive, and discreet guidance to help you meet your obligations while maximizing the efficiency of your capital.</p>
+                <div class="matters-text">
+                    <h2>Why Tax Advisory Matters</h2>
+                    <p>In today's dynamic regulatory landscape, tax strategy is central to wealth preservation. At
+                        Broadwings, we offer expert, adaptive, and discreet guidance to help you meet your obligations
+                        while maximizing the efficiency of your capital.</p>
+                </div>
 
                 <div class="strategic-points">
                     <div class="strategic-item">
                         <span class="strategic-icon">⚡</span>
                         <h4>Precision Planning</h4>
-                        <p>Strategic tax planning that transforms compliance from a burden into a competitive advantage for your wealth.</p>
+                        <p>Strategic tax planning that transforms compliance from a burden into a competitive advantage
+                            for your wealth.</p>
                     </div>
                     <div class="strategic-item">
                         <span class="strategic-icon">🔮</span>
                         <h4>Expert Foresight</h4>
-                        <p>Proactive advisory that anticipates regulatory changes and positions your assets for optimal outcomes.</p>
+                        <p>Proactive advisory that anticipates regulatory changes and positions your assets for optimal
+                            outcomes.</p>
                     </div>
                     <div class="strategic-item">
                         <span class="strategic-icon">🎯</span>
                         <h4>Strategic Advantage</h4>
-                        <p>Through precision planning and expert foresight, we help transform tax into a strategic advantage for your family office.</p>
+                        <p>Through precision planning and expert foresight, we help transform tax into a strategic
+                            advantage for your family office.</p>
                     </div>
                 </div>
             </div>
@@ -770,11 +824,9 @@
         <div class="section-container">
             <div class="cta-content">
                 <h2>Transform Tax Into Your Strategic Advantage</h2>
-                <p>Let our tax experts help you navigate the complex regulatory landscape while optimizing your wealth preservation and growth strategies.</p>
-                <div class="cta-buttons">
-                    <a href="#" class="cta-btn-primary">Schedule Tax Consultation</a>
-                    <a href="#" class="cta-btn-secondary">Download Tax Guide</a>
-                </div>
+                <p>Let our tax experts help you navigate the complex regulatory landscape while optimizing your wealth
+                    preservation and growth strategies.</p>
+
             </div>
         </div>
     </section>
