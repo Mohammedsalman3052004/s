@@ -195,7 +195,7 @@
         .service-icon {
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, #DAA520, #B8860B);
+            /* background: linear-gradient(135deg, #DAA520, #B8860B); */
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -219,7 +219,7 @@
 
         /* Expertise Section */
         .expertise-section {
-            padding: 100px 0;
+            padding:60px 0;
             background: white;
         }
 
