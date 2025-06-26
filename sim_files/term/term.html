@@ -21,10 +21,15 @@
     <meta name="keywords" content="Terms, terms and conditions, Avendus Disclaimer, disclaimer">
 
     <link rel="canonical" href="https://www.avendus.com/india/terms">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
 
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.avendus.com/dist/img/Avendus-new-fav.png">
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://www.avendus.com/dist/img/Avendus-new-fav.png"> -->
 
     <link rel="stylesheet" href="./term_files/app.min.css">
+    <link rel="stylesheet" href="../gobalstyle.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+
     <style>
         /* comment */
         .lg-outer #lg-share {
@@ -175,369 +180,81 @@
 
 
 
-    <nav class="navbar navbar-default navbar-fixed-top         header-design">
-        <div class="container header-resize">
-            <div class="navbar-header" itemtype="http://schema.org/Organization" itemscope="">
-                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button> -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="sr-only">Toggle navigation</span>
-                </button>
-                <a class="navbar-brand logo" href="https://www.avendus.com/india" itemprop="url"><img
-                        src="../footer-logo.png" class="img-responsive" alt="Avendus" id="toplogo" itemprop="logo"
-                        style="display: block;">
-                    <img src="../logo.png" id="toplogo1" alt="Avendus" class="img-responsive"
-                        style="display: none;"></a>
+<nav class="navbar" id="navbar">
+    <div class="navbar-container">
+        <a href="/index.html" class="logo">
+            <div>
+                <img src="../footer-logo.png" alt="Broadwings Dark" class="logo-dark" width="200" height="43">
+                <img src="../logo.png" alt="Broadwings Light" class="logo-light" width="200" height="43"
+                    style="display: none;">
             </div>
-            <div id="navbar" class="navbar-collapse collapse navbar-height">
-                <ul class="nav navbar-nav navbar-right pages-links">
-                    <li class="dropdown mega-dropdown"><a href="https://www.avendus.com/india/who-we-are"
-                            class="dropdown-toggle mega-content-white" id="01" role="button" aria-haspopup="true"
-                            aria-expanded="false">Who We Are</a>
-                        <!-- <span class="drop-close drop-open-not"><i class="fas fa-caret-down caret-img"></i></span>
-                        <ul class="dropdown-menu mega-dropdown-menu row" data-open="1" style="margin-top: 0px;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <ul class="mega-list">
-                                            <li class="mega-content-white" id="1"><a
-                                                    href="https://www.avendus.com/india/about-us">About
-                                                    Us </a>
-                                            </li>
-                                            <li class="mega-content-white" id="2"><a
-                                                    href="https://www.avendus.com/india/purpose-value">Purpose
-                                                    and
-                                                    Values </a></li>
-                                            <li class="mega-content-white" id="3"><a
-                                                    href="https://www.avendus.com/india/leadership">Leadership </a>
-                                            </li>
-                                            <li class="mega-content-white" id="4"><a
-                                                    href="https://www.avendus.com/india/csr">Corporate
-                                                    Social
-                                                    Responsibility </a></li>
+        </a>
 
-
-
-
-                                            <li class="mega-content-white" id="5"><a
-                                                    href="https://www.avendus.com/india/newsroom">Newsroom </a>
-                                            </li>
-                                            <li class="mega-content-white" id="6"><a
-                                                    href="https://www.avendus.com/india/regulatory-information">Regulatory
-                                                    Information </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <ul>
-                                            <p id="01content" class="minicopy-white" style="display: none;">Broadwings
-                                                is a financial services firm
-                                                that offers bespoke solutions in asset management, credit solution,
-                                                investment banking, institutional equities and wealth management</p>
-                                            <p id="1content" class="minicopy-white" style="display: none;">Broadwings
-                                                brings together ideas,
-                                                innovation and people to help high-performing entrepreneurs achieve
-                                                their
-                                                dreams</p>
-                                            <p id="2content" class="minicopy-white" style="display: none;">We strive to
-                                                create value for our
-                                                clients and employees while adhering to principles of excellence and
-                                                trust
-                                            </p>
-                                            <p id="3content" class="minicopy-white" style="display: none;">Brief
-                                                profiles of our firm's top
-                                                management</p>
-                                            <p id="4content" class="minicopy-white" style="display: none;">We believe
-                                                that every bit counts to
-                                                make
-                                                the world a better place
-                                            </p>
-                                            <p id="5content" class="minicopy-white" style="display: none;">Our latest
-                                                media releases and
-                                                stories</p>
-                                            <p id="6content" class="minicopy-white" style="display: none;">Access all
-                                                policies and disclosure
-                                                documents applicable to our businesses</p>
-                                            <p id="7content" class="minicopy-white" style="display: none;">Our take on
-                                                markets, investments, and
-                                                the world economy</p>
-                                        </ul>
-                                    </div>
-                                </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <div  class="nav-link" onclick="toggleMobileDropdown(event)">
+                    Our Services
+                    <span class="dropdown-arrow">‹</span>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-container">
+                        <div class="dropdown-column">
+                            <h4> Services</h4>
+                            <div class="dropdown-services">
+                                <a href="../familywealth/familywealth.html" class="dropdown-item">Family Wealth Strategy</a>
+                                <a href="../familygovernance/familygovernance.html" class="dropdown-item">Family Governance</a>
+                                <a href="../philanthropy/philanthropy.html" class="dropdown-item">Philanthropy & Impact</a>
+                                <a href="../riskmanagement/riskmanagement.html" class="dropdown-item">Risk Management</a>
+                                <a href="../estate/estate.html" class="dropdown-item">Estate & Legacy Planning</a>
                             </div>
-                        </ul> -->
-                    </li>
-
-
-
-                    <li class="dropdown mega-dropdown"><a href="https://www.avendus.com/india/what-we-do"
-                            class="dropdown-toggle mega-content-white" id="wwd01" role="button" aria-haspopup="true"
-                            aria-expanded="false">What We
-                            Do</a>
-                        <!-- <span class="drop-close"><i class="fas fa-caret-down caret-img"></i></span>
-                        <ul class="dropdown-menu mega-dropdown-menu row" data-open="1" style="margin-top: 0px;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-3">
-                                        <ul class="mega-list-wwd">
-                                            <li class="mega-content-white" id="wwd1">
-                                                <a href="https://www.avendus.com/india/asset-management">
-                                                    <p>Asset Management</p>
-                                                </a>
-                                            </li>
-                                            <li class="mega-content-white" id="wwd2">
-                                                <a href="https://www.avendus.com/india/credit-solutions">
-                                                    <p>
-                                                        Credit Solutions</p>
-                                                </a>
-                                            </li>
-                                            <li class="mega-content-white" id="wwd3">
-                                                <a href="https://www.avendus.com/india/investment-banking">
-                                                    <p>
-                                                        Investment Banking</p>
-                                                </a>
-                                            </li>
-                                            <li class="mega-content-white" id="wwd5">
-                                                <a href="https://www.avendus.com/india/institutional-equities">
-                                                    <p>Institutional Equities</p>
-                                                </a>
-                                            </li>
-                                            <li class="mega-content-white" id="wwd4">
-                                                <a href="https://www.avendus.com/india/wealth-management">
-                                                    <p>
-                                                        Wealth Management</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <ul>
-                                            <p id="wwd01content" class="minicopy-white" style="display: none;">We
-                                                provide customized solutions in
-                                                the area of financial services to high-performing entrepreneurs and
-                                                pioneers
-                                                of the new-age economy</p>
-                                            <p id="wwd1content" class="minicopy-white" style="display: none;">Delivering
-                                                steady returns through
-                                                variety of focused funds with differentiated strategies</p>
-                                            <p id="wwd2content" class="minicopy-white" style="display: none;">Leveraging
-                                                cross-functional
-                                                intellect
-                                                to customize innovative and flexible capital
-                                                solutions</p>
-                                            <p id="wwd3content" class="minicopy-white" style="display: none;">Harvesting
-                                                deep expertise to
-                                                deliver high-quality M&amp;A, PE and ECM advisory services</p>
-                                            <p id="wwd4content" class="minicopy-white" style="display: none;">Crafting
-                                                bespoke solutions to grow
-                                                and protect wealth</p>
-                                            <p id="wwd5content" class="minicopy-white" style="display: none;">The first
-                                                port of call for
-                                                institutional investors across geographies who seek a deep dive
-                                                to understand, meet and invest in India</p>
-                                        </ul>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="dropdown-column">
+                            <!-- <h4>Advisory Services</h4> --><br><br><br>
+                            <div class="dropdown-services">
+                                <a href="../taxsection/tax.html" class="dropdown-item">Tax Advisory</a>
+                                <a href="../conciergeservices/conciergeservices.html" class="dropdown-item">Concierge Services</a>
+                                <a href="../legaladvisory/legaladvisory.html" class="dropdown-item">Legal Advisory</a>
+                                <a href="../realestate/realestate.html" class="dropdown-item">Real Estate Solutions</a>
                             </div>
-                        </ul> -->
-                    </li>
-                    <li><a class="transaction-tab" href="../wealth-management.html">Wealth Management<span
-                                class="arrow"><span></span></span></a>
-                        <span class="drop-close">
-                            <!-- <i class="fas fa-caret-down caret-img"> </i>-->
-                        </span>
-                    </li>
-                    <li class="dropdown mega-dropdown"><a href="../careers/careers.html"
-                            class="dropdown-toggle mega-content-white" id="c01" role="button" aria-haspopup="true"
-                            aria-expanded="false">Careers</a>
-                        <!-- <span class="drop-close drop-open-not"><i class="fas fa-caret-down caret-img"></i></span>
-                        <ul class="dropdown-menu mega-dropdown-menu row" data-open="1" style="margin-top: 0px;">
-                            <div class="container outer-valign">
-                                <div class="row inner-valign">
-                                    <div class="col-md-3 col-md-offset-6">
-                                        <ul class="mega-list-career">
-                                            <li class="mega-content-white" id="c1"><a
-                                                    href="https://www.avendus.com/india/careers/life-at-avendus">Life at
-                                                    Broadwings</a></li>
-                                            <li class="mega-content-white" id="c2"><a
-                                                    href="https://www.avendus.com/india/careers/students-and-graduates">Students
-                                                    and
-                                                    Graduates</a></li>
-                                            <li class="mega-content-white" id="c3"><a
-                                                    href="https://www.avendus.com/india/careers/experienced-professionals">Experienced
-                                                    Professionals </a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <ul>
-                                            <p id="c01content" class="minicopy-white" style="display: none;">Explore
-                                                life at Broadwings and the
-                                                opportunities we offer</p>
-                                            <p id="c1content" class="minicopy-white" style="display: none;">We care
-                                                about our people and offer
-                                                you
-                                                a unique ecosystem that enables you to grow with
-                                                us</p>
-                                            <p id="c2content" class="minicopy-white" style="display: none;">Your chance
-                                                to be a future leader at
-                                                Broadwings</p>
-                                            <p id="c3content" class="minicopy-white" style="display: none;">Take your
-                                                career to the next level
-                                            </p>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul> -->
-                    </li>
-                    <li><a href="https://www.avendus.com/india/avendus-eye">Broadwings Eye</a>
-                        <span class="drop-close">
-                            <!-- <i class="fas fa-caret-down caret-img"> </i>-->
-                        </span>
-                    </li>
-                    <li><a href="https://www.avendus.com/india/contact-us">Contact Us</a>
-                        <span class="drop-close">
-                            <!-- <i class="fas fa-caret-down caret-img"></i> -->
-                        </span>
-                    </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-dropdown" id="services-mobile-dropdown">
+                    <a href="../familywealth/familywealth.html" class="mobile-dropdown-item">Family Wealth Strategy</a>
+                    <a href="../familygovernance/familygovernance.html" class="mobile-dropdown-item">Family Governance</a>
+                    <a href="../philanthropy/philanthropy.html" class="mobile-dropdown-item">Philanthropy & Impact</a>
+                    <a href="../riskmanagement/riskmanagement.html" class="mobile-dropdown-item">Risk Management</a>
+                    <a href="../estate/estate.html" class="mobile-dropdown-item">Estate & Legacy Planning</a>
+                    <a href="../taxsection/tax.html" class="mobile-dropdown-item">Tax Advisory</a>
+                    <a href="../conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge Services</a>
+                    <a href="../legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal Advisory</a>
+                    <a href="../realestate/realestate.html" class="mobile-dropdown-item">Real Estate Solutions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="/sim_files/wealth-management.html" class="nav-link">Wealth Management</a>
+            </li>
+            <li class="nav-item">
+                <a href="/sim_files/careers/careers.html" class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a href="../ourteam/ourteam.html" class="nav-link">Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="../faq/faq.html" class="nav-link">Faqs</a>
+            </li>
+        </ul>
 
-                    <li class="dropdown mega-dropdown" style="display: none;">
-                        <a href="https://www.avendus.com/india/contact-us" class="dropdown-toggle" role="button"
-                            aria-haspopup="true" aria-expanded="false">India
-                            <!-- <span class="caret"></span> -->
-                            <i class="fas fa-caret-down caret-img hidden-xs hidden-sm"></i>
-                        </a>
-                        <span class="drop-close"><i class="fas fa-caret-down caret-img"></i></span>
-                        <ul class="dropdown-menu mega-dropdown-menu" data-open="1" style="margin-top: 0px;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 col-md-offset-9">
-                                        <ul class="mega-list-c">
-                                            <li class="mega-content-white" id="c1"><a
-                                                    href="https://www.avendus.com/india/ocean-dial"
-                                                    target="_blank">UK</a></li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="dropdown mega-dropdown">
-                        <!-- <a href="#"><img src="dist/img/login.png" alt="" class="login-img">Login</a> -->
-                        <a href="https://www.avendus.com/india/terms#" class="dropdown-toggle" role="button"
-                            aria-haspopup="true" aria-expanded="false">
-                            <!-- <i
-                                class="far fa-user login-img"></i> -->Login
-                        </a>
-                        <!-- <span class="drop-close"><i class="fas fa-caret-down caret-img"></i></span>
-                        <ul class="dropdown-menu mega-dropdown-menu" data-open="1" style="margin-top: 0px;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-2 col-md-offset-10">
-                                        <ul class="mega-list-c">
-
-                                            <li class="mega-content-white" id="l2"><a href="https://wm.avendus.com/"
-                                                    target="_blank">Wealth Management
-
-                                                </a></li>
-                                            <li class="mega-content-white" id="l2"><a
-                                                    href="https://aif.camsonline.com/avendus/login" target="_blank"> AIF
-                                                    Investor Portal
-                                                </a></li>
-
-
-
-
-                                            <li class="mega-content-white" id="l2"><a href="https://aimpms.avendus.com/"
-                                                    target="_blank">Broadwings Olivo</a>
-                                            </li>
-
-                                            <li class="mega-content-white" id="l2"><a
-                                                    href="http://bo.avendusspark.com/iBeatsWebBO/Sign?C=N"
-                                                    target="_blank">Broadwings Spark Client Portfolio</a></li>
-
-
-                                            <li class="mega-content-white" id="l2"><a
-                                                    href="https://sparkresearch.in/login" target="_blank">Broadwings
-                                                    Spark
-                                                    Research</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul> -->
-                    </li>
-                    <!--  <li class="dropdown mega-dropdown">
-                     <a href="" class="dropdown-toggle" role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"><i class="fas fa-search search-img"></i></a>
-                     <span class="drop-close drop-open-not"><i class="fas fa-caret-down caret-img"></i></span>
-                     <ul class="dropdown-menu mega-dropdown-menu mega-dropdown-menu-search row">
-                         <div class="container outer-valign ">
-                             <div class="row inner-valign">
-                                 <div class="col-md-12 " id="custom-search-input">
-                                     <div class="input-group col-md-12">
-                                         <input type="text" class="form-control input-lg" id="search-text"
-                                                placeholder="Start typing..."/>
-                                         <span class="input-group-btn">
-                                             <button class="btn btn-info btn-lg" type="button">
-                                                 <i class="glyphicon glyphicon-search"></i>
-                                             </button>
-                                         </span>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </ul>
-                 </li> -->
-                    <li class="dropdown mega-dropdown drop-search">
-                        <a href="https://www.avendus.com/india/terms#" class="dropdown-toggle" data-toggle="dropdown"
-                            role="button" aria-haspopup="true" aria-expanded="false">
-                            <!-- <i class="fas fa-search search-img"></i> -->
-                            <!-- <img src="https://www.avendus.com/dist/img/header2/search.png" class="img-responsive"> -->
-                            <img class="iconssearch search-img" alt="Search"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARAQMAAAABo9W5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAcAAAARAAB6R6bUQAAAABJRU5ErkJggg==">
-                        </a>
-                        <span class="drop-close drop-open-not"><i class="fas fa-caret-down caret-img"></i></span>
-                        <ul class="dropdown-menu mega-dropdown-menu-search mega-dropdown-menu" data-open="1"
-                            style="margin-top: 0px;">
-                            <div class="container outer-valign ">
-                                <div class="row inner-valign">
-                                    <div class="col-md-12 " id="custom-search-input">
-                                        <div class="input-group col-md-12 ui-widget">
-                                            <!-- <label for="tags">Tags: </label> -->
-                                            <input id="search-text" type="search"
-                                                class="form-control input-lg placeholder-fix ui-autocomplete-input"
-                                                placeholder="Start typing..." autofocus="" autocomplete="off">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-info btn-lg search-btn" type="button">
-                                                    <!-- <i class="fas fa-search load-icon" style="font-size: 30px; color: #cc1919;"></i> -->
-                                                    <!-- <img src="https://www.avendus.com/dist/img/header2/enter.png "
-                                                     class="img-responsive search-dd"> -->
-                                                    <img class="iconsenter search-dd" alt="Search"
-                                                        src="data:img/icons.png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAASAQMAAACU4OfjAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAVAAAAWgABaj5Q+AAAAABJRU5ErkJggg==">
-                                                    <i class="load-icon fa" style="font-size: 30px;color: #cc1919;"></i>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
 
@@ -810,95 +527,56 @@
 
 
  
-    <footer>
-        <div class="container">
-            <div class="row links-footer">
-                <div class="foot-div col-xs-6">
-                    <a href="https://www.avendus.com/india/who-we-are">
-                        <h4>Who We Are</h4>
-                    </a>
-                    <!-- <a href="https://www.avendus.com/india/about-us"><p>About Us</p></a>
-                <a href="https://www.avendus.com/india/purpose-value"><p>Purpose and Values</p></a>
-                <a href="https://www.avendus.com/india/leadership"><p>Leadership</p></a>
-                <a href="https://www.avendus.com/india/csr"><p>Corporate Social Responsibility</p></a>
-                <a href="https://www.avendus.com/india/newsroom"><p>Newsroom</p></a> -->
-                    <!-- <a href="https://www.avendus.com/india/regulatory-information"><p>Regulatory Information</p></a> -->
-                </div>
-                <div class="foot-div col-xs-6">
-                    <a href="https://www.avendus.com/india/what-we-do">
-                        <h4>What We Do</h4>
-                    </a>
-                    <!-- <a href="https://www.avendus.com/india/asset-management"><p>Asset Management</p></a>
-                <a href="https://www.avendus.com/india/credit-solutions"><p>Credit Solutions</p></a>
-                <a href="https://www.avendus.com/india/investment-banking"><p>Investment Banking</p></a>
-                <a href="https://www.avendus.com/india/institutional-equities"><p>Institutional Equities</p></a> -->
-                    <!-- <a href="https://www.avendus.com/india/wealth-management"><p>Wealth Management</p></a> -->
-                </div>
-                <div class="foot-div col-xs-6">
-                    <a href="../careers/careers.html">
-                        <h4>Careers</h4>
-                    </a>
-                    <!-- <a href="https://www.avendus.com/india/careers/life-at-avendus"><p>Life at Broadwings</p></a>
-                <a href="https://www.avendus.com/india/careers/students-and-graduates"><p>Students and Graduates</p></a>
-                <a href="https://www.avendus.com/india/careers/experienced-professionals"><p>Experienced Professionals</p></a> -->
-                </div>
-                <div class="foot-div col-xs-6">
-                    <a href="javascript:void(0);">
-                        <h4>Corporate Disclosures</h4>
-                    </a>
-                    <!-- <a href="https://www.avendus.com/india/regulatory-information">
-          <p>Regulatory Information</p>
-        </a>
-        <a href="https://www.avendus.com/india/investment-banking-equity-capital-markets">
-          <p>Offer Documents</p>
-        </a>
-        <a href="https://www.avendus.com/india/track-record-disclaimer">
-          <p>Track Record</p>
-        </a> -->
-                </div>
-                <div class="foot-div col-xs-6">
-                    <a href="../wealth-management.html">
-                        <h4>Wealth Management</h4>
-                    </a>
-                </div>
-                <div class="foot-div col-xs-6">
-                    <a href="https://www.avendus.com/india/contact-us">
-                        <h4>Contact Us</h4>
-                    </a>
-
-
-
-                </div>
-                <div class="foot-div col-xs-6" itemscope="" itemtype="http://schema.org/Organization">
-                    <div class="social-icons">
-                        <a itemprop="sameAs" href="https://twitter.com/Avendus" target="_blank">
-                            <!-- <img src="https://www.avendus.com/dist/img/twitter.png" class="img-responsive"> -->
-                            <span class="twitter-footer socialtwittergrey"></span>
-                        </a>
-                        <a itemprop="sameAs" href="https://www.linkedin.com/company/avendus/" target="_blank">
-                            <!-- <img src="https://www.avendus.com/dist/img/linkin.png" class="img-responsive"> -->
-                            <span class="linkedin-footer sociallinkdingrey"></span>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCIcPdtsCqcRYfYf0s-wMB_Q/featured" target="_blank">
-                            <!-- <img src="https://www.avendus.com/dist/img/voot.png" class="img-responsive"> -->
-                            <span class="vimeo-footer socialvimeogrey"></span>
-                        </a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section-main">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="../wealth-management.html">Wealth Management</a></li>
+                            <li><a href="../careers/careers.html">Career</a></li>
+                            <li><a href="../ourteam/ourteam.html">Our Team</a></li>
+                            <li><a href="../faq/faq.html">Faqs</a></li>
+                        </ul>
                     </div>
-                    <a href="https://www.avendus.com/india">
-                        <img src="../footer-logo.png" itemprop="url" alt="Avendus"
-                            class="img-responsive img-mid logo">
-                    </a>
+
+                    <div class="footer-section services-section-main">
+                        <h4>Investment Services</h4>
+                        <div class="services-ctc">
+                            <ul>
+                                <li><a href="../familywealth/familywealth.html">Family Wealth Strategy</a></li>
+                                <li><a href="../familygovernance/familygovernance.html">Family Governance</a></li>
+                                <li><a href="../philanthropy/philanthropy.html">Philanthropy & Impact</a></li>
+                                <li><a href="../riskmanagement/riskmanagement.html">Risk Management</a></li>
+                                <li><a href="../estate/estate.html">Estate & Legacy Planning</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="..//taxsection/tax.html">Tax Advisory</a></li>
+                                <li><a href="../conciergeservices/conciergeservices.html">Concierge Services</a></li>
+                                <li><a href="../legaladvisory/legaladvisory.html">Legal Advisory</a></li>
+                                <li><a href="../realestate/realestate.html">Real Estate Solutions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div>
+                            <img src="../footer-logo.png" alt="footer logo" height="43" width="200">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row footer-bottom">
-                <div class="col-md-6 col-xs-12 col-sm-6">
-                    <h6>Copyright © 2025 Broadwings. All rights reserved. Broadwings Capital Private Limited</h6>
-                </div>
-                <div class="col-md-6 col-xs-12 col-sm-6">
-                    <h5><a href="./term.html">Terms of use </a>| <a
-                            href="../privacy/privacy_file.html">Privacy
-                            Policy</a></h5>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Broadwings. All rights reserved. Broadwings Capital Private Limited</p>
+                <div class="footer-links">
+                    <a href="../term/term.html">Terms of use</a>
+                    <span>|</span>
+                    <a href="../privacy/privacy_file.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -1061,6 +739,118 @@
             // $('.cautionBtn').trigger('click');
         });
     </script>
+
+
+<script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle
+    function toggleMobileDropdown(event) {
+        if (window.innerWidth <= 768) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const dropdown = document.getElementById('services-mobile-dropdown');
+            const arrow = event.currentTarget.querySelector('.dropdown-arrow');
+            
+            if (dropdown) {
+                dropdown.classList.toggle('active');
+                
+                // Rotate arrow
+                if (dropdown.classList.contains('active')) {
+                    arrow.style.transform = 'rotate(180deg)';
+                } else {
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            }
+        }
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function (event) {
+        const isClickInsideNav = navMenu.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+
+        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // Logo switching and dropdown functionality
+    const logoDark = document.querySelector('.logo-dark');
+    const logoLight = document.querySelector('.logo-light');
+
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('navbar');
+
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+            if (logoDark && logoLight) {
+                logoDark.style.display = 'none';
+                logoLight.style.display = 'block';
+            }
+        } else {
+            navbar.classList.remove('scrolled');
+            if (logoDark && logoLight) {
+                logoDark.style.display = 'block';
+                logoLight.style.display = 'none';
+            }
+        }
+    });
+
+    // Professional Dropdown functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
+        const dropdown = document.querySelector('.dropdown');
+        
+        if (servicesNavItem && dropdown) {
+            let dropdownTimeout;
+            
+            // Show dropdown
+            function showDropdown() {
+                clearTimeout(dropdownTimeout);
+                dropdown.style.opacity = '1';
+                dropdown.style.visibility = 'visible';
+                dropdown.style.transform = 'translateY(0)';
+                dropdown.style.pointerEvents = 'all';
+            }
+            
+            // Hide dropdown with delay
+            function hideDropdown() {
+                dropdownTimeout = setTimeout(() => {
+                    dropdown.style.opacity = '0';
+                    dropdown.style.visibility = 'hidden';
+                    dropdown.style.transform = 'translateY(-20px)';
+                    dropdown.style.pointerEvents = 'none';
+                }, 150);
+            }
+            
+            // Event listeners
+            servicesNavItem.addEventListener('mouseenter', showDropdown);
+            servicesNavItem.addEventListener('mouseleave', hideDropdown);
+            dropdown.addEventListener('mouseenter', () => clearTimeout(dropdownTimeout));
+            dropdown.addEventListener('mouseleave', hideDropdown);
+        }
+    }); 
+</script>
 
 
 

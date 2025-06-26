@@ -996,10 +996,10 @@
                     <a href="/sim_files/careers/careers.html" class="nav-link">Careers</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Our Team</a>
+                    <a href="./sim_files/ourteam/ourteam.html" class="nav-link">Our Team</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Faqs</a>
+                    <a href="./sim_files/faq/faq.html" class="nav-link">Faqs</a>
                 </li>
             </ul>
 
@@ -1590,7 +1590,7 @@
                         <div class="owl-carousel owl-theme" id="testimonial-slider">
                             <div class="item">
                                 <div class="col-md-3 col-md-offset-1 col-xs-5 col-sm-4">
-                                    <img src="https://www.avendus.com/dist/img/test1.png" alt="" class="img-responsive">
+                                    <img src="./sim_files/favicon.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="col-md-8 test-img-text col-xs-6">
 
@@ -1612,7 +1612,7 @@
                             </div>
                             <div class="item">
                                 <div class="col-md-3 col-md-offset-1 col-xs-5">
-                                    <img src="https://www.avendus.com/dist/img/test1.png" alt="" class="img-responsive">
+                                    <img src="./sim_files/favicon.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="col-md-8 test-img-text col-xs-6">
                                     <h6>A Multi-Generational UHNI Family</h6>
@@ -1633,7 +1633,7 @@
                             </div>
                             <div class="item">
                                 <div class="col-md-3 col-md-offset-1 col-xs-5">
-                                    <img src="https://www.avendus.com/dist/img/test1.png" alt="" class="img-responsive">
+                                    <img src="./sim_files/favicon.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="col-md-8 test-img-text col-xs-6">
                                     <h6>A Private Equity Investor</h6>
@@ -1653,7 +1653,7 @@
                             </div>
                             <div class="item">
                                 <div class="col-md-3 col-md-offset-1 col-xs-5">
-                                    <img src="https://www.avendus.com/dist/img/test1.png" alt="" class="img-responsive">
+                                    <img src="./sim_files/favicon.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="col-md-8 test-img-text col-xs-6">
                                     <h6> A Corporate Treasury Head </h6>
@@ -2371,7 +2371,7 @@
                             <li><a href="../clond/index.html">Home</a></li>
                             <li><a href="./sim_files/wealth-management.html">Wealth Management</a></li>
                             <li><a href="./sim_files/careers/careers.html">Career</a></li>
-                            <li><a href="">Our Team</a></li>
+                            <li><a href="./sim_files/ourteam/ourteam.html">Our Team</a></li>
                             <li><a href="./sim_files/faq/faq.html">Faqs</a></li>
                         </ul>
                     </div>
@@ -2526,329 +2526,7 @@
     </noscript>
 
 
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            var $temp = $("<input>");
-            $('.clipboard').on('click', function (ev) {
-                ev.preventDefault();
-                $("body").append($temp);
-                $temp.val($(this).attr('href')).select();
-                document.execCommand("copy");
-                $temp.remove();
-                $(this).parent().find("h4").text("URL copied");
-                let vm = $(this);
-                setTimeout(function () {
-                    vm.parent().find("h4").text("");
-                }, 3000);
-            });
-        });
-    </script>
-    <script>
-        $.validator.addMethod("emailtest", function (value, element) {
-            return this.optional(element) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i.test(value);
-        });
-
-        $("#subscribe-newsletter").validate({
-            rules: {
-                subs_email: {
-                    emailtest: true,
-                    required: true,
-                    email: true
-                },
-            },
-            messages: {
-                subs_email: {
-                    emailtest: "Please enter character only"
-                }
-            }
-        });
-
-        // $("#subscribe-newsletter").ajaxForm({
-        //     success: function($response) {
-        //         $("#subscribe_msg").text($response.msg);
-        //         setTimeout(function() {
-        //             $("#subscribe_msg").text('');
-        //         }, 7000);
-        //         document.getElementById("subscribe-newsletter").reset();
-        //     }
-        // });
-    </script>
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org/",
-    "@type": "WebSite",
-    "name": "Avendus",
-    "url": "https://www.avendus.com/india/",
-    "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.avendus.com/india/?s{search_term_string}",
-        "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // alert('1st');
-            if ($('#popupCaution').length) {
-                $("#popupCaution").modal('show');
-                setTimeout(function () {
-
-                    $("#popupCaution").modal('hide');
-
-                }, 15000);
-            }
-
-            // $('.cautionBtn').trigger('click');
-        });
-    </script>
-
-
-<script>
-    const logoDark = document.querySelector('.logo-dark');
-    const logoLight = document.querySelector('.logo-light');
-
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'none';
-                logoLight.style.display = 'block';
-            }
-        } else {
-            navbar.classList.remove('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'block';
-                logoLight.style.display = 'none';
-            }
-        }
-    });
-
-    // Mobile menu toggle
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function () {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
-
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function (event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
-
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-</script>
-<script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Mobile hamburger menu
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Mobile dropdown toggle
-    function toggleMobileDropdown(event) {
-        if (window.innerWidth <= 768) {
-            event.preventDefault();
-            const dropdown = document.getElementById('services-mobile-dropdown');
-            dropdown.classList.toggle('active');
-
-            // Rotate arrow
-            const arrow = event.target.querySelector('.dropdown-arrow');
-            if (dropdown.classList.contains('active')) {
-                arrow.style.transform = 'rotate(180deg)';
-            } else {
-                arrow.style.transform = 'rotate(0deg)';
-            }
-        }
-    }
-
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function (event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
-
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
-
-    const logoDark = document.querySelector('.logo-dark');
-    const logoLight = document.querySelector('.logo-light');
-
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'none';
-                logoLight.style.display = 'block';
-            }
-        } else {
-            navbar.classList.remove('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'block';
-                logoLight.style.display = 'none';
-            }
-        }
-    }); 
-</script>
-
-<script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Mobile hamburger menu
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Mobile dropdown toggle
-    function toggleMobileDropdown(event) {
-        if (window.innerWidth <= 768) {
-            event.preventDefault();
-            event.stopPropagation();
-            
-            const dropdown = document.getElementById('services-mobile-dropdown');
-            const arrow = event.currentTarget.querySelector('.dropdown-arrow');
-            
-            if (dropdown) {
-                dropdown.classList.toggle('active');
-                
-                // Rotate arrow
-                if (dropdown.classList.contains('active')) {
-                    arrow.style.transform = 'rotate(180deg)';
-                } else {
-                    arrow.style.transform = 'rotate(0deg)';
-                }
-            }
-        }
-    }
-
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function (event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
-
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
-
-    // Logo switching and dropdown functionality
-    const logoDark = document.querySelector('.logo-dark');
-    const logoLight = document.querySelector('.logo-light');
-
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'none';
-                logoLight.style.display = 'block';
-            }
-        } else {
-            navbar.classList.remove('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'block';
-                logoLight.style.display = 'none';
-            }
-        }
-    });
-
-    // Professional Dropdown functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
-        const dropdown = document.querySelector('.dropdown');
-        
-        if (servicesNavItem && dropdown) {
-            let dropdownTimeout;
-            
-            // Show dropdown
-            function showDropdown() {
-                clearTimeout(dropdownTimeout);
-                dropdown.style.opacity = '1';
-                dropdown.style.visibility = 'visible';
-                dropdown.style.transform = 'translateY(0)';
-                dropdown.style.pointerEvents = 'all';
-            }
-            
-            // Hide dropdown with delay
-            function hideDropdown() {
-                dropdownTimeout = setTimeout(() => {
-                    dropdown.style.opacity = '0';
-                    dropdown.style.visibility = 'hidden';
-                    dropdown.style.transform = 'translateY(-20px)';
-                    dropdown.style.pointerEvents = 'none';
-                }, 150);
-            }
-            
-            // Event listeners
-            servicesNavItem.addEventListener('mouseenter', showDropdown);
-            servicesNavItem.addEventListener('mouseleave', hideDropdown);
-            dropdown.addEventListener('mouseenter', () => clearTimeout(dropdownTimeout));
-            dropdown.addEventListener('mouseleave', hideDropdown);
-        }
-    }); 
-</script>
+  
 
 
 <script>
