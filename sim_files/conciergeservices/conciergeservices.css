@@ -484,7 +484,7 @@ body {
 
 /* CTA Section */
 .cta-section {
-  padding: 80px;
+  padding: 50px;
   background: linear-gradient(135deg, #1f1f1f, #34495e);
   text-align: center;
 }
@@ -606,5 +606,118 @@ body {
 
   .lifestyle-benefits {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Large screens (1200px and below) */
+@media (max-width: 1200px) {
+  .matters-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .matters-content p {
+    font-size: 1.1rem;
+  }
+
+  .benefit-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium screens / tablets (992px and below) */
+@media (max-width: 992px) {
+  .lifestyle-benefits {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .benefit-card {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .matters-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .matters-content p {
+    font-size: 1rem;
+  }
+
+  .benefit-icon img.icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Small tablets and large phones (768px and below) */
+@media (max-width: 768px) {
+  .matters-section {
+    padding: 80px 20px;
+  }
+
+  .benefit-card {
+    width: 100%;
+    padding: 18px 16px;
+  }
+
+  .matters-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .matters-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .benefit-card h4 {
+    font-size: 1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.9rem;
+  }
+
+  .benefit-icon img.icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .matters-section {
+    padding: 60px 15px;
+  }
+
+  .matters-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .matters-content p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .benefit-card {
+    padding: 16px 12px;
+  }
+
+  .benefit-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.85rem;
+  }
+
+  .benefit-icon img.icon {
+    width: 40px;
+    height: 40px;
   }
 }

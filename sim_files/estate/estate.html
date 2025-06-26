@@ -583,6 +583,107 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Large screens (1200px and below) */
+@media (max-width: 1200px) {
+  .matters-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .matters-content p {
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Medium screens / tablets (992px and below) */
+@media (max-width: 992px) {
+  .stats-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-item {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .matters-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .matters-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small tablets and large phones (768px and below) */
+@media (max-width: 768px) {
+  .matters-section {
+    padding: 80px 20px;
+  }
+
+  .stat-item {
+    width: 100%;
+    padding: 18px 15px;
+  }
+
+  .matters-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .matters-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .matters-section {
+    padding: 60px 15px;
+  }
+
+  .matters-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .matters-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .stat-item {
+    padding: 16px 12px;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+}
+
     </style>
 </head>
 
@@ -590,7 +691,7 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
-            <a href="../clond/index.html" class="logo">
+            <a href="/index.html" class="logo">
                 <div>
                     <img src="../footer-logo.png" alt="Broadwings Dark" class="logo-dark" width="200" height="43">
                     <img src="../logo.png" alt="Broadwings Light" class="logo-light" width="200" height="43"
@@ -600,7 +701,7 @@
 
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="../clond/index.html" class="nav-link">Home</a>
+                    <a href="/index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <div  class="nav-link" onclick="toggleMobileDropdown(event)">
@@ -891,7 +992,7 @@
                     <div class="footer-section">
                         <h4>Quick Links</h4>
                         <ul>
-                            <li><a href="../clond/index.html">Home</a></li>
+                            <li><a href="/index.html">Home</a></li>
                             <li><a href="../wealth-management.html">Wealth Management</a></li>
                             <li><a href="../careers/careers.html">Career</a></li>
                             <li><a href="">Our Team</a></li>

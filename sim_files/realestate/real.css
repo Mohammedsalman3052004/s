@@ -585,3 +585,108 @@ body {
         padding: 30px 20px;
     }
 }
+
+
+
+/* Responsive Design for .value-section */
+@media (max-width: 1200px) {
+    .value-content p {
+        font-size: 1.1rem;
+    }
+
+    .benefit-item {
+        padding: 30px 25px;
+    }
+
+    .benefit-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .benefit-item p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .value-benefits {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .benefit-item {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .value-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .value-content p {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefit-item {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .value-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .value-content p {
+        font-size: 1rem;
+    }
+
+    .benefit-item h4 {
+        font-size: 1.1rem;
+    }
+
+    .benefit-item p {
+        font-size: 0.95rem;
+    }
+
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .value-section {
+        padding: 60px 20px;
+    }
+
+    .value-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .value-content p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .benefit-item {
+        padding: 20px 15px;
+    }
+
+    .benefit-item h4 {
+        font-size: 1rem;
+    }
+
+    .benefit-item p {
+        font-size: 0.9rem;
+    }
+
+    .benefit-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
