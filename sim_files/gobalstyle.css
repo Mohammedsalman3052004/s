@@ -501,14 +501,14 @@ body {
   padding-left: 10px;
 }
 
-.services-section {
+.services-section-ctc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.services {
+.services-ctc {
   display: flex;
   gap: 3rem;
 }
@@ -775,4 +775,10 @@ body {
   .footer-links a {
       font-size: 11px;
   }
+}
+.bg-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }

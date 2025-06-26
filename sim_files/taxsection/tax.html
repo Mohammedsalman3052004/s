@@ -684,6 +684,13 @@
   }
 }
 
+.bg-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
     </style>
 </head>
 
@@ -691,7 +698,7 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
-            <a href="#" class="logo">
+            <a href="../clond/index.html" class="logo">
                 <div>
                     <img src="../footer-logo.png" alt="Broadwings Dark" class="logo-dark" width="200" height="43">
                     <img src="../logo.png" alt="Broadwings Light" class="logo-light" width="200" height="43"
@@ -701,42 +708,46 @@
 
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="/index.html" class="nav-link">Home</a>
+                    <a href="../clond/index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" onclick="toggleMobileDropdown(event)">
+                    <div  class="nav-link" onclick="toggleMobileDropdown(event)">
                         Our Services
-                        <span class="dropdown-arrow">▼</span>
-                    </a>
+                        <span class="dropdown-arrow">‹</span>
+                    </div>
                     <div class="dropdown">
-                        <div class="dropdown-content">
+                        <div class="dropdown-container">
                             <div class="dropdown-column">
-                                <!-- <h4>Investment Services</h4> -->
-                                <a href="#" class="dropdown-item"> Family Wealth Strategy</a>
-                                <a href="#" class="dropdown-item">Family Governance</a>
-                                <a href="#" class="dropdown-item">Philanthropy & Impact</a>
-                                <a href="#" class="dropdown-item">Risk Management</a>
-                                <a href="#" class="dropdown-item">Estate & Legacy Planning</a>
+                                <h4> Services</h4>
+                                <div class="dropdown-services">
+                                    <a href="../familywealth/familywealth.html" class="dropdown-item">Family Wealth Strategy</a>
+                                    <a href="../familygovernance/familygovernance.html" class="dropdown-item">Family Governance</a>
+                                    <a href="../philanthropy/philanthropy.html" class="dropdown-item">Philanthropy & Impact</a>
+                                    <a href="../riskmanagement/riskmanagement.html" class="dropdown-item">Risk Management</a>
+                                    <a href="../estate/estate.html" class="dropdown-item">Estate & Legacy Planning</a>
+                                </div>
                             </div>
                             <div class="dropdown-column">
-                                <br><br>
-                                <a href="#" class="dropdown-item">Tax Advisory</a>
-                                <a href="#" class="dropdown-item">Concierge Services</a>
-                                <a href="#" class="dropdown-item">Legal Advisory</a>
-                                <a href="#" class="dropdown-item">Real Estate Solutions</a>
+                                <!-- <h4>Advisory Services</h4> --><br><br><br>
+                                <div class="dropdown-services">
+                                    <a href="../taxsection/tax.html" class="dropdown-item">Tax Advisory</a>
+                                    <a href="../conciergeservices/conciergeservices.html" class="dropdown-item">Concierge Services</a>
+                                    <a href="../legaladvisory/legaladvisory.html" class="dropdown-item">Legal Advisory</a>
+                                    <a href="../realestate/realestate.html" class="dropdown-item">Real Estate Solutions</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="mobile-dropdown" id="services-mobile-dropdown">
-                        <a href="#" class="mobile-dropdown-item">Family Wealth Strategy</a>
-                        <a href="#" class="mobile-dropdown-item">Family Governance</a>
-                        <a href="#" class="mobile-dropdown-item">Philanthropy & Impact</a>
-                        <a href="#" class="mobile-dropdown-item">Risk Management</a>
-                        <a href="#" class="mobile-dropdown-item">Estate & Legacy Planning</a>
-                        <a href="#" class="mobile-dropdown-item">Tax Advisory</a>
-                        <a href="#" class="mobile-dropdown-item">Concierge Services</a>
-                        <a href="#" class="mobile-dropdown-item">Legal Advisory</a>
-                        <a href="#" class="mobile-dropdown-item">Real Estate Solutions</a>
+                        <a href="../familywealth/familywealth.html" class="mobile-dropdown-item">Family Wealth Strategy</a>
+                        <a href="../familygovernance/familygovernance.html" class="mobile-dropdown-item">Family Governance</a>
+                        <a href="../philanthropy/philanthropy.html" class="mobile-dropdown-item">Philanthropy & Impact</a>
+                        <a href="../riskmanagement/riskmanagement.html" class="mobile-dropdown-item">Risk Management</a>
+                        <a href="../estate/estate.html" class="mobile-dropdown-item">Estate & Legacy Planning</a>
+                        <a href="../taxsection/tax.html" class="mobile-dropdown-item">Tax Advisory</a>
+                        <a href="../conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge Services</a>
+                        <a href="../legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal Advisory</a>
+                        <a href="../realestate/realestate.html" class="mobile-dropdown-item">Real Estate Solutions</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -883,7 +894,9 @@
                     </ul>
                 </div>
                 <div class="expertise-visual">
-                    <div class="expertise-image">💼</div>
+                    <div class="expertise-image">
+                        <img src="./Tax Advisory 2.webp" alt="" class="bg-image">
+                    </div>
                 </div>
             </div>
         </div>
@@ -987,29 +1000,29 @@
                     <div class="footer-section">
                         <h4>Quick Links</h4>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Wealth Management</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Faqs</a></li>
+                            <li><a href="../clond/index.html">Home</a></li>
+                            <li><a href="../wealth-management.html">Wealth Management</a></li>
+                            <li><a href="../careers/careers.html">Career</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="../faq/faq.html">Faqs</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-section services-section-main">
                         <h4>Investment Services</h4>
-                        <div class="services">
+                        <div class="services-ctc">
                             <ul>
-                                <li><a href="#">Family Wealth Strategy</a></li>
-                                <li><a href="#">Family Governance</a></li>
-                                <li><a href="#">Philanthropy & Impact</a></li>
-                                <li><a href="#">Risk Management</a></li>
-                                <li><a href="#">Estate & Legacy Planning</a></li>
+                                <li><a href="../familywealth/familywealth.html">Family Wealth Strategy</a></li>
+                                <li><a href="../familygovernance/familygovernance.html">Family Governance</a></li>
+                                <li><a href="../philanthropy/philanthropy.html">Philanthropy & Impact</a></li>
+                                <li><a href="../riskmanagement/riskmanagement.html">Risk Management</a></li>
+                                <li><a href="../estate/estate.html">Estate & Legacy Planning</a></li>
                             </ul>
                             <ul>
-                                <li><a href="#">Tax Advisory</a></li>
-                                <li><a href="#">Concierge Services</a></li>
-                                <li><a href="#">Legal Advisory</a></li>
-                                <li><a href="#">Real Estate Solutions</a></li>
+                                <li><a href="..//taxsection/tax.html">Tax Advisory</a></li>
+                                <li><a href="../conciergeservices/conciergeservices.html">Concierge Services</a></li>
+                                <li><a href="../legaladvisory/legaladvisory.html">Legal Advisory</a></li>
+                                <li><a href="../realestate/realestate.html">Real Estate Solutions</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1027,9 +1040,9 @@
             <div class="footer-bottom">
                 <p>Copyright © 2025 Broadwings. All rights reserved. Broadwings Capital Private Limited</p>
                 <div class="footer-links">
-                    <a href="#">Terms of use</a>
+                    <a href="../term/term.html">Terms of use</a>
                     <span>|</span>
-                    <a href="#">Privacy Policy</a>
+                    <a href="../privacy/privacy_file.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -1045,50 +1058,56 @@
                 navbar.classList.remove('scrolled');
             }
         });
-
+    
         // Mobile hamburger menu
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
-
+    
         hamburger.addEventListener('click', function () {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
-
+    
         // Mobile dropdown toggle
         function toggleMobileDropdown(event) {
             if (window.innerWidth <= 768) {
                 event.preventDefault();
+                event.stopPropagation();
+                
                 const dropdown = document.getElementById('services-mobile-dropdown');
-                dropdown.classList.toggle('active');
-
-                // Rotate arrow
-                const arrow = event.target.querySelector('.dropdown-arrow');
-                if (dropdown.classList.contains('active')) {
-                    arrow.style.transform = 'rotate(180deg)';
-                } else {
-                    arrow.style.transform = 'rotate(0deg)';
+                const arrow = event.currentTarget.querySelector('.dropdown-arrow');
+                
+                if (dropdown) {
+                    dropdown.classList.toggle('active');
+                    
+                    // Rotate arrow
+                    if (dropdown.classList.contains('active')) {
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
                 }
             }
         }
-
+    
         // Close mobile menu when clicking outside
         document.addEventListener('click', function (event) {
             const isClickInsideNav = navMenu.contains(event.target);
             const isClickOnHamburger = hamburger.contains(event.target);
-
+    
             if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
             }
         });
-
+    
+        // Logo switching and dropdown functionality
         const logoDark = document.querySelector('.logo-dark');
         const logoLight = document.querySelector('.logo-light');
-
+    
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
-
+    
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
                 if (logoDark && logoLight) {
@@ -1102,8 +1121,44 @@
                     logoLight.style.display = 'none';
                 }
             }
+        });
+    
+        // Professional Dropdown functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
+            const dropdown = document.querySelector('.dropdown');
+            
+            if (servicesNavItem && dropdown) {
+                let dropdownTimeout;
+                
+                // Show dropdown
+                function showDropdown() {
+                    clearTimeout(dropdownTimeout);
+                    dropdown.style.opacity = '1';
+                    dropdown.style.visibility = 'visible';
+                    dropdown.style.transform = 'translateY(0)';
+                    dropdown.style.pointerEvents = 'all';
+                }
+                
+                // Hide dropdown with delay
+                function hideDropdown() {
+                    dropdownTimeout = setTimeout(() => {
+                        dropdown.style.opacity = '0';
+                        dropdown.style.visibility = 'hidden';
+                        dropdown.style.transform = 'translateY(-20px)';
+                        dropdown.style.pointerEvents = 'none';
+                    }, 150);
+                }
+                
+                // Event listeners
+                servicesNavItem.addEventListener('mouseenter', showDropdown);
+                servicesNavItem.addEventListener('mouseleave', hideDropdown);
+                dropdown.addEventListener('mouseenter', () => clearTimeout(dropdownTimeout));
+                dropdown.addEventListener('mouseleave', hideDropdown);
+            }
         }); 
     </script>
+    
 </body>
 
 </html>
