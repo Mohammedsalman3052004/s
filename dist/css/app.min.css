@@ -30173,7 +30173,7 @@ input:focus {
     }
 }
 .banner-image{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81195,7 +81195,8 @@ label sup {
     color: #1f1f1f;
     margin-bottom: 3em;
     letter-spacing: 1px;
-    line-height: 1.4
+    line-height: 1.4;
+    text-align: justify;
 }
 
 @media screen and (max-width:991px) {

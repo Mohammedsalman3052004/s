@@ -39640,6 +39640,11 @@ footer .footer-bottom h5 a:hover {
   height: 525px;
   position: relative;
 }
+.overlay-div{
+  background-color: rgba(0, 0, 0, 0.0002);
+  backdrop-filter: blur(5px);
+  width: 100%;
+}
 @media screen and (max-width: 767px) {
   #wealth-m .nr-banner {
     padding-left: 30px;
@@ -39725,6 +39730,7 @@ footer .footer-bottom h5 a:hover {
   padding: 10px;
   line-height: 1.4;
   letter-spacing: 1px;
+  text-align: justify;
 }
 @media screen and (max-width: 767px) {
   #wealth-m .wealth-content p {
@@ -39811,6 +39817,7 @@ footer .footer-bottom h5 a:hover {
   padding: 30px;
   transition: all 0.5s ease-out;
 }
+
 @media screen and (max-width: 991px) {
   #wealth-m .work-with-section .work-with-content {
     height: 360px;
@@ -39891,6 +39898,7 @@ footer .footer-bottom h5 a:hover {
   padding-bottom: 15px;
   letter-spacing: 1px;
   padding-top: 8px;
+  text-align: justify;
 }
 #wealth-m .product-section {
   background-color: #1f1f1f;
@@ -40003,6 +40011,7 @@ footer .footer-bottom h5 a:hover {
   text-align: left;
   padding-bottom: 15px;
   letter-spacing: 1px;
+  text-align: justify;
 }
 #wealth-m .product-section .product-content .arrow-anchor {
   background-image: url(../img/credit-arrow.png);
@@ -73819,6 +73828,7 @@ label sup {
   margin-bottom: 30px;
   letter-spacing: 1px;
   line-height: 1.4;
+  text-align: justify;
 }
 .block-section .main-outer-box .unit-class .blog-text1 {
   background-color: #fff;
@@ -73907,6 +73917,7 @@ label sup {
   margin-bottom: 3em;
   letter-spacing: 1px;
   line-height: 1.4;
+  text-align: justify;
 }
 @media screen and (max-width: 991px) {
   .block-section .main-outer-box .unit-class .blog-text1 p {

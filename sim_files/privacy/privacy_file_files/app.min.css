@@ -30588,7 +30588,7 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   .picker__frame {
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
   }
 }
 .picker__box {

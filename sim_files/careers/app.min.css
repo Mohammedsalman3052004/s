@@ -7969,6 +7969,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   line-height: 24px;
   margin: 10px 0;
 }
+
 .case-study-sec .row-flex .slider-div .case-study-slider .item p {
   font-size: 14px;
   line-height: 18px;
@@ -21651,6 +21652,12 @@ footer .footer_inner .made_by_ting_sec span {
 }
 #career .inner_page_banner {
   background-image: url(./banner-white.webp);
+}
+.overlay-div{
+  background-color: rgba(0, 0, 0, 0.0002);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 767px) {
   #career .inner_page_banner {
