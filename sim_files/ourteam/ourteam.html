@@ -184,15 +184,15 @@
             font-size: 16px;
         }
 
-        /* Team Section */
+        /* New Team Section */
         .team-section {
-            background: #1a1a1a;
+            background: #f8f9fa;
             padding: 100px 0;
             position: relative;
         }
 
         .team-container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 40px;
         }
@@ -203,24 +203,22 @@
         }
 
         .team-label {
-            color: #daa520;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
+            color: #666;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
         }
 
         .team-title {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            color: #ffffff;
+            color: #333;
             margin-bottom: 25px;
         }
 
         .team-subtitle {
             font-size: 16px;
-            color: rgba(255, 255, 255, 0.7);
+            color: #666;
             max-width: 600px;
             margin: 0 auto 15px;
             line-height: 1.6;
@@ -228,101 +226,98 @@
 
         .team-description {
             font-size: 14px;
-            color: rgba(255, 255, 255, 0.6);
+            color: #888;
             max-width: 700px;
             margin: 0 auto;
             line-height: 1.7;
         }
 
         .team-grid {
-            width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             margin-bottom: 40px;
-            justify-content: center;
-            /* display: flex;
-            gap: 1rem; */
         }
 
         .team-member {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-            position: relative;
+            background: #ffffff;
+            border-radius: 12px;
             overflow: hidden;
-            transition: all 0.4s ease;
-            cursor: pointer;
-        }
-
-        .team-member::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(135deg, #b8860b, #daa520);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .team-member:hover::before {
-            transform: scaleX(1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s ease;
+            position: relative;
+            border: 1px solid #e8e8e8;
         }
 
         .team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(218, 165, 32, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+        }
+
+        .member-image-container {
+            position: relative;
+            overflow: hidden;
+            height: 320px;
+            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
         }
 
         .member-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 15px;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            margin: 0 auto 20px;
-            border: 3px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            object-position: center top;
+            transition: transform 0.3s ease;
         }
 
         .team-member:hover .member-image {
-            border-color: #daa520;
-            transform: scale(1.05);
+            transform: scale(1.02);
+        }
+
+        .member-info {
+            padding: 30px 25px;
+            text-align: left;
+            background: #ffffff;
         }
 
         .member-name {
             font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #2c2c2c;
+            line-height: 1.2;
         }
 
         .member-position {
-            font-size: 14px;
-            color: #daa520;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 15px;
+            color: #666666;
+            line-height: 1.5;
+            margin-bottom: 0;
+            font-weight: 400;
         }
 
-        .member-social {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .member-social .social-icon {
-            width: 36px;
-            height: 36px;
-            font-size: 14px;
+        .red-accent {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: #dc3545;
+            z-index: 2;
         }
 
         /* Responsive Design */
+        @media (max-width: 1200px) {
+            .team-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
+
+            .team-container {
+                max-width: 1200px;
+                padding: 0 30px;
+            }
+        }
+
         @media (max-width: 1024px) {
             .founder-container {
                 gap: 60px;
@@ -339,6 +334,11 @@
 
             .team-container {
                 padding: 0 30px;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
             }
         }
 
@@ -376,16 +376,29 @@
             }
 
             .team-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 25px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
             }
 
-            .team-member {
-                padding: 25px;
+            .member-image-container {
+                height: 280px;
+            }
+
+            .member-info {
+                padding: 25px 20px;
+            }
+
+            .member-name {
+                font-size: 18px;
+            }
+
+            .member-position {
+                font-size: 14px;
             }
         }
 
         @media (max-width: 480px) {
+
             .founder-section,
             .team-section {
                 padding: 60px 0;
@@ -409,13 +422,12 @@
                 gap: 20px;
             }
 
-            .team-member {
-                padding: 20px;
+            .member-image-container {
+                height: 280px;
             }
 
-            .member-image {
-                width: 100px;
-                height: 100px;
+            .member-info {
+                padding: 20px 15px;
             }
 
             .founder-image {
@@ -427,9 +439,6 @@
                 padding: 20px;
             }
         }
-
-
-
 
         /* Hero Section */
         .hero-section {
@@ -497,7 +506,7 @@
             font-weight: 300;
         }
 
-        /* Tablet Styles (1024px and below) */
+        /* Responsive Hero Section */
         @media (max-width: 1024px) {
             .hero-section {
                 height: 50vh;
@@ -520,7 +529,6 @@
             }
         }
 
-        /* Tablet Portrait and Large Mobile (768px and below) */
         @media (max-width: 768px) {
             .hero-section {
                 height: 45vh;
@@ -550,7 +558,6 @@
             }
         }
 
-        /* Mobile Styles (480px and below) */
         @media (max-width: 480px) {
             .hero-section {
                 height: 40vh;
@@ -582,7 +589,6 @@
             }
         }
 
-        /* Very Small Mobile (360px and below) */
         @media (max-width: 360px) {
             .hero-section {
                 height: 35vh;
@@ -611,7 +617,6 @@
             }
         }
 
-        /* Extra Small Mobile (320px and below) */
         @media (max-width: 320px) {
             .hero-section {
                 height: 32vh;
@@ -635,10 +640,246 @@
             }
         }
 
-        /* Social Icons */
-        /* .social-linkedin::before { content: "in"; }
-        .social-instagram::before { content: "ig"; }
-        .social-facebook::before { content: "fb"; } */
+
+
+
+        .team-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            width: 100%;
+            max-width: 320px;
+            margin: 2rem auto;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image-container {
+            position: relative;
+            overflow: hidden;
+            height: 280px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            margin-top: -2rem;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover .card-image {
+            transform: scale(1.02);
+        }
+
+        .card-content {
+            padding: 30px 25px;
+            text-align: left;
+            position: relative;
+        }
+
+        .red-accent {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #dc3545;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .member-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+            line-height: 1.3;
+            margin-left: 15px;
+        }
+
+        .member-position {
+            font-size: 15px;
+            color: #666666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-weight: 400;
+            margin-left: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+            margin-left: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            color: #495057;
+        }
+
+        .social-icon:hover {
+            background: #007bff;
+            border-color: #007bff;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .social-icon.linkedin:hover {
+            background: #0077b5;
+            border-color: #0077b5;
+        }
+
+        .social-icon.twitter:hover {
+            background: #1da1f2;
+            border-color: #1da1f2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            .team-card {
+                max-width: 300px;
+                margin: 1.5rem auto;
+            }
+
+            .card-image-container {
+                height: 260px;
+                margin-top: -1.5rem;
+            }
+
+            .card-content {
+                padding: 25px 20px;
+            }
+
+            .member-name {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+
+            .member-position {
+                font-size: 14px;
+                margin-bottom: 18px;
+            }
+
+            .social-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .team-card {
+                max-width: 280px;
+                margin: 1rem auto;
+            }
+
+            .card-image-container {
+                height: 240px;
+                margin-top: -1rem;
+            }
+
+            .card-content {
+                padding: 20px 18px;
+            }
+
+            .member-name {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .member-position {
+                font-size: 13px;
+                margin-bottom: 16px;
+            }
+
+            .social-icons {
+                gap: 10px;
+            }
+
+            .social-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .team-card {
+                max-width: 260px;
+            }
+
+            .card-image-container {
+                height: 220px;
+            }
+
+            .card-content {
+                padding: 18px 15px;
+            }
+
+            .member-name {
+                font-size: 17px;
+            }
+
+            .member-position {
+                font-size: 12px;
+            }
+
+            .social-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 12px;
+            }
+        }
+
+        /* For demonstration - multiple cards layout */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -658,7 +899,7 @@
                     <a href="/index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <div  class="nav-link" onclick="toggleMobileDropdown(event)">
+                    <div class="nav-link" onclick="toggleMobileDropdown(event)">
                         Our Services
                         <span class="dropdown-arrow">‹</span>
                     </div>
@@ -667,10 +908,14 @@
                             <div class="dropdown-column">
                                 <h4> Services</h4>
                                 <div class="dropdown-services">
-                                    <a href="../familywealth/familywealth.html" class="dropdown-item">Family Wealth Strategy</a>
-                                    <a href="../familygovernance/familygovernance.html" class="dropdown-item">Family Governance</a>
-                                    <a href="../philanthropy/philanthropy.html" class="dropdown-item">Philanthropy & Impact</a>
-                                    <a href="../riskmanagement/riskmanagement.html" class="dropdown-item">Risk Management</a>
+                                    <a href="../familywealth/familywealth.html" class="dropdown-item">Family Wealth
+                                        Strategy</a>
+                                    <a href="../familygovernance/familygovernance.html" class="dropdown-item">Family
+                                        Governance</a>
+                                    <a href="../philanthropy/philanthropy.html" class="dropdown-item">Philanthropy &
+                                        Impact</a>
+                                    <a href="../riskmanagement/riskmanagement.html" class="dropdown-item">Risk
+                                        Management</a>
                                     <a href="../estate/estate.html" class="dropdown-item">Estate & Legacy Planning</a>
                                 </div>
                             </div>
@@ -678,21 +923,28 @@
                                 <!-- <h4>Advisory Services</h4> --><br><br><br>
                                 <div class="dropdown-services">
                                     <a href="../taxsection/tax.html" class="dropdown-item">Tax Advisory</a>
-                                    <a href="../conciergeservices/conciergeservices.html" class="dropdown-item">Concierge Services</a>
-                                    <a href="../legaladvisory/legaladvisory.html" class="dropdown-item">Legal Advisory</a>
-                                    <a href="../realestate/realestate.html" class="dropdown-item">Real Estate Solutions</a>
+                                    <a href="../conciergeservices/conciergeservices.html"
+                                        class="dropdown-item">Concierge Services</a>
+                                    <a href="../legaladvisory/legaladvisory.html" class="dropdown-item">Legal
+                                        Advisory</a>
+                                    <a href="../realestate/realestate.html" class="dropdown-item">Real Estate
+                                        Solutions</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="mobile-dropdown" id="services-mobile-dropdown">
-                        <a href="../familywealth/familywealth.html" class="mobile-dropdown-item">Family Wealth Strategy</a>
-                        <a href="../familygovernance/familygovernance.html" class="mobile-dropdown-item">Family Governance</a>
-                        <a href="../philanthropy/philanthropy.html" class="mobile-dropdown-item">Philanthropy & Impact</a>
+                        <a href="../familywealth/familywealth.html" class="mobile-dropdown-item">Family Wealth
+                            Strategy</a>
+                        <a href="../familygovernance/familygovernance.html" class="mobile-dropdown-item">Family
+                            Governance</a>
+                        <a href="../philanthropy/philanthropy.html" class="mobile-dropdown-item">Philanthropy &
+                            Impact</a>
                         <a href="../riskmanagement/riskmanagement.html" class="mobile-dropdown-item">Risk Management</a>
                         <a href="../estate/estate.html" class="mobile-dropdown-item">Estate & Legacy Planning</a>
                         <a href="../taxsection/tax.html" class="mobile-dropdown-item">Tax Advisory</a>
-                        <a href="../conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge Services</a>
+                        <a href="../conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge
+                            Services</a>
                         <a href="../legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal Advisory</a>
                         <a href="../realestate/realestate.html" class="mobile-dropdown-item">Real Estate Solutions</a>
                     </div>
@@ -719,15 +971,12 @@
         </div>
     </nav>
 
-
-
-
-
     <section class="hero-section">
         <div class="hero-content">
             <h1 class="hero-title">Our Team</h1>
             <p class="hero-description">
-                The foundation of Broadwings is built upon the unparalleled expertise of our founding members, each a visionary in their respective fields.
+                The foundation of Broadwings is built upon the unparalleled expertise of our founding members, each a
+                visionary in their respective fields.
             </p>
             <div class="hero-breadcrumb">
                 <a href="/index.html" class="breadcrumb-link">Home</a>
@@ -737,36 +986,25 @@
         </div>
     </section>
 
-
-
     <!-- Founder Section -->
     <section class="founder-section">
         <div class="founder-container">
             <div class="founder-content">
                 <div class="founder-label">Our Founder</div>
                 <h1 class="founder-name">Sanjeev Kumar Rai</h1>
-                
+
                 <p class="founder-description">
-                    With 16 years of dedicated experience in the finance and investment industry, Sanjeev brings a wealth of knowledge to the team. His extensive background encompasses expertise in relationship management and advisory services.
+                    With 16 years of dedicated experience in the finance and investment industry, Sanjeev brings a
+                    wealth of knowledge to the team. His extensive background encompasses expertise in relationship
+                    management and advisory services.
                 </p>
-                
+
                 <p class="founder-highlight">
-                    Sanjeev stands out for his exceptional understanding of financial markets and his ability to make rational decisions unaffected by emotions.
+                    Sanjeev stands out for his exceptional understanding of financial markets and his ability to make
+                    rational decisions unaffected by emotions.
                 </p>
-                
-                <!-- <div class="founder-social">
-                    <a href="#" class="social-icon social-linkedin">
-                        <img src="../instagram.jpg" alt="" class="social-icon-main">
-                    </a>
-                    <a href="#" class="social-icon social-instagram">
-                        <img src="../facebook.webp" alt="" class="social-icon-main">
-                    </a>
-                    <a href="#" class="social-icon social-facebook">
-                        <img src="../X.png" alt="" class="social-icon-main">
-                    </a>
-                </div> -->
             </div>
-            
+
             <div class="founder-image-container">
                 <div class="founder-card">
                     <img src="../team-members/member0.png" alt="Sanjeev Kumar Rai" class="founder-image">
@@ -782,6 +1020,9 @@
                         <a href="#" class="social-icon social-instagram">
                             <img src="../X.png" alt="" class="social-icon-main">
                         </a>
+                        <a href="#" class="social-icon social-instagram">
+                            <img src="../linkedin.png" alt="" class="social-icon-main">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -792,160 +1033,189 @@
     <section class="team-section">
         <div class="team-container">
             <div class="team-header">
-                <div class="team-label">Our Expert</div>
+                <div class="team-label">People</div>
                 <h2 class="team-title">Our Key Team Members</h2>
-                <p class="team-subtitle">
-                    The foundation of Broadwings is built upon the unparalleled expertise of our founding members, each a visionary in their respective fields.
-                </p>
-                <p class="team-description">
-                    Their collective vision and leadership have been instrumental in crafting the unique ethos of Broadwings, guiding our team of over a hundred professionals towards new frontiers in wealth management.
-                </p>
             </div>
-            
+
             <div class="team-grid">
-                <!-- <div class="team-member">
-                    <img src="https://via.placeholder.com/120x120/333/fff?text=KM" alt="Karthikeyan M" class="member-image">
-                    <h3 class="member-name">Karthikeyan M</h3>
-                    <p class="member-position">Partner</p>
-                    <div class="member-social">
-                        <a href="#" class="social-icon social-facebook"></a>
-                        <a href="#" class="social-icon social-linkedin"></a>
-                        <a href="#" class="social-icon social-instagram"></a>
+                <div class="team-card">
+                    <div class="card-image-container">
+                        <img src="../team-members/member1.png" alt="Apurva Sahijwani" class="card-image">
                     </div>
-                </div> -->
-                
-                <div class="team-member">
-                    <img src="../team-members/member1.png" alt="Ashwin Kumar S" class="member-image">
-                    <h3 class="member-name">Ashwin Kumar S</h3>
-                    <p class="member-position">Assistant Vice President</p>
-                    <div class="founder-card-social">
-                        <a href="#" class="social-icon social-facebook">
-                            <img src="../instagram.jpg" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-linkedin">
-                            <img src="../facebook.webp" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-instagram">
-                            <img src="../X.png" alt="" class="social-icon-main">
-                        </a>
+                    <div class="card-content">
+                        <div class="red-accent"></div>
+                        <h3 class="member-name">Ashwin Kumar S</h3>
+                        <p class="member-position">Assistant Vice President</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <img src="../instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../X.png" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="team-member">
-                    <img src="../team-members/member2.png" alt="Debendra Kumar Nayak" class="member-image">
-                    <h3 class="member-name">Debendra Kumar Nayak</h3>
-                    <p class="member-position">Operations Manager</p>
-                    <div class="founder-card-social">
-                        <a href="#" class="social-icon social-facebook">
-                            <img src="../instagram.jpg" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-linkedin">
-                            <img src="../facebook.webp" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-instagram">
-                            <img src="../X.png" alt="" class="social-icon-main">
-                        </a>
+
+                <div class="team-card">
+                    <div class="card-image-container">
+                        <img src="../team-members/member2.png" alt="Apurva Sahijwani" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="red-accent"></div>
+                        <h3 class="member-name">Debendra Kumar Nayak</h3>
+                        <p class="member-position">Operations Manager</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <img src="../instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../X.png" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="team-member">
-                    <img src="../team-members/member3.png" alt="Anusha Rajendra Rao" class="member-image">
-                    <h3 class="member-name">Anusha Rajendra Rao</h3>
-                    <p class="member-position">Operation Manager</p>
-                    <div class="founder-card-social">
-                        <a href="#" class="social-icon social-facebook">
-                            <img src="../instagram.jpg" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-linkedin">
-                            <img src="../facebook.webp" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-instagram">
-                            <img src="../X.png" alt="" class="social-icon-main">
-                        </a>
+
+                <div class="team-card">
+                    <div class="card-image-container">
+                        <img src="../team-members/member3.png" alt="Apurva Sahijwani" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="red-accent"></div>
+                        <h3 class="member-name">Anusha Rajendra Rao</h3>
+                        <p class="member-position">Operation Manager</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <img src="../instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../X.png" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="team-member">
-                    <img src="../team-members/member4.png" alt="Rishav Saraf" class="member-image">
-                    <h3 class="member-name">Rishav Saraf</h3>
-                    <p class="member-position">Chartered Accountant</p>
-                    <div class="founder-card-social">
-                        <a href="#" class="social-icon social-facebook">
-                            <img src="../instagram.jpg" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-linkedin">
-                            <img src="../facebook.webp" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-instagram">
-                            <img src="../X.png" alt="" class="social-icon-main">
-                        </a>
+
+                <div class="team-card">
+                    <div class="card-image-container">
+                        <img src="../team-members/member4.png" alt="Apurva Sahijwani" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="red-accent"></div>
+                        <h3 class="member-name">Rishav Saraf</h3>
+                        <p class="member-position">Chartered Accountant</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <img src="../instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../X.png" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="team-member">
-                    <img src="../team-members/member5.png" alt="Manjunath K" class="member-image">
-                    <h3 class="member-name">Manjunath K</h3>
-                    <p class="member-position">Operation Executive</p>
-                    <div class="founder-card-social">
-                        <a href="#" class="social-icon social-facebook">
-                            <img src="../instagram.jpg" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-linkedin">
-                            <img src="../facebook.webp" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-instagram">
-                            <img src="../X.png" alt="" class="social-icon-main">
-                        </a>
+                <div class="team-card">
+                    <div class="card-image-container">
+                        <img src="../team-members/member7.jpg" alt="Apurva Sahijwani" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="red-accent"></div>
+                        <h3 class="member-name">Sneha Choudhury</h3>
+                        <p class="member-position">Lead Designer</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <img src="../instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../X.png" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="../team-members/member6.jpg" alt="Manjunath K" class="member-image">
-                    <h3 class="member-name">Nikitha Varadaraj</h3>
-                    <p class="member-position">Chartered Accountant</p>
-                    <div class="founder-card-social">
-                        <a href="#" class="social-icon social-facebook">
-                            <img src="../instagram.jpg" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-linkedin">
-                            <img src="../facebook.webp" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-instagram">
-                            <img src="../X.png" alt="" class="social-icon-main">
-                        </a>
+
+
+                <div class="team-card">
+                    <div class="card-image-container">
+                        <img src="../team-members/member6.jpg" alt="Apurva Sahijwani" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="red-accent"></div>
+                        <h3 class="member-name">Nikitha Varadaraj</h3>
+                        <p class="member-position">Chartered Accountant</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <img src="../instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../X.png" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="../team-members/member7.jpg" alt="Manjunath K" class="member-image">
-                    <h3 class="member-name">Sneha Choudhury</h3>
-                    <p class="member-position">Lead Designer</p>
-                    <div class="founder-card-social">
-                        <a href="#" class="social-icon social-facebook">
-                            <img src="../instagram.jpg" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-linkedin">
-                            <img src="../facebook.webp" alt="" class="social-icon-main">
-                        </a>
-                        <a href="#" class="social-icon social-instagram">
-                            <img src="../X.png" alt="" class="social-icon-main">
-                        </a>
+                <div class="team-card">
+                    <div class="card-image-container">
+                        <img src="../team-members/member5.png" alt="Apurva Sahijwani" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="red-accent"></div>
+                        <h3 class="member-name">Manjunath K</h3>
+                        <p class="member-position">Operation Executive</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <img src="../instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../X.png" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- <div class="team-member">
-                    <img src="https://via.placeholder.com/120x120/333/fff?text=RM" alt="Rachita Murarka" class="member-image">
-                    <h3 class="member-name">Rachita Murarka</h3>
-                    <p class="member-position">Chartered Accountant</p>
-                    <div class="member-social">
-                        <a href="#" class="social-icon social-facebook"></a>
-                        <a href="#" class="social-icon social-linkedin"></a>
-                        <a href="#" class="social-icon social-instagram"></a>
-                    </div>
-                </div> -->
+
+
             </div>
         </div>
     </section>
-
-
 
     <footer class="footer">
         <div class="footer-container">
@@ -961,7 +1231,7 @@
                             <li><a href="../faq/faq.html">Faqs</a></li>
                         </ul>
                     </div>
-    
+
                     <div class="footer-section services-section-main">
                         <h4>Investment Services</h4>
                         <div class="services-ctc">
@@ -981,20 +1251,21 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div>
                             <img src="../footer-logo.png" alt="footer logo" height="43" width="200">
                         </div>
                     </div>
-                    
+
                     <!-- Address Section -->
                     <div class="footer-address">
                         <div class="address-item">
                             <!-- <div class="address-icon">📍</div> -->
                             <div class="address-text">
-                                3rd floor, Metro Station, #539, Chinmaya Mission Hospital Rd, near Indiranagar, Indiranagar, Bengaluru, Karnataka 560038
+                                3rd floor, Metro Station, #539, Chinmaya Mission Hospital Rd, near Indiranagar,
+                                Indiranagar, Bengaluru, Karnataka 560038
                             </div>
                         </div>
                         <div class="address-item">
@@ -1002,7 +1273,7 @@
                             <div class="phone-text">+91 80485 16571</div>
                         </div>
                     </div>
-    
+
                     <!-- Social Media Icons -->
                     <div class="social-media">
                         <div class="social-icons">
@@ -1015,11 +1286,14 @@
                             <a href="#" class="social-icon" aria-label="Twitter">
                                 <img src="../X.png" alt="" class="social-icon-main">
                             </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <img src="../linkedin.png" alt="" class="social-icon-main">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <div class="footer-bottom">
                 <p>Copyright © 2025 Broadwings. All rights reserved. Broadwings Capital Private Limited</p>
                 <div class="footer-links">
@@ -1041,28 +1315,28 @@
                 navbar.classList.remove('scrolled');
             }
         });
-    
+
         // Mobile hamburger menu
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
-    
+
         hamburger.addEventListener('click', function () {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
-    
+
         // Mobile dropdown toggle
         function toggleMobileDropdown(event) {
             if (window.innerWidth <= 768) {
                 event.preventDefault();
                 event.stopPropagation();
-                
+
                 const dropdown = document.getElementById('services-mobile-dropdown');
                 const arrow = event.currentTarget.querySelector('.dropdown-arrow');
-                
+
                 if (dropdown) {
                     dropdown.classList.toggle('active');
-                    
+
                     // Rotate arrow
                     if (dropdown.classList.contains('active')) {
                         arrow.style.transform = 'rotate(180deg)';
@@ -1072,25 +1346,25 @@
                 }
             }
         }
-    
+
         // Close mobile menu when clicking outside
         document.addEventListener('click', function (event) {
             const isClickInsideNav = navMenu.contains(event.target);
             const isClickOnHamburger = hamburger.contains(event.target);
-    
+
             if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
             }
         });
-    
+
         // Logo switching and dropdown functionality
         const logoDark = document.querySelector('.logo-dark');
         const logoLight = document.querySelector('.logo-light');
-    
+
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
-    
+
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
                 if (logoDark && logoLight) {
@@ -1105,15 +1379,15 @@
                 }
             }
         });
-    
+
         // Professional Dropdown functionality
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
             const dropdown = document.querySelector('.dropdown');
-            
+
             if (servicesNavItem && dropdown) {
                 let dropdownTimeout;
-                
+
                 // Show dropdown
                 function showDropdown() {
                     clearTimeout(dropdownTimeout);
@@ -1122,7 +1396,7 @@
                     dropdown.style.transform = 'translateY(0)';
                     dropdown.style.pointerEvents = 'all';
                 }
-                
+
                 // Hide dropdown with delay
                 function hideDropdown() {
                     dropdownTimeout = setTimeout(() => {
@@ -1132,7 +1406,7 @@
                         dropdown.style.pointerEvents = 'none';
                     }, 150);
                 }
-                
+
                 // Event listeners
                 servicesNavItem.addEventListener('mouseenter', showDropdown);
                 servicesNavItem.addEventListener('mouseleave', hideDropdown);
@@ -1141,6 +1415,7 @@
             }
         }); 
     </script>
+
 </body>
 
 </html>
