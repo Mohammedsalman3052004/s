@@ -448,6 +448,7 @@ body {
   font-weight: 700;
   color: white;
   margin-bottom: 20px;
+  line-height: 1.1;
 }
 
 .cta-content p {
@@ -457,6 +458,7 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.3;
 }
 
 .cta-buttons {
@@ -551,5 +553,18 @@ body {
 
   .service-card {
     padding: 30px 20px;
+  }
+
+
+
+  .hero-illustration{
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .hero-description{
+    line-height: 1.3;
+  }
+  .hero-content h1{
+    font-size: 2.2rem;
   }
 }

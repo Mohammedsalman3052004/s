@@ -39647,10 +39647,10 @@ footer .footer-bottom h5 a:hover {
 }
 @media screen and (max-width: 767px) {
   #wealth-m .nr-banner {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
     background-image: url("./banner-white.webp");
-    height: 600px;
+    height: 40vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -39688,6 +39688,7 @@ footer .footer-bottom h5 a:hover {
 @media screen and (max-width: 767px) {
   #wealth-m .nr-banner .outer-valign .inner-valign h1 {
     font-size: 34px;
+    /* margin-top: -12rem; */
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -74778,4 +74779,13 @@ textarea {
 }
 .mega-content-white{
   color: white;
+}
+
+
+
+
+
+
+.radio-option label{
+  color: black;
 }

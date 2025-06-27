@@ -479,6 +479,7 @@ body {
   font-weight: 700;
   color: white;
   margin-bottom: 20px;
+  line-height: 1.1;
 }
 
 .cta-content p {
@@ -488,6 +489,7 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.3;
 }
 
 .cta-buttons {
@@ -667,5 +669,19 @@ body {
   .clients-header p {
     font-size: 0.95rem;
     padding: 0 10px;
+  }
+
+
+
+
+  .hero-illustration{
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .hero-description{
+    line-height: 1.3;
+  }
+  .hero-content h1{
+    font-size: 2.2rem;
   }
 }

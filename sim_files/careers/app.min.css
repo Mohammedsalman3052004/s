@@ -20507,7 +20507,7 @@ footer .footer_inner .made_by_ting_sec span {
   left: -15px;
   width: 5px;
   height: 5px;
-  background-color: #363157;
+  background-color: #000000;
   margin-top: 8px;
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -21805,7 +21805,7 @@ footer .footer_inner .made_by_ting_sec span {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #363157;
+  color: black;
   margin: 10px 0;
 }
 #career .values .value-points-grid .value-txt .paraTxt {
@@ -113612,4 +113612,8 @@ textarea {
 }
 .mega-content-white{
   color: white;
+}
+
+.radio-group label{
+  color: black;
 }

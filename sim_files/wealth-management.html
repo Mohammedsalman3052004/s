@@ -22,8 +22,10 @@
         content="wealth management, wealth management companies, wealth management companies in India, wealth management services, wealth management firms, wealth management services in India, wealth management firms in India, top wealth management firms in India,AIF, private placements,  Avendus Wealth, wealth, HNIs , UHNIs , Ultra high net worth individual, High net worth individual, Family office , Alternate investment, Advisors, Equity Advisory, Direct Investment , Corporate Treasuries , Capital Markets, Financial markets , Hedge funds, Capital Management, Technology fund, Private Placement, Fixed Income, Taxation advisory, Debt Advisory, Investment portfolio, PMS">
 
     <link rel="canonical" href="https://www.avendus.com/india/wealth-management">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.avendus.com/dist/img/Avendus-new-fav.png">
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://www.avendus.com/dist/img/Avendus-new-fav.png"> -->
 
     <link rel="stylesheet" href="./app.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -405,6 +407,434 @@
         }
     </style>
 
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Cinzel", serif !important;
+    }
+
+    body {
+        background: #1a1a1a;
+        color: #ffffff;
+        line-height: 1.6;
+    }
+
+    /* Founder Section */
+    .founder-section {
+        background: #1a1a1a;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .founder-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .founder-content {
+        position: relative;
+    }
+
+    .founder-label {
+        color: #daa520;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .founder-label::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: linear-gradient(135deg, #b8860b, #daa520);
+    }
+
+    .founder-name {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 30px;
+        line-height: 1.1;
+    }
+
+    .founder-description {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .founder-highlight {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.7;
+        margin-bottom: 40px;
+    }
+
+    .founder-social {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 18px;
+    }
+
+    .social-icon:hover {
+        background: #daa520;
+        border-color: #daa520;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(218, 165, 32, 0.3);
+    }
+
+    .founder-image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .founder-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        max-width: 400px;
+        transition: all 0.3s ease;
+    }
+
+    .founder-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(135deg, #b8860b, #daa520);
+    }
+
+    .founder-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .founder-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover;
+        margin-bottom: 25px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .founder-card-name {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #ffffff;
+    }
+
+    .founder-title {
+        font-size: 14px;
+        color: #daa520;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .founder-card-social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .founder-card-social .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* Team Section */
+    .team-section {
+        background: #1a1a1a;
+        padding: 100px 0;
+        position: relative;
+    }
+
+    .team-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .team-header {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .team-label {
+        color: #daa520;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .team-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 25px;
+    }
+
+    .team-subtitle {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        max-width: 600px;
+        margin: 0 auto 15px;
+        line-height: 1.6;
+    }
+
+    .team-description {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+
+    .team-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+        justify-content: center;
+        /* display: flex;
+        gap: 1rem; */
+    }
+
+    .team-member {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+
+    .team-member::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(135deg, #b8860b, #daa520);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .team-member:hover::before {
+        transform: scaleX(1);
+    }
+
+    .team-member:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        border-color: rgba(218, 165, 32, 0.3);
+    }
+
+    .member-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        object-fit: cover;
+        margin: 0 auto 20px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .team-member:hover .member-image {
+        border-color: #daa520;
+        transform: scale(1.05);
+    }
+
+    .member-name {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #ffffff;
+    }
+
+    .member-position {
+        font-size: 14px;
+        color: #daa520;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .member-social {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .member-social .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .founder-container {
+            gap: 60px;
+            padding: 0 30px;
+        }
+
+        .founder-name {
+            font-size: 3rem;
+        }
+
+        .team-title {
+            font-size: 2.5rem;
+        }
+
+        .team-container {
+            padding: 0 30px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .founder-section {
+            padding: 80px 0;
+        }
+
+        .founder-container {
+            grid-template-columns: 1fr;
+            gap: 50px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .founder-name {
+            font-size: 2.5rem;
+        }
+
+        .founder-description,
+        .founder-highlight {
+            font-size: 16px;
+        }
+
+        .team-section {
+            padding: 80px 0;
+        }
+
+        .team-container {
+            padding: 0 20px;
+        }
+
+        .team-title {
+            font-size: 2rem;
+        }
+
+        .team-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .team-member {
+            padding: 25px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .founder-section,
+        .team-section {
+            padding: 60px 0;
+        }
+
+        .founder-container,
+        .team-container {
+            padding: 0 15px;
+        }
+
+        .founder-name {
+            font-size: 2rem;
+        }
+
+        .team-title {
+            font-size: 1.8rem;
+        }
+
+        .team-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .team-member {
+            padding: 20px;
+        }
+
+        .member-image {
+            width: 100px;
+            height: 100px;
+        }
+
+        .founder-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .founder-card {
+            padding: 20px;
+        }
+    }
+
+    /* Social Icons */
+    /* .social-linkedin::before { content: "in"; }
+    .social-instagram::before { content: "ig"; }
+    .social-facebook::before { content: "fb"; } */
+</style>
+
     <!-- <script type="text/javascript">
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -583,7 +1013,7 @@
                     <div class="col-md-12">
                         <div class="outer-valign">
                             <div class="inner-valign toop">
-                                <h1 class="ttt" style="margin-top: 18rem;">Holistic Wealth Management </h1>
+                                <h1 class="ttt" style="margin-top: -12rem;">Holistic Wealth Management </h1>
                                 <p class="tttt">Tailored strategies to preserve, grow, and transition your wealth across
                                     generations.</p>
                             </div>
@@ -1172,162 +1602,180 @@
 
 
 
-        <div class="ib-people-section" id="ourteam">
-            <div class="container">
-                <div class="row" style="width: 100%;">
-                    <div class="col-md-12">
-                        <h1 class="ib-people-heading">Our Team</h1>
-                    </div>
+        <section class="team-section">
+            <div class="team-container">
+                <div class="team-header">
+                    <div class="team-label">Our Expert</div>
+                    <h2 class="team-title">Our Key Team Members</h2>
+                    <p class="team-subtitle">
+                        The foundation of Broadwings is built upon the unparalleled expertise of our founding members, each a visionary in their respective fields.
+                    </p>
+                    <p class="team-description">
+                        Their collective vision and leadership have been instrumental in crafting the unique ethos of Broadwings, guiding our team of over a hundred professionals towards new frontiers in wealth management.
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <a href="https://www.avendus.com/india/leadership/apurva-sahijwani">
-                            <div class="ib-people-info">
-                                <img src="./team-members/member0.png" alt="" class="img-responsive ib-people-img">
-                                <div class="ib-people-text">
-                                    <h6>Sanjeev Kumar Rai</h6>
-                                    <p>Our Founder</p>
-                                    <div class="ib-people-icon-icon"
-                                        style="display: flex; gap: 10px; margin-top: 2rem;">
-                                        <a href="">
-                                            <img src="./icons/facebook.png" alt="facebook" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/linkedin.png" alt="LinkedIn" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/instagram.png" alt="Instagram" height="25" width="25">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                
+                <div class="team-grid">
+                    <!-- <div class="team-member">
+                        <img src="https://via.placeholder.com/120x120/333/fff?text=KM" alt="Karthikeyan M" class="member-image">
+                        <h3 class="member-name">Karthikeyan M</h3>
+                        <p class="member-position">Partner</p>
+                        <div class="member-social">
+                            <a href="#" class="social-icon social-facebook"></a>
+                            <a href="#" class="social-icon social-linkedin"></a>
+                            <a href="#" class="social-icon social-instagram"></a>
+                        </div>
+                    </div> -->
+                    
+                    <div class="team-member">
+                        <img src="./team-members/member0.png" alt="Ashwin Kumar S" class="member-image">
+                        <h3 class="member-name">Sanjeev Kumar Rai</h3>
+                        <p class="member-position">Assistant Vice President</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="https://www.avendus.com/india/leadership/saurabh-rungta">
-                            <div class="ib-people-info">
-                                <img src="./team-members/member1.png" alt="" class="img-responsive ib-people-img">
-                                <div class="ib-people-text">
-                                    <h6>Ashwin
-                                        Kumar S</h6>
-                                    <p>Assistant Vice President</p>
-                                    <div class="ib-people-icon-icon"
-                                        style="display: flex; gap: 10px; margin-top: 2rem;">
-                                        <a href="">
-                                            <img src="./icons/facebook.png" alt="facebook" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/linkedin.png" alt="LinkedIn" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/instagram.png" alt="Instagram" height="25" width="25">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="team-member">
+                        <img src="./team-members/member1.png" alt="Ashwin Kumar S" class="member-image">
+                        <h3 class="member-name">Ashwin Kumar S</h3>
+                        <p class="member-position">Assistant Vice President</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="https://www.avendus.com/india/leadership/pavan-manghnani">
-                            <div class="ib-people-info">
-                                <img src="./team-members/member2.png" alt="" class="img-responsive ib-people-img">
-                                <div class="ib-people-text">
-                                    <h6>Debendra Kumar Nayak</h6>
-                                    <p>Operations Manager</p>
-                                    <div class="ib-people-icon-icon"
-                                        style="display: flex; gap: 10px; margin-top: 2rem;">
-                                        <a href="">
-                                            <img src="./icons/facebook.png" alt="facebook" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/linkedin.png" alt="LinkedIn" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/instagram.png" alt="Instagram" height="25" width="25">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    
+                    <div class="team-member">
+                        <img src="./team-members/member2.png" alt="Debendra Kumar Nayak" class="member-image">
+                        <h3 class="member-name">Debendra Kumar Nayak</h3>
+                        <p class="member-position">Operations Manager</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="https://www.avendus.com/india/leadership/anirudh-gangahar">
-                            <div class="ib-people-info">
-                                <img src="./team-members/member3.png" alt="" class="img-responsive ib-people-img">
-                                <div class="ib-people-text">
-                                    <h6>Anusha
-                                        Rajendra Rao</h6>
-                                    <p>Operation Manager</p>
-                                    <div class="ib-people-icon-icon"
-                                        style="display: flex; gap: 10px; margin-top: 2rem;">
-                                        <a href="">
-                                            <img src="./icons/facebook.png" alt="facebook" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/linkedin.png" alt="LinkedIn" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/instagram.png" alt="Instagram" height="25" width="25">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    
+                    <div class="team-member">
+                        <img src="./team-members/member3.png" alt="Anusha Rajendra Rao" class="member-image">
+                        <h3 class="member-name">Anusha Rajendra Rao</h3>
+                        <p class="member-position">Operation Manager</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="row ibbb"
-                    style="display: flex; justify-content: center; align-items: center; width: 100%; ">
-                    <div class="col-md-3 col-sm-6">
-                        <a href="https://www.avendus.com/india/leadership/swati-singh">
-                            <div class="ib-people-info">
-                                <img src="./team-members/member4.png" alt="" class="img-responsive ib-people-img">
-                                <div class="ib-people-text">
-                                    <h6>Rishav
-                                        Saraf</h6>
-                                    <p>Chartered Accountant</p>
-                                    <div class="ib-people-icon-icon"
-                                        style="display: flex; gap: 10px; margin-top: 2rem;">
-                                        <a href="">
-                                            <img src="./icons/facebook.png" alt="facebook" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/linkedin.png" alt="LinkedIn" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/instagram.png" alt="Instagram" height="25" width="25">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    
+                    <div class="team-member">
+                        <img src="./team-members/member4.png" alt="Rishav Saraf" class="member-image">
+                        <h3 class="member-name">Rishav Saraf</h3>
+                        <p class="member-position">Chartered Accountant</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="https://www.avendus.com/india/leadership/ashvini-chopra">
-                            <div class="ib-people-info">
-                                <img src="./team-members/member5.png" alt="" class="img-responsive ib-people-img">
-                                <div class="ib-people-text">
-                                    <h6>Manjunath
-                                        K</h6>
-                                    <p>Operation Executive</p>
-                                    <div class="ib-people-icon-icon"
-                                        style="display: flex; gap: 10px; margin-top: 2rem;">
-                                        <a href="">
-                                            <img src="./icons/facebook.png" alt="facebook" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/linkedin.png" alt="LinkedIn" height="25" width="25">
-                                        </a>
-                                        <a href="">
-                                            <img src="./icons/instagram.png" alt="Instagram" height="25" width="25">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    
+                    <div class="team-member">
+                        <img src="./team-members/member5.png" alt="Manjunath K" class="member-image">
+                        <h3 class="member-name">Manjunath K</h3>
+                        <p class="member-position">Operation Executive</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
                     </div>
+                    <div class="team-member">
+                        <img src="./team-members/member6.jpg" alt="Manjunath K" class="member-image">
+                        <h3 class="member-name">Nikitha Varadaraj</h3>
+                        <p class="member-position">Chartered Accountant</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="./team-members/member7.jpg" alt="Manjunath K" class="member-image">
+                        <h3 class="member-name">Sneha Choudhury</h3>
+                        <p class="member-position">Lead Designer</p>
+                        <div class="founder-card-social">
+                            <a href="#" class="social-icon social-facebook">
+                                <img src="./instagram.jpg" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-linkedin">
+                                <img src="./facebook.webp" alt="" class="social-icon-main">
+                            </a>
+                            <a href="#" class="social-icon social-instagram">
+                                <img src="./X.png" alt="" class="social-icon-main">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="team-member">
+                        <img src="https://via.placeholder.com/120x120/333/fff?text=RM" alt="Rachita Murarka" class="member-image">
+                        <h3 class="member-name">Rachita Murarka</h3>
+                        <p class="member-position">Chartered Accountant</p>
+                        <div class="member-social">
+                            <a href="#" class="social-icon social-facebook"></a>
+                            <a href="#" class="social-icon social-linkedin"></a>
+                            <a href="#" class="social-icon social-instagram"></a>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-        </div>
+        </section>
+
+
+
 
         <div class="modal fade wealth-award-popup" id="myModal" role="dialog">
             <div class="modal-dialog modal-lg modal-custom">
@@ -1447,7 +1895,7 @@
 
                 <div class="contact-location">
                     <div class="office">
-                        <span>Bengaluru</span> <span>+91-80-67433089</span>
+                        <span>Bengaluru</span> <span>+91 80485 16571</span>
                     </div>
                 </div>
             </div>
@@ -1508,6 +1956,35 @@
                 <div class="footer-logo">
                     <div>
                         <img src="./footer-logo.png" alt="footer logo" height="43" width="200">
+                    </div>
+                </div>
+                
+                <!-- Address Section -->
+                <div class="footer-address">
+                    <div class="address-item">
+                        <!-- <div class="address-icon">📍</div> -->
+                        <div class="address-text">
+                            3rd floor, Metro Station, #539, Chinmaya Mission Hospital Rd, near Indiranagar, Indiranagar, Bengaluru, Karnataka 560038
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <!-- <div class="address-icon">📞</div> -->
+                        <div class="phone-text">+91 80485 16571</div>
+                    </div>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="social-media">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <img src="./instagram.jpg" alt="" class="social-icon-main">
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <img src="./facebook.webp" alt="" class="social-icon-main">
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <img src="./X.png" alt="" class="social-icon-main">
+                        </a>
                     </div>
                 </div>
             </div>
