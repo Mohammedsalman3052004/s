@@ -428,6 +428,213 @@
             }
         }
 
+
+
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../team.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.1;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .breadcrumb-link {
+            color: #daa520;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .breadcrumb-link:hover {
+            color: #ffffff;
+        }
+
+        .breadcrumb-separator {
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 300;
+        }
+
+        /* Tablet Styles (1024px and below) */
+        @media (max-width: 1024px) {
+            .hero-section {
+                height: 50vh;
+                min-height: 350px;
+                background-attachment: scroll;
+                margin-top: 60px;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .hero-description {
+                font-size: 17px;
+            }
+
+            .hero-content {
+                max-width: 700px;
+                padding: 0 30px;
+            }
+        }
+
+        /* Tablet Portrait and Large Mobile (768px and below) */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 45vh;
+                min-height: 300px;
+                margin-top: 60px;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+                margin-bottom: 20px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .hero-breadcrumb {
+                font-size: 14px;
+                gap: 10px;
+                margin-top: 25px;
+            }
+
+            .hero-content {
+                max-width: 600px;
+                padding: 0 25px;
+            }
+        }
+
+        /* Mobile Styles (480px and below) */
+        @media (max-width: 480px) {
+            .hero-section {
+                height: 40vh;
+                min-height: 280px;
+                margin-top: 50px;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+                margin-bottom: 18px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+                margin-bottom: 18px;
+                line-height: 1.5;
+            }
+
+            .hero-breadcrumb {
+                flex-direction: column;
+                gap: 8px;
+                font-size: 13px;
+                margin-top: 20px;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+        }
+
+        /* Very Small Mobile (360px and below) */
+        @media (max-width: 360px) {
+            .hero-section {
+                height: 35vh;
+                min-height: 250px;
+                margin-top: 50px;
+            }
+
+            .hero-title {
+                font-size: 1.9rem;
+                margin-bottom: 15px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .hero-breadcrumb {
+                font-size: 12px;
+                gap: 6px;
+                margin-top: 18px;
+            }
+
+            .hero-content {
+                padding: 0 15px;
+            }
+        }
+
+        /* Extra Small Mobile (320px and below) */
+        @media (max-width: 320px) {
+            .hero-section {
+                height: 32vh;
+                min-height: 220px;
+            }
+
+            .hero-title {
+                font-size: 1.7rem;
+            }
+
+            .hero-description {
+                font-size: 13px;
+            }
+
+            .hero-breadcrumb {
+                font-size: 11px;
+            }
+
+            .hero-content {
+                padding: 0 12px;
+            }
+        }
+
         /* Social Icons */
         /* .social-linkedin::before { content: "in"; }
         .social-instagram::before { content: "ig"; }
@@ -511,6 +718,27 @@
             </div>
         </div>
     </nav>
+
+
+
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Our Team</h1>
+            <p class="hero-description">
+                The foundation of Broadwings is built upon the unparalleled expertise of our founding members, each a visionary in their respective fields.
+            </p>
+            <div class="hero-breadcrumb">
+                <a href="/index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <span>Our Team</span>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Founder Section -->
     <section class="founder-section">
         <div class="founder-container">

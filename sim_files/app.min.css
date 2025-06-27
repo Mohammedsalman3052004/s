@@ -39688,7 +39688,7 @@ footer .footer-bottom h5 a:hover {
 @media screen and (max-width: 767px) {
   #wealth-m .nr-banner .outer-valign .inner-valign h1 {
     font-size: 34px;
-    /* margin-top: -12rem; */
+    margin-top: -12rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -74787,5 +74787,8 @@ textarea {
 
 
 .radio-option label{
+  color: black;
+}
+.wealth-content p{
   color: black;
 }
