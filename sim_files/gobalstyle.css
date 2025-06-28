@@ -801,16 +801,16 @@ body {
 
 .footer-container {
   max-width: 1200px;
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 20rem;
   margin-bottom: 40px;
 }
 .footer-section{
@@ -822,6 +822,8 @@ body {
   margin-bottom: 20px;
   color: #f5f5f5;
   font-weight: 600;
+  /* border-bottom: 1px solid gold;
+  padding-bottom: 5px; */
 }
 
 .footer-section p,
