@@ -118,7 +118,7 @@ body {
 }
 
 .nav-link:hover {
-  /* color: #CC1919; */
+  color: #fff;
 }
 
 .nav-link::after {
@@ -218,6 +218,7 @@ body {
   letter-spacing: 2px;
   position: relative;
   padding-bottom: 12px;
+  left: 11rem;
 }
 
 .dropdown-column h4::after {
@@ -250,6 +251,7 @@ body {
   background: transparent;
   position: relative;
   overflow: hidden;
+  left: 11rem;
 }
 
 .dropdown-item::before {
@@ -576,7 +578,7 @@ body {
   }
 
   .nav-item {
-      margin: 15px 0;
+      margin: 8px 0;
       margin-left: 0;
   }
 
@@ -656,7 +658,7 @@ body {
   }
 
   .nav-menu .nav-link {
-      padding: 12px 15px;
+      padding: 8px 15px;
       font-size: 15px;
   }
 
