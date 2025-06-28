@@ -99,7 +99,7 @@
         }
 
         .reportDownload:focus {
-            color: #fff;
+            color: black;
         }
 
         .toop {
@@ -173,7 +173,7 @@
         form input:focus,
         form textarea:focus {
             outline: none;
-            border-bottom: 1px solid #2d2a4c;
+            border-bottom: 1px solid black;
             color: #000;
         }
 
@@ -406,6 +406,23 @@
                 margin-top: 6rem;
             }
         }
+
+
+
+        .custom-input {
+    /* border: none; */
+    border-bottom: 1px solid black;
+    /* outline: none; */
+  }
+
+  .custom-input:focus {
+    border-bottom: 1px solid black;
+  }
+
+
+  form input:focus {
+    border-bottom: 1px solid black;
+  }
     </style>
 
 
@@ -1842,10 +1859,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="/sim_files/wealth-management.html" class="nav-link">Wealth Management</a>
+                    <a href="./wealth-management.html" class="nav-link">Wealth Management</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/sim_files/careers/careers.html" class="nav-link">Careers</a>
+                    <a href="./careers/careers.html" class="nav-link">Careers</a>
                 </li>
                 <li class="nav-item">
                     <a href="./ourteam/ourteam.html" class="nav-link">Our Team</a>
@@ -2755,16 +2772,16 @@
             <!-- RIGHT SECTION -->
             <div class="right">
                 <form>
-                    <input type="text" placeholder="Full Name*" required />
+                    <input type="text" placeholder="Full Name*" required class="custom-input"/>
                     <div style="display: flex; gap: 20px">
-                        <input type="email" placeholder="Email Address*" required style="flex: 1" />
-                        <input type="tel" placeholder="Contact Number*" required style="flex: 1" />
+                        <input type="email" placeholder="Email Address*" required style="flex: 1" class="custom-input" />
+                        <input type="tel" placeholder="Contact Number*" required style="flex: 1"  class="custom-input"/>
                     </div>
                     <div style="display: flex; gap: 20px">
-                        <input type="text" placeholder="Name of the Company / Family*" style="flex: 1" />
+                        <input type="text" placeholder="Name of the Company / Family*" style="flex: 1" class="custom-input"/>
                         <input type="text" placeholder="City*" style="flex: 1" />
                     </div>
-                    <textarea placeholder="How can we help you?" rows="5"></textarea>
+                    <textarea placeholder="How can we help you?" rows="5" class="custom-input"></textarea>
 
                     <div class="submit-section">
                         <button type="submit" class="submit-btn">Submit</button>
@@ -2807,7 +2824,7 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="./clond/index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="./wealth-management.html">Wealth Management</a></li>
                         <li><a href="./careers/careers.html">Career</a></li>
                         <li><a href="./ourteam/ourteam.html">Our Team</a></li>
@@ -2826,7 +2843,7 @@
                             <li><a href="./estate/estate.html">Estate & Legacy Planning</a></li>
                         </ul>
                         <ul>
-                            <li><a href=".//taxsection/tax.html">Tax Advisory</a></li>
+                            <li><a href="./taxsection/tax.html">Tax Advisory</a></li>
                             <li><a href="./conciergeservices/conciergeservices.html">Concierge Services</a></li>
                             <li><a href="./legaladvisory/legaladvisory.html">Legal Advisory</a></li>
                             <li><a href="./realestate/realestate.html">Real Estate Solutions</a></li>
