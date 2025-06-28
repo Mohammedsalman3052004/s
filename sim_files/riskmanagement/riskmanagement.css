@@ -486,21 +486,21 @@ body {
 /* CTA Section */
 .cta-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #1f1f1f, #34495e);
+  background-color: #E4E4E4;
   text-align: center;
 }
 
 .cta-content h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: white;
+  color: #333333;
   margin-bottom: 20px;
   line-height: 1.1;
 }
 
 .cta-content p {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #333333;
   margin-bottom: 40px;
   max-width: 800px;
   margin-left: auto;
