@@ -38635,7 +38635,7 @@ img.mfp-img {
   padding: 50px;
 }
 .heading-container-contact {
-  padding: 50px;
+  /* padding: 50px; */
 }
 .container {
   max-width: 1300px;
@@ -38721,7 +38721,7 @@ textarea {
 }
 
 .submit-section {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .submit-btn {
@@ -38768,8 +38768,8 @@ textarea {
 /* Tablet Devices (768px - 1024px) */
 @media (max-width: 1024px) {
   .container {
-    flex-direction: column;
-    gap: 40px;
+    /* flex-direction: column; */
+    /* gap: 40px; */
   }
 
   .left,
@@ -38794,7 +38794,7 @@ textarea {
 /* Mobile Devices (below 768px) */
 @media (max-width: 767px) {
   .heading-container-contact {
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
   }
 
   .contact-us-contnet {
