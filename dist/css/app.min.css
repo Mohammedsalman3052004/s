@@ -39925,7 +39925,8 @@ footer .footer-bottom h5 a:hover {
     color: #a0a0a0;
     letter-spacing: 1px;
     line-height: 1.4;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 #index .banner-section .banner-text .banner-readmore {
