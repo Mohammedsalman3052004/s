@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../gobalstyle.css">
 
-    
+
 </head>
 
 <body>
@@ -29,12 +29,135 @@
                 <li class="nav-item">
                     <a href="../../index.html" class="nav-link">Home</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a href="#" class="nav-link">About Us</a>
-                </li> -->
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Our Services</a>
+
+                <!-- WHO WE ARE DROPDOWN -->
+                <li class="nav-item dropdown-parent">
+                    <div class="nav-link" onclick="toggleMobileDropdown(event, 'who-we-are-mobile-dropdown')">
+                        Who we are
+                        <span class="dropdown-arrow">‹</span>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-column">
+                                <div class="dropdown-services">
+                                    <a href="../aboutus/aboutus.html" class="dropdown-item active"
+                                        data-content="about">About us</a>
+                                    <a href="../purpose-value/purpose-value.html" class="dropdown-item"
+                                        data-content="mission">Mission & Vision</a>
+                                    <a href="../regulatoryInformation/regulatoryInformation.html" class="dropdown-item"
+                                        data-content="regulatory">Regulatory Information</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-column">
+                                <div class="dropdown-content">
+                                    <div class="content-item active" id="content-about">
+                                        <p class="content-description">Broadwings Family Office is a leading wealth
+                                            management firm dedicated to serving high-net-worth families and
+                                            individuals. With decades of combined experience, we provide comprehensive
+                                            financial solutions that preserve and grow wealth across generations while
+                                            maintaining the highest standards of professionalism and confidentiality.
+                                        </p>
+                                    </div>
+                                    <div class="content-item" id="content-mission">
+                                        <p class="content-description">Our mission is to be the trusted partner for
+                                            affluent families, providing holistic wealth management solutions that align
+                                            with their values and aspirations. We envision a future where every family
+                                            we serve achieves their financial goals while creating lasting positive
+                                            impact for future generations.</p>
+                                    </div>
+                                    <div class="content-item" id="content-regulatory">
+                                        <p class="content-description">We operate under strict regulatory oversight and
+                                            maintain the highest compliance standards. Our firm is registered with
+                                            appropriate financial authorities and adheres to all applicable laws and
+                                            regulations. We are committed to transparency, ethical practices, and
+                                            maintaining the trust our clients place in us.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown" id="who-we-are-mobile-dropdown">
+                        <a href="../aboutus/aboutus.html" class="mobile-dropdown-item">About us</a>
+                        <a href="../purpose-value/purpose-value.html" class="mobile-dropdown-item">Mission & Vision</a>
+                        <a href="../regulatoryInformation/regulatoryInformation.html"
+                            class="mobile-dropdown-item">Regulatory Information</a>
+                    </div>
                 </li>
+
+                <!-- WHAT WE DO DROPDOWN -->
+                <li class="nav-item dropdown-parent">
+                    <div class="nav-link" onclick="toggleMobileDropdown(event, 'what-we-do-mobile-dropdown')">
+                        What We Do
+                        <span class="dropdown-arrow">‹</span>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-column">
+                                <div class="dropdown-services">
+                                    <a href="../wealth-management.html" class="dropdown-item active"
+                                        data-content="wealth">Wealth Management</a>
+                                    <a href="../estate/estate.html" class="dropdown-item" data-content="family">Estate &
+                                        Legacy Planning</a>
+                                    <a href="../legaladvisory/legaladvisory.html" class="dropdown-item"
+                                        data-content="governance">Legal & Tax Advisory</a>
+                                    <a href="../realestate/realestate.html" class="dropdown-item"
+                                        data-content="philanthropy">Real Estate Solutions</a>
+                                    <a href="../conciergeservices/conciergeservices.html" class="dropdown-item"
+                                        data-content="risk">Concierge Services</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-column">
+                                <div class="dropdown-content">
+                                    <div class="content-item active" id="content-wealth">
+                                        <p class="content-description">We provide personalized investment strategies and
+                                            comprehensive financial planning to help you build, preserve, and transfer
+                                            wealth across generations. Our expert team combines deep market knowledge
+                                            with cutting-edge technology to deliver superior risk-adjusted returns while
+                                            ensuring your financial goals are met with precision and care.</p>
+                                    </div>
+                                    <div class="content-item" id="content-family">
+                                        <p class="content-description">Strategic planning to ensure your family's wealth
+                                            is preserved and grown across multiple generations while aligning with your
+                                            values and objectives. We help establish robust frameworks for family
+                                            decision-making, succession planning, and wealth transfer strategies that
+                                            maintain family unity and purpose.</p>
+                                    </div>
+                                    <div class="content-item" id="content-governance">
+                                        <p class="content-description">Establish robust governance structures that
+                                            promote family unity, clear communication, and effective decision-making
+                                            processes. Our governance solutions include family council formation, policy
+                                            development, and conflict resolution mechanisms that ensure smooth
+                                            operations across generations.</p>
+                                    </div>
+                                    <div class="content-item" id="content-philanthropy">
+                                        <p class="content-description">Create meaningful social impact through strategic
+                                            philanthropic initiatives that align with your family's values and legacy
+                                            goals. We help design and implement comprehensive giving strategies that
+                                            maximize impact while providing tax advantages and building lasting family
+                                            traditions of social responsibility.</p>
+                                    </div>
+                                    <div class="content-item" id="content-risk">
+                                        <p class="content-description">Comprehensive risk assessment and mitigation
+                                            strategies to protect your wealth and family interests from various
+                                            financial and operational risks. Our holistic approach covers insurance
+                                            planning, business continuity, crisis management, and regulatory compliance
+                                            to safeguard your assets and reputation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown" id="what-we-do-mobile-dropdown">
+                        <a href="../wealth-management.html" class="mobile-dropdown-item">Wealth Management</a>
+                        <a href="../estate/estate.html" class="mobile-dropdown-item">Estate & Legacy Planning</a>
+                        <a href="../legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal & Tax
+                            Advisory</a>
+                        <a href="../realestate/realestate.html" class="mobile-dropdown-item">Real Estate Solutions</a>
+                        <a href="../conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge
+                            Services</a>
+                    </div>
+                </li>
+
                 <li class="nav-item">
                     <a href="../careers/careers.html" class="nav-link">Careers</a>
                 </li>
@@ -99,7 +222,7 @@
                     <span class="category-icon">🔹</span>
                     <h2 class="category-title">General</h2>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question">
                         <span class="question-text">What is the Broadwings Family Office?</span>
@@ -107,7 +230,11 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Broadwings Family Office is a boutique multi-family office offering holistic, personalized services to ultra-high-net-worth individuals, NRIs, entrepreneurs, and legacy-driven families. From wealth management and succession planning to lifestyle concierge and philanthropic advisory, we provide 360° solutions tailored to your financial and personal aspirations.
+                            Broadwings Family Office is a boutique multi-family office offering holistic, personalized
+                            services to ultra-high-net-worth individuals, NRIs, entrepreneurs, and legacy-driven
+                            families. From wealth management and succession planning to lifestyle concierge and
+                            philanthropic advisory, we provide 360° solutions tailored to your financial and personal
+                            aspirations.
                         </div>
                     </div>
                 </div>
@@ -119,7 +246,9 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Our clients include multi-generational business families, globally mobile NRIs, successful entrepreneurs, and promoters seeking structured, long-term strategies to preserve, grow, and transition their wealth.
+                            Our clients include multi-generational business families, globally mobile NRIs, successful
+                            entrepreneurs, and promoters seeking structured, long-term strategies to preserve, grow, and
+                            transition their wealth.
                         </div>
                     </div>
                 </div>
@@ -131,7 +260,9 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Broadwings is headquartered in India and works with families globally, including clients with assets and family members across North America, the Middle East, Europe, and Southeast Asia.
+                            Broadwings is headquartered in India and works with families globally, including clients
+                            with assets and family members across North America, the Middle East, Europe, and Southeast
+                            Asia.
                         </div>
                     </div>
                 </div>
@@ -151,7 +282,9 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Our wealth management covers holistic asset allocation, bespoke portfolio construction, estate planning, succession, and liquidity strategies — all aligned with your long-term legacy goals.
+                            Our wealth management covers holistic asset allocation, bespoke portfolio construction,
+                            estate planning, succession, and liquidity strategies — all aligned with your long-term
+                            legacy goals.
                         </div>
                     </div>
                 </div>
@@ -163,7 +296,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Yes. We advise across equity, debt, alternatives (private equity, VC), and impact investing, ensuring each asset fits your family's values and objectives.
+                            Yes. We advise across equity, debt, alternatives (private equity, VC), and impact investing,
+                            ensuring each asset fits your family's values and objectives.
                         </div>
                     </div>
                 </div>
@@ -183,7 +317,9 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Proper estate planning ensures your wealth is distributed as intended, avoids legal complications, and secures your legacy across generations. We help you structure wills, trusts, and succession frameworks seamlessly.
+                            Proper estate planning ensures your wealth is distributed as intended, avoids legal
+                            complications, and secures your legacy across generations. We help you structure wills,
+                            trusts, and succession frameworks seamlessly.
                         </div>
                     </div>
                 </div>
@@ -195,7 +331,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Absolutely. We offer next-gen mentoring, governance education, and financial literacy programs to empower future custodians of your wealth.
+                            Absolutely. We offer next-gen mentoring, governance education, and financial literacy
+                            programs to empower future custodians of your wealth.
                         </div>
                     </div>
                 </div>
@@ -215,7 +352,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            We assist with family constitutions, shareholder agreements, trust formation, and legal due diligence — offering proactive legal counsel aligned with your family's interests.
+                            We assist with family constitutions, shareholder agreements, trust formation, and legal due
+                            diligence — offering proactive legal counsel aligned with your family's interests.
                         </div>
                     </div>
                 </div>
@@ -227,7 +365,9 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            From domestic to international tax planning, capital gains optimization, gift and inheritance tax strategies to regulatory filings (FEMA, FATCA, CRS), we deliver end-to-end tax advisory.
+                            From domestic to international tax planning, capital gains optimization, gift and
+                            inheritance tax strategies to regulatory filings (FEMA, FATCA, CRS), we deliver end-to-end
+                            tax advisory.
                         </div>
                     </div>
                 </div>
@@ -247,7 +387,9 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Family governance defines how decisions are made within the family and business. It includes family constitutions, councils, and succession structures — essential to avoid future disputes and maintain unity.
+                            Family governance defines how decisions are made within the family and business. It includes
+                            family constitutions, councils, and succession structures — essential to avoid future
+                            disputes and maintain unity.
                         </div>
                     </div>
                 </div>
@@ -259,7 +401,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Yes. We establish preventive frameworks and offer facilitation to manage intergenerational or business-related conflicts peacefully and constructively.
+                            Yes. We establish preventive frameworks and offer facilitation to manage intergenerational
+                            or business-related conflicts peacefully and constructively.
                         </div>
                     </div>
                 </div>
@@ -279,7 +422,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            We assist in real estate acquisition, investment strategy, title due diligence, tax structuring, lease advisory, and integration of property within estate plans.
+                            We assist in real estate acquisition, investment strategy, title due diligence, tax
+                            structuring, lease advisory, and integration of property within estate plans.
                         </div>
                     </div>
                 </div>
@@ -291,7 +435,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Yes. We support both acquisition and compliance for residential and commercial properties across global markets.
+                            Yes. We support both acquisition and compliance for residential and commercial properties
+                            across global markets.
                         </div>
                     </div>
                 </div>
@@ -311,7 +456,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            From luxury travel and healthcare coordination to relocation, event planning, and educational advisory — our concierge desk handles every aspect of refined living.
+                            From luxury travel and healthcare coordination to relocation, event planning, and
+                            educational advisory — our concierge desk handles every aspect of refined living.
                         </div>
                     </div>
                 </div>
@@ -323,7 +469,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Yes. Whether you're based in India or overseas, our concierge and advisory teams offer global support through a trusted partner network.
+                            Yes. Whether you're based in India or overseas, our concierge and advisory teams offer
+                            global support through a trusted partner network.
                         </div>
                     </div>
                 </div>
@@ -335,7 +482,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Start with a confidential discovery session. We'll understand your needs and curate a bespoke family office service model tailored to your unique situation.
+                            Start with a confidential discovery session. We'll understand your needs and curate a
+                            bespoke family office service model tailored to your unique situation.
                         </div>
                     </div>
                 </div>
@@ -347,7 +495,8 @@
                     </div>
                     <div class="faq-answer">
                         <div class="answer-content">
-                            Absolutely. Confidentiality, discretion, and data protection are pillars of our client relationship. All engagements follow the highest standards of security and trust.
+                            Absolutely. Confidentiality, discretion, and data protection are pillars of our client
+                            relationship. All engagements follow the highest standards of security and trust.
                         </div>
                     </div>
                 </div>
@@ -379,48 +528,49 @@
                         <h4>Quick Links</h4>
                         <ul>
                             <li><a href="../../index.html">Home</a></li>
-                            <!-- <li><a href="../wealth-management.html">Wealth Management</a></li> -->
-                            <li><a href="../careers.html">Career</a></li>
+                            <li><a href="../careers/careers.html">Career</a></li>
                             <li><a href="../ourteam/ourteam.html">Our Team</a></li>
-                            <li><a href="./faq.html">FAQ's</a></li>
-                            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+                            <li><a href="./faq.html">Faq's</a></li>
+                            <li><a href="../contactus/contactus.html">Contact</a></li>
                         </ul>
                     </div>
-    
+                    <div class="footer-section">
+                        <h4>Who we are</h4>
+                        <ul>
+                            <!-- <li><a href="../../index.html">Who we are</a></li> -->
+                            <li><a href="../aboutus/aboutus.html">About Us</a></li>
+                            <li><a href="../purpose-value/purpose-value.html">Mission & Vision</a></li>
+                            <li><a href="../regulatoryInformation/regulatoryInformation.html">Regulatory Information</a></li>
+                        </ul>
+                    </div>
+
                     <div class="footer-section services-section-main">
                         <h4>What We Do</h4>
                         <div class="services-ctc">
                             <ul>
                                 <li><a href="../wealth-management.html">Wealth Management</a></li>
-                                <li><a href="../familywealth/familywealth.html">Family Wealth Strategy</a></li>
-                                <li><a href="../familygovernance/familygovernance.html">Family Governance</a></li>
-                                <li><a href="../philanthropy/philanthropy.html">Philanthropy & Impact</a></li>
-                                <li><a href="../riskmanagement/riskmanagement.html">Risk Management</a></li>
-                            </ul>
-                            <ul>
                                 <li><a href="../estate/estate.html">Estate & Legacy Planning</a></li>
-                                <li><a href="../taxsection/tax.html">Tax Advisory</a></li>
-                                <li><a href="../conciergeservices/conciergeservices.html">Concierge Services</a></li>
-                                <li><a href="../legaladvisory/legaladvisory.html">Legal Advisory</a></li>
+                                <li><a href="../legaladvisory/legaladvisory.html">Legal & Tax Advisory</a></li>
                                 <li><a href="../realestate/realestate.html">Real Estate Solutions</a></li>
+                                <li><a href="../conciergeservices/conciergeservices.html">Concierge Services</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div>
                             <img src="../footer-logo.png" alt="footer logo" height="43" width="200">
                         </div>
                     </div>
-                    
+
                     <!-- Address Section -->
                     <div class="footer-address">
                         <div class="address-item">
                             <!-- <div class="address-icon">📍</div> -->
                             <div class="address-text">
-                                3rd floor, Metro Station, #539, Chinmaya Mission Hospital Rd, near Indiranagar, Indiranagar, Bengaluru, Karnataka 560038
+                                539, 3rd floor, CMH Road, Indiranagar, Bengaluru, Karnataka 560038
                             </div>
                         </div>
                         <div class="address-item">
@@ -428,7 +578,7 @@
                             <div class="phone-text">+91 80485 16571</div>
                         </div>
                     </div>
-    
+
                     <!-- Social Media Icons -->
                     <div class="social-media">
                         <div class="social-icons">
@@ -448,7 +598,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="footer-bottom">
                 <p>Copyright © 2025 Broadwings. All rights reserved. Broadwings Capital Private Limited</p>
                 <div class="footer-links">
@@ -464,265 +614,267 @@
 
     <script>
         // Navbar functionality
-const logoDark = document.querySelector('.logo-dark');
-const logoLight = document.querySelector('.logo-light');
+        const logoDark = document.querySelector('.logo-dark');
+        const logoLight = document.querySelector('.logo-light');
 
-window.addEventListener('scroll', function () {
-    const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
 
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-        if (logoDark && logoLight) {
-            logoDark.style.display = 'none';
-            logoLight.style.display = 'block';
-        }
-    } else {
-        navbar.classList.remove('scrolled');
-        if (logoDark && logoLight) {
-            logoDark.style.display = 'block';
-            logoLight.style.display = 'none';
-        }
-    }
-});
-
-// Mobile menu toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-hamburger.addEventListener('click', function () {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function () {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
-});
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', function (event) {
-    const isClickInsideNav = navMenu.contains(event.target);
-    const isClickOnHamburger = hamburger.contains(event.target);
-
-    if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    }
-});
-
-// FAQ functionality
-document.addEventListener('DOMContentLoaded', function() {
-    // Category tab switching
-    const categoryTabs = document.querySelectorAll('.category-tab');
-    const faqCategories = document.querySelectorAll('.faq-category');
-
-    categoryTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            const targetCategory = this.getAttribute('data-category');
-            
-            // Remove active class from all tabs and categories
-            categoryTabs.forEach(t => t.classList.remove('active'));
-            faqCategories.forEach(c => c.classList.remove('active'));
-            
-            // Add active class to clicked tab and corresponding category
-            this.classList.add('active');
-            document.getElementById(targetCategory).classList.add('active');
-        });
-    });
-
-    // FAQ item toggle functionality
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', function() {
-            const faqItem = this.parentElement;
-            const faqAnswer = faqItem.querySelector('.faq-answer');
-            const isActive = this.classList.contains('active');
-            
-            // Close all other FAQ items in the same category
-            const currentCategory = this.closest('.faq-category');
-            const allQuestionsInCategory = currentCategory.querySelectorAll('.faq-question');
-            const allAnswersInCategory = currentCategory.querySelectorAll('.faq-answer');
-            
-            allQuestionsInCategory.forEach(q => q.classList.remove('active'));
-            allAnswersInCategory.forEach(a => a.classList.remove('active'));
-            
-            // Toggle current item if it wasn't active
-            if (!isActive) {
-                this.classList.add('active');
-                faqAnswer.classList.add('active');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                if (logoDark && logoLight) {
+                    logoDark.style.display = 'none';
+                    logoLight.style.display = 'block';
+                }
+            } else {
+                navbar.classList.remove('scrolled');
+                if (logoDark && logoLight) {
+                    logoDark.style.display = 'block';
+                    logoLight.style.display = 'none';
+                }
             }
         });
-    });
 
-    // Search functionality
-    const searchInput = document.getElementById('searchInput');
-    
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
-        const allFaqItems = document.querySelectorAll('.faq-item');
-        
-        if (searchTerm === '') {
-            // Show all items and restore category filtering
-            allFaqItems.forEach(item => {
-                item.style.display = 'block';
-            });
-            
-            // Show only active category
-            faqCategories.forEach(category => {
-                if (category.classList.contains('active')) {
-                    category.style.display = 'block';
-                } else {
-                    category.style.display = 'none';
-                }
-            });
-        } else {
-            // Show all categories during search
-            faqCategories.forEach(category => {
-                category.style.display = 'block';
-            });
-            
-            // Filter FAQ items based on search
-            allFaqItems.forEach(item => {
-                const questionText = item.querySelector('.question-text').textContent.toLowerCase();
-                const answerText = item.querySelector('.answer-content').textContent.toLowerCase();
-                
-                if (questionText.includes(searchTerm) || answerText.includes(searchTerm)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-    });
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function (event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickOnHamburger = hamburger.contains(event.target);
+
+            if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            // Category tab switching
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const faqCategories = document.querySelectorAll('.faq-category');
+
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const targetCategory = this.getAttribute('data-category');
+
+                    // Remove active class from all tabs and categories
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    faqCategories.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab and corresponding category
+                    this.classList.add('active');
+                    document.getElementById(targetCategory).classList.add('active');
                 });
+            });
+
+            // FAQ item toggle functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const faqItem = this.parentElement;
+                    const faqAnswer = faqItem.querySelector('.faq-answer');
+                    const isActive = this.classList.contains('active');
+
+                    // Close all other FAQ items in the same category
+                    const currentCategory = this.closest('.faq-category');
+                    const allQuestionsInCategory = currentCategory.querySelectorAll('.faq-question');
+                    const allAnswersInCategory = currentCategory.querySelectorAll('.faq-answer');
+
+                    allQuestionsInCategory.forEach(q => q.classList.remove('active'));
+                    allAnswersInCategory.forEach(a => a.classList.remove('active'));
+
+                    // Toggle current item if it wasn't active
+                    if (!isActive) {
+                        this.classList.add('active');
+                        faqAnswer.classList.add('active');
+                    }
+                });
+            });
+
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase();
+                const allFaqItems = document.querySelectorAll('.faq-item');
+
+                if (searchTerm === '') {
+                    // Show all items and restore category filtering
+                    allFaqItems.forEach(item => {
+                        item.style.display = 'block';
+                    });
+
+                    // Show only active category
+                    faqCategories.forEach(category => {
+                        if (category.classList.contains('active')) {
+                            category.style.display = 'block';
+                        } else {
+                            category.style.display = 'none';
+                        }
+                    });
+                } else {
+                    // Show all categories during search
+                    faqCategories.forEach(category => {
+                        category.style.display = 'block';
+                    });
+
+                    // Filter FAQ items based on search
+                    allFaqItems.forEach(item => {
+                        const questionText = item.querySelector('.question-text').textContent.toLowerCase();
+                        const answerText = item.querySelector('.answer-content').textContent.toLowerCase();
+
+                        if (questionText.includes(searchTerm) || answerText.includes(searchTerm)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
         });
-    });
-});
-    </script>
-  <script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
 
-    // Mobile hamburger menu
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+        // Mobile hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
 
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
 
-    // Mobile dropdown toggle
-    function toggleMobileDropdown(event) {
-        if (window.innerWidth <= 768) {
-            event.preventDefault();
-            event.stopPropagation();
-            
-            const dropdown = document.getElementById('services-mobile-dropdown');
-            const arrow = event.currentTarget.querySelector('.dropdown-arrow');
-            
-            if (dropdown) {
-                dropdown.classList.toggle('active');
-                
-                // Rotate arrow
-                if (dropdown.classList.contains('active')) {
-                    arrow.style.transform = 'rotate(180deg)';
-                } else {
-                    arrow.style.transform = 'rotate(0deg)';
+        // Mobile dropdown toggle
+        function toggleMobileDropdown(event) {
+            if (window.innerWidth <= 768) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                const dropdown = document.getElementById('services-mobile-dropdown');
+                const arrow = event.currentTarget.querySelector('.dropdown-arrow');
+
+                if (dropdown) {
+                    dropdown.classList.toggle('active');
+
+                    // Rotate arrow
+                    if (dropdown.classList.contains('active')) {
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
                 }
             }
         }
-    }
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function (event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function (event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickOnHamburger = hamburger.contains(event.target);
 
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
-
-    // Logo switching and dropdown functionality
-    const logoDark = document.querySelector('.logo-dark');
-    const logoLight = document.querySelector('.logo-light');
-
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'none';
-                logoLight.style.display = 'block';
+            if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
             }
-        } else {
-            navbar.classList.remove('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'block';
-                logoLight.style.display = 'none';
-            }
-        }
-    });
+        });
 
-    // Professional Dropdown functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
-        const dropdown = document.querySelector('.dropdown');
-        
-        if (servicesNavItem && dropdown) {
-            let dropdownTimeout;
-            
-            // Show dropdown
-            function showDropdown() {
-                clearTimeout(dropdownTimeout);
-                dropdown.style.opacity = '1';
-                dropdown.style.visibility = 'visible';
-                dropdown.style.transform = 'translateY(0)';
-                dropdown.style.pointerEvents = 'all';
+        // Logo switching and dropdown functionality
+        const logoDark = document.querySelector('.logo-dark');
+        const logoLight = document.querySelector('.logo-light');
+
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                if (logoDark && logoLight) {
+                    logoDark.style.display = 'none';
+                    logoLight.style.display = 'block';
+                }
+            } else {
+                navbar.classList.remove('scrolled');
+                if (logoDark && logoLight) {
+                    logoDark.style.display = 'block';
+                    logoLight.style.display = 'none';
+                }
             }
-            
-            // Hide dropdown with delay
-            function hideDropdown() {
-                dropdownTimeout = setTimeout(() => {
-                    dropdown.style.opacity = '0';
-                    dropdown.style.visibility = 'hidden';
-                    dropdown.style.transform = 'translateY(-20px)';
-                    dropdown.style.pointerEvents = 'none';
-                }, 150);
+        });
+
+        // Professional Dropdown functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
+            const dropdown = document.querySelector('.dropdown');
+
+            if (servicesNavItem && dropdown) {
+                let dropdownTimeout;
+
+                // Show dropdown
+                function showDropdown() {
+                    clearTimeout(dropdownTimeout);
+                    dropdown.style.opacity = '1';
+                    dropdown.style.visibility = 'visible';
+                    dropdown.style.transform = 'translateY(0)';
+                    dropdown.style.pointerEvents = 'all';
+                }
+
+                // Hide dropdown with delay
+                function hideDropdown() {
+                    dropdownTimeout = setTimeout(() => {
+                        dropdown.style.opacity = '0';
+                        dropdown.style.visibility = 'hidden';
+                        dropdown.style.transform = 'translateY(-20px)';
+                        dropdown.style.pointerEvents = 'none';
+                    }, 150);
+                }
+
+                // Event listeners
+                servicesNavItem.addEventListener('mouseenter', showDropdown);
+                servicesNavItem.addEventListener('mouseleave', hideDropdown);
+                dropdown.addEventListener('mouseenter', () => clearTimeout(dropdownTimeout));
+                dropdown.addEventListener('mouseleave', hideDropdown);
             }
-            
-            // Event listeners
-            servicesNavItem.addEventListener('mouseenter', showDropdown);
-            servicesNavItem.addEventListener('mouseleave', hideDropdown);
-            dropdown.addEventListener('mouseenter', () => clearTimeout(dropdownTimeout));
-            dropdown.addEventListener('mouseleave', hideDropdown);
-        }
-    }); 
-</script>
-    </body>
-    </html>
+        }); 
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

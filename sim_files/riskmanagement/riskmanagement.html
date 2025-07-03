@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risk Management - Broadwings Family Office</title>
     <link rel="stylesheet" href="../gobalstyle.css">
+    <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="./riskmanagement.css">
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-
-
 </head>
 
 <body>
@@ -19,8 +18,7 @@
             <a href="../../index.html" class="logo">
                 <div>
                     <img src="../footer-logo.png" alt="Broadwings Dark" class="logo-dark" width="200" height="43">
-                    <img src="../logo.png" alt="Broadwings Light" class="logo-light" width="200" height="43"
-                        style="display: none;">
+                    <img src="../logo.png" alt="Broadwings Light" class="logo-light" width="200" height="43" style="display: none;">
                 </div>
             </a>
 
@@ -28,8 +26,45 @@
                 <li class="nav-item">
                     <a href="../../index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
-                    <div  class="nav-link" onclick="toggleMobileDropdown(event)">
+                <li class="nav-item dropdown-parent">
+                    <div class="nav-link" onclick="toggleMobileDropdown(event, 'who-we-are-mobile-dropdown')">
+                        Who we are
+                        <span class="dropdown-arrow">‹</span>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-column">
+                                <div class="dropdown-services">
+                                    <a href="" class="dropdown-item active" data-content="about">About us</a>
+                                    <a href="../purpose-value/purpose-value.html" class="dropdown-item" data-content="mission">Mission & Vision</a>
+                                    <a href="" class="dropdown-item" data-content="regulatory">Regulatory Information</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-column">
+                                <div class="dropdown-content">
+                                    <div class="content-item active" id="content-about">
+                                        <p class="content-description">Broadwings Family Office is a leading wealth management firm dedicated to serving high-net-worth families and individuals. With decades of combined experience, we provide comprehensive financial solutions that preserve and grow wealth across generations while maintaining the highest standards of professionalism and confidentiality.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-mission">
+                                        <p class="content-description">Our mission is to be the trusted partner for affluent families, providing holistic wealth management solutions that align with their values and aspirations. We envision a future where every family we serve achieves their financial goals while creating lasting positive impact for future generations.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-regulatory">
+                                        <p class="content-description">We operate under strict regulatory oversight and maintain the highest compliance standards. Our firm is registered with appropriate financial authorities and adheres to all applicable laws and regulations. We are committed to transparency, ethical practices, and maintaining the trust our clients place in us.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown" id="who-we-are-mobile-dropdown">
+                        <a href="" class="mobile-dropdown-item">About us</a>
+                        <a href="" class="mobile-dropdown-item">Mission & Vision</a>
+                        <a href="" class="mobile-dropdown-item">Regulatory Information</a>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown-parent">
+                    <div class="nav-link" onclick="toggleMobileDropdown(event, 'what-we-do-mobile-dropdown')">
                         What We Do
                         <span class="dropdown-arrow">‹</span>
                     </div>
@@ -37,35 +72,44 @@
                         <div class="dropdown-container">
                             <div class="dropdown-column">
                                 <div class="dropdown-services">
-                                    <a href="../wealth-management.html" class="dropdown-item">Wealth Management</a>
-                                    <a href="../familywealth/familywealth.html" class="dropdown-item">Family Wealth Strategy</a>
-                                    <a href="../familygovernance/familygovernance.html" class="dropdown-item">Family Governance</a>
-                                    <a href="../philanthropy/philanthropy.html" class="dropdown-item">Philanthropy & Impact</a>
-                                    <a href="./riskmanagement.html" class="dropdown-item">Risk Management</a>
+                                    <a href="../wealth-management.html" class="dropdown-item active" data-content="wealth">Wealth Management</a>
+                                    <a href="../estate/estate.html" class="dropdown-item" data-content="family">Estate & Legacy Planning</a>
+                                    <a href="../legaladvisory/legaladvisory.html" class="dropdown-item" data-content="governance">Legal & Tax Advisory</a>
+                                    <a href="../realestate/realestate.html" class="dropdown-item" data-content="philanthropy">Real Estate Solutions</a>
+                                    <a href="../conciergeservices/conciergeservices.html" class="dropdown-item" data-content="risk">Concierge Services</a>
                                 </div>
                             </div>
                             <div class="dropdown-column">
-                                <div class="dropdown-services">
-                                    <a href="../estate/estate.html" class="dropdown-item">Estate & Legacy Planning</a>
-                                    <a href="../taxsection/tax.html" class="dropdown-item">Tax Advisory</a>
-                                    <a href="../conciergeservices/conciergeservices.html" class="dropdown-item">Concierge Services</a>
-                                    <a href="../legaladvisory/legaladvisory.html" class="dropdown-item">Legal Advisory</a>
-                                    <a href="../realestate/realestate.html" class="dropdown-item">Real Estate Solutions</a>
+                                <div class="dropdown-content">
+                                    <div class="content-item active" id="content-wealth">
+                                        <p class="content-description">We provide personalized investment strategies and comprehensive financial planning to help you build, preserve, and transfer wealth across generations. Our expert team combines deep market knowledge with cutting-edge technology to deliver superior risk-adjusted returns while ensuring your financial goals are met with precision and care.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-family">
+                                        <p class="content-description">Strategic planning to ensure your family's wealth is preserved and grown across multiple generations while aligning with your values and objectives. We help establish robust frameworks for family decision-making, succession planning, and wealth transfer strategies that maintain family unity and purpose.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-governance">
+                                        <p class="content-description">Establish robust governance structures that promote family unity, clear communication, and effective decision-making processes. Our governance solutions include family council formation, policy development, and conflict resolution mechanisms that ensure smooth operations across generations.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-philanthropy">
+                                        <p class="content-description">Create meaningful social impact through strategic philanthropic initiatives that align with your family's values and legacy goals. We help design and implement comprehensive giving strategies that maximize impact while providing tax advantages and building lasting family traditions of social responsibility.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-risk">
+                                        <p class="content-description">Comprehensive risk assessment and mitigation strategies to protect your wealth and family interests from various financial and operational risks. Our holistic approach covers insurance planning, business continuity, crisis management, and regulatory compliance to safeguard your assets and reputation.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="mobile-dropdown" id="services-mobile-dropdown">
+                    <div class="mobile-dropdown" id="what-we-do-mobile-dropdown">
                         <a href="../wealth-management.html" class="mobile-dropdown-item">Wealth Management</a>
-                        <a href="../familywealth/familywealth.html" class="mobile-dropdown-item">Family Wealth Strategy</a>
-                        <a href="../familygovernance/familygovernance.html" class="mobile-dropdown-item">Family Governance</a>
-                        <a href="../philanthropy/philanthropy.html" class="mobile-dropdown-item">Philanthropy & Impact</a>
-                        <a href="./riskmanagement.html" class="mobile-dropdown-item">Risk Management</a>
                         <a href="../estate/estate.html" class="mobile-dropdown-item">Estate & Legacy Planning</a>
-                        <a href="../taxsection/tax.html" class="mobile-dropdown-item">Tax Advisory</a>
-                        <a href="../conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge Services</a>
-                        <a href="../legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal Advisory</a>
+                        <a href="../legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal & Tax Advisory</a>
                         <a href="../realestate/realestate.html" class="mobile-dropdown-item">Real Estate Solutions</a>
+                        <a href="../conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge Services</a>
                     </div>
                 </li> 
                 <li class="nav-item">
@@ -75,7 +119,7 @@
                     <a href="../ourteam/ourteam.html" class="nav-link">Our Team</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../faq/faq.html" class="nav-link">Faq's</a>
+                    <a href="../faq/faq.html" class="nav-link">FAQ's</a>
                 </li>
                 <li class="nav-item">
                     <a href="../contactus/contactus.html" class="nav-link">Contact Us</a>
@@ -381,7 +425,7 @@
                         <div class="address-item">
                             <!-- <div class="address-icon">📍</div> -->
                             <div class="address-text">
-                                3rd floor, Metro Station, #539, Chinmaya Mission Hospital Rd, near Indiranagar, Indiranagar, Bengaluru, Karnataka 560038
+                                539, 3rd floor, CMH Road, Indiranagar, Bengaluru, Karnataka 560038
                             </div>
                         </div>
                         <div class="address-item">
@@ -420,7 +464,8 @@
             </div>
         </div>
     </footer>
-    <script>
+    <!-- <script>
+        
         // Navbar scroll effect
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
@@ -529,7 +574,12 @@
                 dropdown.addEventListener('mouseleave', hideDropdown);
             }
         }); 
-    </script>
+    </script> -->
+
+
+ 
+    <script src="../script.js"></script>
+
 </body>
 
 </html>

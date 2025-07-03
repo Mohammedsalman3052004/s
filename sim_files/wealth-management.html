@@ -34,6 +34,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./gobalstyle.css">
+    <link rel="stylesheet" href="riskmanagement/riskmanagement.css">
     <style>
         /* comment */
         * {
@@ -410,442 +411,443 @@
 
 
         .custom-input {
-    /* border: none; */
-    border-bottom: 1px solid black;
-    /* outline: none; */
-  }
+            /* border: none; */
+            border-bottom: 1px solid black;
+            /* outline: none; */
+        }
 
-  .custom-input:focus {
-    border-bottom: 1px solid black;
-  }
+        .custom-input:focus {
+            border-bottom: 1px solid black;
+        }
 
 
-  form input:focus {
-    border-bottom: 1px solid black;
-  }
+        form input:focus {
+            border-bottom: 1px solid black;
+        }
     </style>
 
 
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Cinzel", serif !important;
-    }
-
-    body {
-        background: #1a1a1a;
-        color: #ffffff;
-        line-height: 1.6;
-    }
-
-    /* Founder Section */
-    .founder-section {
-        background: #1a1a1a;
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .founder-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 80px;
-        align-items: center;
-    }
-
-    .founder-content {
-        position: relative;
-    }
-
-    .founder-label {
-        color: #daa520;
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        position: relative;
-        display: inline-block;
-    }
-
-    .founder-label::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 50px;
-        height: 2px;
-        background: linear-gradient(135deg, #b8860b, #daa520);
-    }
-
-    .founder-name {
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 30px;
-        line-height: 1.1;
-    }
-
-    .founder-description {
-        font-size: 18px;
-        color: rgba(255, 255, 255, 0.8);
-        line-height: 1.8;
-        margin-bottom: 20px;
-    }
-
-    .founder-highlight {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.9);
-        line-height: 1.7;
-        margin-bottom: 40px;
-    }
-
-    .founder-social {
-        display: flex;
-        gap: 15px;
-    }
-
-    .social-icon {
-        width: 50px;
-        height: 50px;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        font-size: 18px;
-    }
-
-    .social-icon:hover {
-        background: #daa520;
-        border-color: #daa520;
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(218, 165, 32, 0.3);
-    }
-
-    .founder-image-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
-    .founder-card {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        padding: 30px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        max-width: 400px;
-        transition: all 0.3s ease;
-    }
-
-    .founder-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: linear-gradient(135deg, #b8860b, #daa520);
-    }
-
-    .founder-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    }
-
-    .founder-image {
-        width: 200px;
-        height: 200px;
-        border-radius: 15px;
-        object-fit: cover;
-        margin-bottom: 25px;
-        border: 3px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .founder-card-name {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 8px;
-        color: #ffffff;
-    }
-
-    .founder-title {
-        font-size: 14px;
-        color: #daa520;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .founder-card-social {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .founder-card-social .social-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    /* Team Section */
-    .team-section {
-        background: #1a1a1a;
-        padding: 100px 0;
-        position: relative;
-    }
-
-    .team-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 40px;
-    }
-
-    .team-header {
-        text-align: center;
-        margin-bottom: 80px;
-    }
-
-    .team-label {
-        color: #daa520;
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-
-    .team-title {
-        font-size: 3rem;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 25px;
-    }
-
-    .team-subtitle {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.7);
-        max-width: 600px;
-        margin: 0 auto 15px;
-        line-height: 1.6;
-    }
-
-    .team-description {
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.6);
-        max-width: 700px;
-        margin: 0 auto;
-        line-height: 1.7;
-    }
-
-    .team-grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-        margin-bottom: 40px;
-        justify-content: center;
-        /* display: flex;
-        gap: 1rem; */
-    }
-
-    .team-member {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        padding: 30px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        transition: all 0.4s ease;
-        cursor: pointer;
-    }
-
-    .team-member::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: linear-gradient(135deg, #b8860b, #daa520);
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
-
-    .team-member:hover::before {
-        transform: scaleX(1);
-    }
-
-    .team-member:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        border-color: rgba(218, 165, 32, 0.3);
-    }
-
-    .member-image {
-        width: 120px;
-        height: 120px;
-        border-radius: 15px;
-        object-fit: cover;
-        margin: 0 auto 20px;
-        border: 3px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .team-member:hover .member-image {
-        border-color: #daa520;
-        transform: scale(1.05);
-    }
-
-    .member-name {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 8px;
-        color: #ffffff;
-    }
-
-    .member-position {
-        font-size: 14px;
-        color: #daa520;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .member-social {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .member-social .social-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 14px;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-        .founder-container {
-            gap: 60px;
-            padding: 0 30px;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cinzel", serif !important;
         }
 
-        .founder-name {
-            font-size: 3rem;
+        body {
+            background: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
         }
 
-        .team-title {
-            font-size: 2.5rem;
-        }
-
-        .team-container {
-            padding: 0 30px;
-        }
-    }
-
-    @media (max-width: 768px) {
+        /* Founder Section */
         .founder-section {
-            padding: 80px 0;
+            background: #1a1a1a;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
         }
 
         .founder-container {
-            grid-template-columns: 1fr;
-            gap: 50px;
-            text-align: center;
-            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .founder-content {
+            position: relative;
+        }
+
+        .founder-label {
+            color: #daa520;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .founder-label::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(135deg, #b8860b, #daa520);
         }
 
         .founder-name {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 30px;
+            line-height: 1.1;
         }
 
-        .founder-description,
+        .founder-description {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
         .founder-highlight {
             font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            margin-bottom: 40px;
         }
 
-        .team-section {
-            padding: 80px 0;
+        .founder-social {
+            display: flex;
+            gap: 15px;
         }
 
-        .team-container {
-            padding: 0 20px;
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 18px;
         }
 
-        .team-title {
-            font-size: 2rem;
+        .social-icon:hover {
+            background: #daa520;
+            border-color: #daa520;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(218, 165, 32, 0.3);
         }
 
-        .team-grid {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .team-member {
-            padding: 25px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .founder-section,
-        .team-section {
-            padding: 60px 0;
-        }
-
-        .founder-container,
-        .team-container {
-            padding: 0 15px;
-        }
-
-        .founder-name {
-            font-size: 2rem;
-        }
-
-        .team-title {
-            font-size: 1.8rem;
-        }
-
-        .team-grid {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        .team-member {
-            padding: 20px;
-        }
-
-        .member-image {
-            width: 100px;
-            height: 100px;
-        }
-
-        .founder-image {
-            width: 150px;
-            height: 150px;
+        .founder-image-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
         }
 
         .founder-card {
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            max-width: 400px;
+            transition: all 0.3s ease;
         }
-    }
+
+        .founder-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #b8860b, #daa520);
+        }
+
+        .founder-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .founder-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-bottom: 25px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .founder-card-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .founder-title {
+            font-size: 14px;
+            color: #daa520;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .founder-card-social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .founder-card-social .social-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: #1a1a1a;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .team-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .team-label {
+            color: #daa520;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .team-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .team-subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto 15px;
+            line-height: 1.6;
+        }
+
+        .team-description {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .team-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+            justify-content: center;
+            /* display: flex;
+        gap: 1rem; */
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .team-member::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #b8860b, #daa520);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover::before {
+            transform: scaleX(1);
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(218, 165, 32, 0.3);
+        }
+
+        .member-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover .member-image {
+            border-color: #daa520;
+            transform: scale(1.05);
+        }
+
+        .member-name {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .member-position {
+            font-size: 14px;
+            color: #daa520;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .member-social {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .member-social .social-icon {
+            width: 36px;
+            height: 36px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .founder-container {
+                gap: 60px;
+                padding: 0 30px;
+            }
+
+            .founder-name {
+                font-size: 3rem;
+            }
+
+            .team-title {
+                font-size: 2.5rem;
+            }
+
+            .team-container {
+                padding: 0 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .founder-section {
+                padding: 80px 0;
+            }
+
+            .founder-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            .founder-name {
+                font-size: 2.5rem;
+            }
+
+            .founder-description,
+            .founder-highlight {
+                font-size: 16px;
+            }
+
+            .team-section {
+                padding: 80px 0;
+            }
+
+            .team-container {
+                padding: 0 20px;
+            }
+
+            .team-title {
+                font-size: 2rem;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 25px;
+            }
+
+            .team-member {
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .founder-section,
+            .team-section {
+                padding: 60px 0;
+            }
+
+            .founder-container,
+            .team-container {
+                padding: 0 15px;
+            }
+
+            .founder-name {
+                font-size: 2rem;
+            }
+
+            .team-title {
+                font-size: 1.8rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .team-member {
+                padding: 20px;
+            }
+
+            .member-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .founder-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .founder-card {
+                padding: 20px;
+            }
+        }
 
 
 
@@ -856,8 +858,8 @@
 
 
 
-     /* Founder Section */
-     .founder-section {
+        /* Founder Section */
+        .founder-section {
             background: #1a1a1a;
             padding: 100px 0;
             position: relative;
@@ -1537,7 +1539,8 @@
             margin-bottom: -1px;
             color: #2c2c2c;
             line-height: 1.3;
-            margin-left: 15px;1
+            margin-left: 15px;
+            1
         }
 
         .member-position {
@@ -1716,11 +1719,12 @@
                 gap: 20px;
             }
         }
-    /* Social Icons */
-    /* .social-linkedin::before { content: "in"; }
+
+        /* Social Icons */
+        /* .social-linkedin::before { content: "in"; }
     .social-instagram::before { content: "ig"; }
     .social-facebook::before { content: "fb"; } */
-</style>
+    </style>
 
     <!-- <script type="text/javascript">
         (function(i, s, o, g, r, a, m) {
@@ -1798,6 +1802,10 @@
 
 
 
+    <link rel="stylesheet" href="./gobalstyle.css">
+
+
+
 
 </head>
 
@@ -1811,8 +1819,7 @@
             <a href="../index.html" class="logo">
                 <div>
                     <img src="./footer-logo.png" alt="Broadwings Dark" class="logo-dark" width="200" height="43">
-                    <img src="./logo.png" alt="Broadwings Light" class="logo-light" width="200" height="43"
-                        style="display: none;">
+                    <img src="./logo.png" alt="Broadwings Light" class="logo-light" width="200" height="43" style="display: none;">
                 </div>
             </a>
 
@@ -1820,62 +1827,103 @@
                 <li class="nav-item">
                     <a href="../index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
-                    <div  class="nav-link" onclick="toggleMobileDropdown(event)">
+                <li class="nav-item dropdown-parent">
+                    <div class="nav-link" onclick="toggleMobileDropdown(event, 'who-we-are-mobile-dropdown')">
+                        Who we are
+                        <span class="dropdown-arrow">‹</span>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-column">
+                                <div class="dropdown-services">
+                                    <a href="./aboutus/aboutus.html" class="dropdown-item active" data-content="about">About us</a>
+                                    <a href="./purpose-value/purpose-value.html" class="dropdown-item" data-content="mission">Mission & Vision</a>
+                                    <a href="./regulatoryInformation/regulatoryInformation.html" class="dropdown-item" data-content="regulatory">Regulatory Information</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-column">
+                                <div class="dropdown-content">
+                                    <div class="content-item active" id="content-about">
+                                        <p class="content-description">Broadwings Family Office is a leading wealth management firm dedicated to serving high-net-worth families and individuals. With decades of combined experience, we provide comprehensive financial solutions that preserve and grow wealth across generations while maintaining the highest standards of professionalism and confidentiality.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-mission">
+                                        <p class="content-description">Our mission is to be the trusted partner for affluent families, providing holistic wealth management solutions that align with their values and aspirations. We envision a future where every family we serve achieves their financial goals while creating lasting positive impact for future generations.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-regulatory">
+                                        <p class="content-description">We operate under strict regulatory oversight and maintain the highest compliance standards. Our firm is registered with appropriate financial authorities and adheres to all applicable laws and regulations. We are committed to transparency, ethical practices, and maintaining the trust our clients place in us.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown" id="who-we-are-mobile-dropdown">
+                        <a href="./aboutus/aboutus.html" class="mobile-dropdown-item">About us</a>
+                        <a href="./purpose-value/purpose-value.html" class="mobile-dropdown-item">Mission & Vision</a>
+                        <a href="./regulatoryInformation/regulatoryInformation.html" class="mobile-dropdown-item">Regulatory Information</a>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown-parent">
+                    <div class="nav-link" onclick="toggleMobileDropdown(event, 'what-we-do-mobile-dropdown')">
                         What We Do
                         <span class="dropdown-arrow">‹</span>
                     </div>
                     <div class="dropdown">
                         <div class="dropdown-container">
                             <div class="dropdown-column">
-                                <!-- <h4> Services</h4> -->
                                 <div class="dropdown-services">
-                                    <a href="./wealth-management.html" class="dropdown-item">Wealth Management</a>
-                                    <a href="./familywealth/familywealth.html" class="dropdown-item">Family Wealth Strategy</a>
-                                    <a href="./familygovernance/familygovernance.html" class="dropdown-item">Family Governance</a>
-                                    <a href="./philanthropy/philanthropy.html" class="dropdown-item">Philanthropy & Impact</a>
-                                    <a href="./riskmanagement/riskmanagement.html" class="dropdown-item">Risk Management</a>
+                                    <a href="./wealth-management.html" class="dropdown-item active" data-content="wealth">Wealth Management</a>
+                                    <a href="./estate/estate.html" class="dropdown-item" data-content="family">Estate & Legacy Planning</a>
+                                    <a href="./legaladvisory/legaladvisory.html" class="dropdown-item" data-content="governance">Legal & Tax Advisory</a>
+                                    <a href="./realestate/realestate.html" class="dropdown-item" data-content="philanthropy">Real Estate Solutions</a>
+                                    <a href="./conciergeservices/conciergeservices.html" class="dropdown-item" data-content="risk">Concierge Services</a>
                                 </div>
                             </div>
                             <div class="dropdown-column">
-                                <!-- <h4>Advisory Services</h4> -->
-                                <div class="dropdown-services">
-                                    <a href="./estate/estate.html" class="dropdown-item">Estate & Legacy Planning</a>
-                                    <a href="./taxsection/tax.html" class="dropdown-item">Tax Advisory</a>
-                                    <a href="./conciergeservices/conciergeservices.html" class="dropdown-item">Concierge Services</a>
-                                    <a href="./legaladvisory/legaladvisory.html" class="dropdown-item">Legal Advisory</a>
-                                    <a href="./realestate/realestate.html" class="dropdown-item">Real Estate Solutions</a>
+                                <div class="dropdown-content">
+                                    <div class="content-item active" id="content-wealth">
+                                        <p class="content-description">We provide personalized investment strategies and comprehensive financial planning to help you build, preserve, and transfer wealth across generations. Our expert team combines deep market knowledge with cutting-edge technology to deliver superior risk-adjusted returns while ensuring your financial goals are met with precision and care.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-family">
+                                        <p class="content-description">Strategic planning to ensure your family's wealth is preserved and grown across multiple generations while aligning with your values and objectives. We help establish robust frameworks for family decision-making, succession planning, and wealth transfer strategies that maintain family unity and purpose.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-governance">
+                                        <p class="content-description">Establish robust governance structures that promote family unity, clear communication, and effective decision-making processes. Our governance solutions include family council formation, policy development, and conflict resolution mechanisms that ensure smooth operations across generations.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-philanthropy">
+                                        <p class="content-description">Create meaningful social impact through strategic philanthropic initiatives that align with your family's values and legacy goals. We help design and implement comprehensive giving strategies that maximize impact while providing tax advantages and building lasting family traditions of social responsibility.</p>
+                                    </div>
+
+                                    <div class="content-item" id="content-risk">
+                                        <p class="content-description">Comprehensive risk assessment and mitigation strategies to protect your wealth and family interests from various financial and operational risks. Our holistic approach covers insurance planning, business continuity, crisis management, and regulatory compliance to safeguard your assets and reputation.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="mobile-dropdown" id="services-mobile-dropdown">
+                    <div class="mobile-dropdown" id="what-we-do-mobile-dropdown">
                         <a href="./wealth-management.html" class="mobile-dropdown-item">Wealth Management</a>
-                        <a href="./familywealth/familywealth.html" class="mobile-dropdown-item">Family Wealth Strategy</a>
-                        <a href="./familygovernance/familygovernance.html" class="mobile-dropdown-item">Family Governance</a>
-                        <a href="./philanthropy/philanthropy.html" class="mobile-dropdown-item">Philanthropy & Impact</a>
-                        <a href="./riskmanagement/riskmanagement.html" class="mobile-dropdown-item">Risk Management</a>
                         <a href="./estate/estate.html" class="mobile-dropdown-item">Estate & Legacy Planning</a>
-                        <a href="./taxsection/tax.html" class="mobile-dropdown-item">Tax Advisory</a>
-                        <a href="./conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge Services</a>
-                        <a href="./legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal Advisory</a>
+                        <a href="./legaladvisory/legaladvisory.html" class="mobile-dropdown-item">Legal & Tax Advisory</a>
                         <a href="./realestate/realestate.html" class="mobile-dropdown-item">Real Estate Solutions</a>
+                        <a href="./conciergeservices/conciergeservices.html" class="mobile-dropdown-item">Concierge Services</a>
                     </div>
-                </li>
-                <!-- <li class="nav-item">
-                    <a href="./wealth-management.html" class="nav-link">Wealth Management</a>
-                </li> -->
+                </li> 
                 <li class="nav-item">
-                    <a href="./careers/careers.html" class="nav-link">Careers</a>
+                    <a href="../careers/careers.html" class="nav-link">Careers</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./ourteam/ourteam.html" class="nav-link">Our Team</a>
+                    <a href="../ourteam/ourteam.html" class="nav-link">Our Team</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./faq/faq.html" class="nav-link">FAQ's</a>
+                    <a href="../faq/faq.html" class="nav-link">FAQ's</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./contactus/contactus.html" class="nav-link">Contact Us</a>
+                    <a href="../contactus/contactus.html" class="nav-link">Contact Us</a>
                 </li>
             </ul>
 
@@ -2068,14 +2116,13 @@
             <div class="container ">
                 <div class="row" style="width: 100%;">
                     <div class="col-md-12">
-                        <h2>Product Offerings</h2>
+                        <h2>Investment Strategies</h2>
                     </div>
                 </div>
                 <div class="row">
                     <a href="">
                     </a>
-                    <div class="col-md-4 col-sm-6 product-content"><a
-                            href="">
+                    <div class="col-md-4 col-sm-6 product-content"><a href="">
                             <img src="./po-1.png" class="img-responsive">
                             <h6>Debt</h6>
                             <p>Broadwings Family Office leverages its extensive network of leading debt market
@@ -2089,8 +2136,7 @@
 
                     <a href="">
                     </a>
-                    <div class="col-md-4 col-sm-6 product-content"><a
-                            href="">
+                    <div class="col-md-4 col-sm-6 product-content"><a href="">
                             <img src="./po-2.png" class="img-responsive">
                             <h6>Equity</h6>
                             <p>Broadwings Family Office's strong relationships in the equity markets, along with
@@ -2103,8 +2149,7 @@
 
                     <a href="">
                     </a>
-                    <div class="col-md-4 col-sm-6 product-content"><a
-                            href="">
+                    <div class="col-md-4 col-sm-6 product-content"><a href="">
                             <img src="./po-3.png" class="img-responsive">
                             <h6>Alternates</h6>
                             <p>Broadwings Family Office, utilizing its broad global ecosystem, offers exclusive access
@@ -2134,7 +2179,7 @@
                             <div class="box">
                                 <a href="./block1/block1.html">
                                     <div class="field-wrapper">
-                                        <div class="box-img" style="background-image: url('./blog1.jpg')">
+                                        <div class="box-img" style="background-image: url('./blog111.jpg')">
                                         </div>
                                         <div class="blog-text">
                                             <h6>Investment Banking</h6>
@@ -2156,12 +2201,10 @@
                                         <span>Read Time: 5 minutes</span>
                                     </div>
                                     <div class="share-icon">
-                                        <a href=""
-                                            class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href=""
-                                            class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href=""
-                                            class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                        <a href="" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="" class="linkedin" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                        <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                         <h4 class="url-copied"></h4>
                                     </div>
                                 </div>
@@ -2172,7 +2215,7 @@
                             <div class="box">
                                 <a href="./block2/block2.html">
                                     <div class="field-wrapper">
-                                        <div class="box-img" style="background-image: url('blog2.png')">
+                                        <div class="box-img" style="background-image: url('blog22.jpg')">
                                         </div>
                                         <div class="blog-text">
                                             <h6>PRIVATE MARKETS & AUTOMATION</h6>
@@ -2195,12 +2238,10 @@
                                         <span>Read Time: 5 minutes</span>
                                     </div>
                                     <div class="share-icon">
-                                        <a href=""
-                                            class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href=""
-                                            class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href=""
-                                            class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                        <a href="" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="" class="linkedin" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                        <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                         <h4 class="url-copied"></h4>
                                     </div>
                                 </div>
@@ -2238,12 +2279,10 @@
                                         <span>Read Time: 4 minutes</span>
                                     </div>
                                     <div class="share-icon">
-                                        <a href=""
-                                            class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href=""
-                                            class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href=""
-                                            class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                        <a href="" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="" class="linkedin" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                        <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                         <h4 class="url-copied"></h4>
                                     </div>
                                 </div>
@@ -2278,12 +2317,11 @@
                                             <span>Read Time: 5 minutes</span>
                                         </div>
                                         <div class="share-icon">
-                                            <a href=""
-                                                class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                            <a href=""
-                                                class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href=""
-                                                class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                            <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                             <h4 class="url-copied"></h4>
                                         </div>
                                     </div>
@@ -2314,12 +2352,11 @@
                                             <span>Read Time: 6 minutes</span>
                                         </div>
                                         <div class="share-icon">
-                                            <a href=""
-                                                class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                            <a href=""
-                                                class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href=""
-                                                class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                            <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                             <h4 class="url-copied"></h4>
                                         </div>
                                     </div>
@@ -2332,7 +2369,7 @@
 
                             <div class="box">
                                 <a href="./block6/block6.html">
-                                    <div class="box-img" style="background-image: url('blog-image.png')">
+                                    <div class="box-img" style="background-image: url('blog11.jpg')">
                                     </div>
                                     <div class="blog-text">
                                         <h6>PORTFOLIO STRATEGY</h6>
@@ -2352,12 +2389,10 @@
                                         <span>Read Time: 5 minutes</span>
                                     </div>
                                     <div class="share-icon">
-                                        <a href=""
-                                            class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href=""
-                                            class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href=""
-                                            class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                        <a href="" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="" class="linkedin" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                        <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                         <h4 class="url-copied"></h4>
                                     </div>
                                 </div>
@@ -2407,12 +2442,10 @@
                                         <span>Read Time: 5 minutes</span>
                                     </div>
                                     <div class="share-icon">
-                                        <a href=""
-                                            class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href=""
-                                            class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href=""
-                                            class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                        <a href="" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="" class="linkedin" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                        <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                         <h4 class="url-copied"></h4>
                                     </div>
                                 </div>
@@ -2434,53 +2467,28 @@
                                                 capturing tactical growth, or planning across generations, our hybrid
                                                 strategies align market intelligence with personal legacy—ensuring your
                                                 investments grow with purpose and resilience.
-
                                             </p>
-
                                         </div>
                                     </div>
                                 </a>
-
                                 <div class="icon-time-section">
                                     <div class="time-section">
                                         <span>Read Time: 3 minutes</span>
                                     </div>
                                     <div class="share-icon">
-                                        <a href=""
-                                            class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href=""
-                                            class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href=""
-                                            class="clipboard"><i class="fas fa-link link-share"></i></a>
+                                        <a href="" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="" class="linkedin" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                        <a href="" class="clipboard"><i class="fas fa-link link-share"></i></a>
                                         <h4 class="url-copied"></h4>
                                     </div>
                                 </div>
-
-
                             </div>
-
                         </div>
-
-
-
-
-
                         <div class="unit-class">
-
-
-
-
                         </div>
-
-
-
-
-
-
-
                     </div>
                 </div>
-
 
                 <div class="col-md-8 col-md-offset-2 text-center vi-eye">
                     <a href="">
@@ -2494,13 +2502,174 @@
 
 
 
+<section class="services-section" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Safeguarding Wealth Through Strategic Foresight</h2>
+                <p class="section-subtitle">
+                    We build resilient frameworks that anticipate volatility while supporting long-term goals through
+                    comprehensive risk management solutions.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./riskmanagement/Comprehensive Risk Assessment.svg" alt="Comprehensive Risk Assessment" class="icon">
+                    </div>
+                    <h3>Comprehensive Risk Assessment</h3>
+                    <p>Evaluate exposures across financial, legal, operational, geopolitical, and reputational domains
+                        with detailed risk mapping and analysis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./riskmanagement/Investment Risk Monitoring.svg" alt="Investment Risk Monitoring" class="icon">
+                    </div>
+                    <h3>Investment Risk Monitoring</h3>
+                    <p>Continuously assess portfolio risks, drawdowns, concentration levels, and liquidity mismatches
+                        with real-time monitoring systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./riskmanagement/Family & Business Contingency Planning.svg" alt="Family & Business Contingency Planning" class="icon">
+                    </div>
+                    <h3>Family & Business Contingency Planning</h3>
+                    <p>Design strategies for crisis events — from key-person risks to business disruptions, ensuring
+                        continuity and resilience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./riskmanagement/Insurance Structuring & Optimization.svg" alt="Insurance Structuring & Optimization" class="icon">
+                    </div>
+                    <h3>Insurance Structuring & Optimization</h3>
+                    <p>Secure life, asset, health, and liability coverage tailored to family and enterprise needs with
+                        optimal coverage strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./riskmanagement/Cybersecurity & Data Risk Controls.svg" alt="Cybersecurity & Data Risk Controls" class="icon">
+                    </div>
+                    <h3>Cybersecurity & Data Risk Controls</h3>
+                    <p>Implement protocols to safeguard sensitive family and financial information from digital threats
+                        and data breaches.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./riskmanagement/Risk Reporting & Governance Reviews.svg" alt="Risk Reporting & Governance Reviews" class="icon">
+                    </div>
+                    <h3>Risk Reporting & Governance Reviews</h3>
+                    <p>Provide regular dashboards, alerts, and reviews for real-time decision support and strategic
+                        risk oversight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- Client Types Section -->
+     <section class="clients-section">
+        <div class="section-container">
+            <div class="clients-header">
+                <h2>We Work With</h2>
+                <p>Our risk management expertise serves diverse family structures and business environments, each with
+                    unique risk profiles and protection needs.</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <span class="client-icon">
+                        <img src="./riskmanagement/Enterprising Families.svg" alt="Enterprising Families" class="icon">
+                    </span>
+                    <h3>Enterprising Families</h3>
+                    <p>With operating businesses and diversified asset portfolios requiring proactive risk mapping,
+                        comprehensive coverage, and business continuity planning.</p>
+                </div>
+                <div class="client-card">
+                    <span class="client-icon">
+                        <img src="./riskmanagement/Global Investors.svg" alt="Global Investors" class="icon">
+                    </span>
+                    <h3>Global Investors</h3>
+                    <p>With exposure across currencies, geographies, and regulatory environments needing sophisticated
+                        risk management and compliance frameworks.</p>
+                </div>
+                <div class="client-card">
+                    <span class="client-icon">
+                        <img src="./riskmanagement/Legacy-Centric Families.svg" alt="Legacy-Centric Families" class="icon">
+                    </span>
+                    <h3>Legacy-Centric Families</h3>
+                    <p>Seeking long-term continuity without disruptions to family harmony, enterprise control, or asset
+                        value across generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- Risk Philosophy Section -->
+     <section class="philosophy-section">
+        <div class="section-container">
+            <div class="philosophy-content">
+                <h2>Why Risk Management Matters</h2>
+                <div class="philosophy-description">
+                    <p>Uncertainty is inevitable — but unpreparedness is optional. At Broadwings, we turn uncertainty
+                        into
+                        strategy by equipping families with tools to navigate volatility, protect their vision, and
+                        remain
+                        in control.</p>
+                </div>
+
+                <!-- <div class="philosophy-highlight">
+                    <h3>Converting Risk into Resilience</h3>
+                    <p>Our integrated approach ensures risk does not just get managed — it gets converted into
+                        resilience. We believe that proper risk management is the foundation of sustainable wealth
+                        preservation and growth across generations.</p>
+                </div> -->
+
+                <div class="risk-stats">
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="./riskmanagement/Proactive Monitoring.svg" alt="Proactive Monitoring" class="icon">
+                        </span>
+                        <h4>Proactive Monitoring</h4>
+                        <p>Real-time risk assessment and early warning systems for immediate response</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="./riskmanagement/Precision Planning.svg" alt="Precision Planning" class="icon">
+                        </span>
+                        <h4>Precision Planning</h4>
+                        <p>Tailored risk strategies aligned with family goals and risk tolerance</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="./riskmanagement/Adaptive Frameworks.svg" alt="Adaptive Frameworks" class="icon">
+                        </span>
+                        <h4>Adaptive Frameworks</h4>
+                        <p>Dynamic risk management that evolves with changing circumstances</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="./riskmanagement/Comprehensive Protection.svg" alt="Comprehensive Protection" class="icon">
+                        </span>
+                        <h4>Comprehensive Protection</h4>
+                        <p>Holistic coverage across all risk dimensions and asset classes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
         <section class="team-section">
             <div class="team-container">
                 <div class="team-header">
                     <div class="team-label">People</div>
                     <h2 class="team-title">Our Key Team Members</h2>
                 </div>
-    
+
                 <div class="team-grid">
                     <div class="team-card">
                         <div class="card-image-container">
@@ -2526,7 +2695,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="team-card">
                         <div class="card-image-container">
                             <img src="./team-members/member2.png" alt="Apurva Sahijwani" class="card-image">
@@ -2551,7 +2720,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="team-card">
                         <div class="card-image-container">
                             <img src="./team-members/member3.png" alt="Apurva Sahijwani" class="card-image">
@@ -2576,7 +2745,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="team-card">
                         <div class="card-image-container">
                             <img src="./team-members/member4.png" alt="Apurva Sahijwani" class="card-image">
@@ -2625,8 +2794,8 @@
                             </div>
                         </div>
                     </div>
-    
-    
+
+
                     <div class="team-card">
                         <div class="card-image-container">
                             <img src="./team-members/member6.jpg" alt="Apurva Sahijwani" class="card-image">
@@ -2675,8 +2844,8 @@
                             </div>
                         </div>
                     </div>
-    
-    
+
+
                 </div>
             </div>
         </section>
@@ -2779,13 +2948,15 @@
             <!-- RIGHT SECTION -->
             <div class="right">
                 <form>
-                    <input type="text" placeholder="Full Name*" required class="custom-input"/>
+                    <input type="text" placeholder="Full Name*" required class="custom-input" />
                     <div style="display: flex; gap: 20px">
-                        <input type="email" placeholder="Email Address*" required style="flex: 1" class="custom-input" />
-                        <input type="tel" placeholder="Contact Number*" required style="flex: 1"  class="custom-input"/>
+                        <input type="email" placeholder="Email Address*" required style="flex: 1"
+                            class="custom-input" />
+                        <input type="tel" placeholder="Contact Number*" required style="flex: 1" class="custom-input" />
                     </div>
                     <div style="display: flex; gap: 20px">
-                        <input type="text" placeholder="Name of the Company / Family*" style="flex: 1" class="custom-input"/>
+                        <input type="text" placeholder="Name of the Company / Family*" style="flex: 1"
+                            class="custom-input" />
                         <input type="text" placeholder="City*" style="flex: 1" />
                     </div>
                     <textarea placeholder="How can we help you?" rows="5" class="custom-input"></textarea>
@@ -2832,11 +3003,19 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <!-- <li><a href="./wealth-management.html">Wealth Management</a></li> -->
                         <li><a href="./careers/careers.html">Career</a></li>
                         <li><a href="./ourteam/ourteam.html">Our Team</a></li>
-                        <li><a href="./faq/faq.html">FAQ's</a></li>
-                        <li><a href="./contactus/contactus.html">Contact Us</a></li>
+                        <li><a href="./faq/faq.html">Faq's</a></li>
+                        <li><a href="./contactus/contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Who we are</h4>
+                    <ul>
+                        <!-- <li><a href="../index.html">Who we are</a></li> -->
+                        <li><a href="./aboutus/aboutus.html">About Us</a></li>
+                        <li><a href="./purpose-value/purpose-value.html">Mission & Vision</a></li>
+                        <li><a href="./regulatoryInformation/regulatoryInformation.html">Regulatory Information</a></li>
                     </ul>
                 </div>
 
@@ -2845,17 +3024,10 @@
                     <div class="services-ctc">
                         <ul>
                             <li><a href="./wealth-management.html">Wealth Management</a></li>
-                            <li><a href="./familywealth/familywealth.html">Family Wealth Strategy</a></li>
-                            <li><a href="./familygovernance/familygovernance.html">Family Governance</a></li>
-                            <li><a href="./philanthropy/philanthropy.html">Philanthropy & Impact</a></li>
-                            <li><a href="./riskmanagement/riskmanagement.html">Risk Management</a></li>
-                        </ul>
-                        <ul>
                             <li><a href="./estate/estate.html">Estate & Legacy Planning</a></li>
-                            <li><a href="./taxsection/tax.html">Tax Advisory</a></li>
-                            <li><a href="./conciergeservices/conciergeservices.html">Concierge Services</a></li>
-                            <li><a href="./legaladvisory/legaladvisory.html">Legal Advisory</a></li>
+                            <li><a href="./legaladvisory/legaladvisory.html">Legal & Tax Advisory</a></li>
                             <li><a href="./realestate/realestate.html">Real Estate Solutions</a></li>
+                            <li><a href="./conciergeservices/conciergeservices.html">Concierge Services</a></li>
                         </ul>
                     </div>
                 </div>
@@ -2867,13 +3039,13 @@
                         <img src="./footer-logo.png" alt="footer logo" height="43" width="200">
                     </div>
                 </div>
-                
+
                 <!-- Address Section -->
                 <div class="footer-address">
                     <div class="address-item">
                         <!-- <div class="address-icon">📍</div> -->
                         <div class="address-text">
-                            3rd floor, Metro Station, #539, Chinmaya Mission Hospital Rd, near Indiranagar, Indiranagar, Bengaluru, Karnataka 560038
+                            539, 3rd floor, CMH Road, Indiranagar, Bengaluru, Karnataka 560038
                         </div>
                     </div>
                     <div class="address-item">
@@ -2917,119 +3089,119 @@
 
 
     <!-- Google Tag Manager (noscript) -->
- 
 
 
-<script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
 
-    // Mobile hamburger menu
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
+        // Mobile hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
 
-    // Mobile dropdown toggle
-    function toggleMobileDropdown(event) {
-        if (window.innerWidth <= 768) {
-            event.preventDefault();
-            event.stopPropagation();
-            
-            const dropdown = document.getElementById('services-mobile-dropdown');
-            const arrow = event.currentTarget.querySelector('.dropdown-arrow');
-            
-            if (dropdown) {
-                dropdown.classList.toggle('active');
-                
-                // Rotate arrow
-                if (dropdown.classList.contains('active')) {
-                    arrow.style.transform = 'rotate(180deg)';
-                } else {
-                    arrow.style.transform = 'rotate(0deg)';
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle
+        function toggleMobileDropdown(event) {
+            if (window.innerWidth <= 768) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                const dropdown = document.getElementById('services-mobile-dropdown');
+                const arrow = event.currentTarget.querySelector('.dropdown-arrow');
+
+                if (dropdown) {
+                    dropdown.classList.toggle('active');
+
+                    // Rotate arrow
+                    if (dropdown.classList.contains('active')) {
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
                 }
             }
         }
-    }
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function (event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function (event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickOnHamburger = hamburger.contains(event.target);
 
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
-
-    // Logo switching and dropdown functionality
-    const logoDark = document.querySelector('.logo-dark');
-    const logoLight = document.querySelector('.logo-light');
-
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'none';
-                logoLight.style.display = 'block';
+            if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
             }
-        } else {
-            navbar.classList.remove('scrolled');
-            if (logoDark && logoLight) {
-                logoDark.style.display = 'block';
-                logoLight.style.display = 'none';
-            }
-        }
-    });
+        });
 
-    // Professional Dropdown functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
-        const dropdown = document.querySelector('.dropdown');
-        
-        if (servicesNavItem && dropdown) {
-            let dropdownTimeout;
-            
-            // Show dropdown
-            function showDropdown() {
-                clearTimeout(dropdownTimeout);
-                dropdown.style.opacity = '1';
-                dropdown.style.visibility = 'visible';
-                dropdown.style.transform = 'translateY(0)';
-                dropdown.style.pointerEvents = 'all';
+        // Logo switching and dropdown functionality
+        const logoDark = document.querySelector('.logo-dark');
+        const logoLight = document.querySelector('.logo-light');
+
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                if (logoDark && logoLight) {
+                    logoDark.style.display = 'none';
+                    logoLight.style.display = 'block';
+                }
+            } else {
+                navbar.classList.remove('scrolled');
+                if (logoDark && logoLight) {
+                    logoDark.style.display = 'block';
+                    logoLight.style.display = 'none';
+                }
             }
-            
-            // Hide dropdown with delay
-            function hideDropdown() {
-                dropdownTimeout = setTimeout(() => {
-                    dropdown.style.opacity = '0';
-                    dropdown.style.visibility = 'hidden';
-                    dropdown.style.transform = 'translateY(-20px)';
-                    dropdown.style.pointerEvents = 'none';
-                }, 150);
+        });
+
+        // Professional Dropdown functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const servicesNavItem = document.querySelector('.nav-item:nth-child(2)'); // Our Services item
+            const dropdown = document.querySelector('.dropdown');
+
+            if (servicesNavItem && dropdown) {
+                let dropdownTimeout;
+
+                // Show dropdown
+                function showDropdown() {
+                    clearTimeout(dropdownTimeout);
+                    dropdown.style.opacity = '1';
+                    dropdown.style.visibility = 'visible';
+                    dropdown.style.transform = 'translateY(0)';
+                    dropdown.style.pointerEvents = 'all';
+                }
+
+                // Hide dropdown with delay
+                function hideDropdown() {
+                    dropdownTimeout = setTimeout(() => {
+                        dropdown.style.opacity = '0';
+                        dropdown.style.visibility = 'hidden';
+                        dropdown.style.transform = 'translateY(-20px)';
+                        dropdown.style.pointerEvents = 'none';
+                    }, 150);
+                }
+
+                // Event listeners
+                servicesNavItem.addEventListener('mouseenter', showDropdown);
+                servicesNavItem.addEventListener('mouseleave', hideDropdown);
+                dropdown.addEventListener('mouseenter', () => clearTimeout(dropdownTimeout));
+                dropdown.addEventListener('mouseleave', hideDropdown);
             }
-            
-            // Event listeners
-            servicesNavItem.addEventListener('mouseenter', showDropdown);
-            servicesNavItem.addEventListener('mouseleave', hideDropdown);
-            dropdown.addEventListener('mouseenter', () => clearTimeout(dropdownTimeout));
-            dropdown.addEventListener('mouseleave', hideDropdown);
-        }
-    }); 
-</script>
+        }); 
+    </script>
 
     <div class="zoombox-maincon disabled skin-nebula transition-fade transition-gallery-slide transition-out-fade">
         <div class="zoombox-bg" onclick=""></div>
@@ -3046,6 +3218,10 @@
     <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
         style="display: none;"></ul>
     <div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
