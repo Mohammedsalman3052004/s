@@ -74552,3 +74552,9 @@ label sup {
   font-size: 1.2rem;
   max-width: 900px;
 }
+
+.about-image{
+  height: 350px;
+  width: 550px;
+  border-radius: 20px;
+}

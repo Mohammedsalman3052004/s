@@ -1342,7 +1342,7 @@ body {
   padding: 50px 40px;
   display: grid;
   grid-template-columns: 400px 1fr;
-  gap: 80px;
+  gap: 40px;
   align-items: start;
   min-height: 400px;
 }
@@ -1350,6 +1350,8 @@ body {
 .dropdown-column {
   display: flex;
   flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  padding-right: 2rem;
 }
 
 .dropdown-services {
@@ -1423,13 +1425,15 @@ body {
 .dropdown-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 60px 40px;
-  background: linear-gradient(135deg, #f8f9fa, #ffffff);
-  border-radius: 12px;
+  justify-content: start;
+  /* padding: 60px 40px; */
+  /* background: linear-gradient(135deg, #f8f9fa, #ffffff); */
+  /* border-radius: 12px; */
   /* border-left: 1px solid #000000; */
   min-height: 320px;
   opacity: 1;
+  box-shadow: none;
+  max-width: 600px;
 }
 
 .content-item {
