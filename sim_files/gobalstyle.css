@@ -1363,6 +1363,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  margin-left: 25rem;
 }
 
 .dropdown-item {
@@ -1463,7 +1464,7 @@ body {
 }
 
 .content-description {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
   line-height: 1.8;
   text-align: justify;
