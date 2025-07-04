@@ -21738,6 +21738,7 @@ footer .footer_inner .made_by_ting_sec span {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  align-items: center;
 }
 #career .current-opening .row-flex .txt_sec {
   width: 36%;
@@ -21815,12 +21816,12 @@ footer .footer_inner .made_by_ting_sec span {
   color: #363157;
 }
 #career .sld-wd {
-  margin: 25px 0 80px;
+  /* margin: 25px 0 80px; */
   padding: 50px 0;
 }
 @media (max-width: 767px) {
   #career .sld-wd {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     padding-bottom: 0;
   }
 }
@@ -38644,10 +38645,10 @@ img.mfp-img {
 
 
 .contact-us-contnet {
-  padding: 50px;
+  /* padding: 0px 50px; */
 }
 .heading-container-contact {
-  padding: 50px;
+  /* padding: 50px; */
 }
 .container {
   max-width: 1300px;
@@ -113415,10 +113416,10 @@ label sup {
 
 
 .contact-us-contnet {
-  padding: 50px;
+  /* padding: 50px; */
 }
 .heading-container-contact {
-  padding: 50px;
+  /* padding: 50px; */
 }
 .container {
   max-width: 1300px;
